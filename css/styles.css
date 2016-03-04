@@ -442,6 +442,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   background-color: #6FB2E0;
   overflow: hidden;
   padding: 0.25rem 0rem;
@@ -459,12 +460,54 @@ header {
     border: none;
     color: white;
     border-radius: 0 3px 3px 0; }
-  header img {
-    height: 18px;
-    opacity: 1; }
   header ul li {
     color: white;
     float: right;
     margin: 1.25em; }
+
+.content {
+  position: relative;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+  .content section.sidebar {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 29.375em;
+    height: 100%;
+    background-color: white; }
+  .content section.map {
+    display: table-cell;
+    width: 66.66667%;
+    padding: 2.35765%; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #4A4A4A;
+  padding: 0.5rem;
+  z-index: 999;
+  width: 100%; }
+  footer p {
+    font-size: 0.875em;
+    margin: 0.7em 1em;
+    float: left;
+    color: white; }
+    footer p span {
+      color: #9B9B9B; }
+  footer ul {
+    float: right; }
+    footer ul li {
+      color: white;
+      display: inline-block;
+      margin: 0.5em 1.25em; }
+    footer ul a {
+      text-decoration: none;
+      color: white; }
 
 /*# sourceMappingURL=styles.css.map */
