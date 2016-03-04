@@ -439,25 +439,29 @@ body {
   font-family: "roboto", helvetica, arial; }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #6FB2E0;
   overflow: hidden;
-  padding: 0.25rem 0rem; }
+  padding: 0.25rem 0rem;
+  width: 100%; }
   header .logo {
     float: left;
     margin: 1.04em; }
   header form.search-bar {
     float: left;
     margin: 0.6em; }
-    header form.search-bar input[type=search] {
-      border-radius: 3px; }
-    header form.search-bar button[type=submit] {
-      background-color: #4A4A4A;
-      border: none;
-      color: white;
-      border-radius: 0 3px 3px 0; }
-      header form.search-bar button[type=submit] img {
-        height: 18px;
-        opacity: 1; }
+  header input[type=search] {
+    border-radius: 3px; }
+  header button[type=submit] {
+    background-color: #4A4A4A;
+    border: none;
+    color: white;
+    border-radius: 0 3px 3px 0; }
+  header img {
+    height: 18px;
+    opacity: 1; }
   header ul li {
     color: white;
     float: right;
