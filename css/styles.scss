@@ -6,8 +6,11 @@
 
 $font: "roboto", helvetica, arial;
 $primary-color: #6FB2E0;
-$dark-gray:	#4A4A4A;
+$dark-gray:	#5C5A58;
 $light-gray: #9B9B9B;
+$white: #fff;
+$light-blue: #D4E6F3;
+
 
 body {
 	font-family: $font;
@@ -34,11 +37,11 @@ header {
 		button[type=submit] {
 			background-color: $dark-gray;
 			border: none;
-			color: white;
+			color: $white;
 			border-radius: 0 3px 3px 0 ;
 		}
 	ul li {
-			color: white;
+			color: $white;
 			float: right;
 			margin: 1.25em;
 		}
@@ -47,11 +50,49 @@ header {
 	@include position(relative, 64px null null 0);
 	@include fill-parent();
 	@include row(table);
-	section.sidebar {
+	
+  section.sidebar {
 		@include position(fixed, 64px null null 0);
 		width: em(470);
 		height: 100%;
-		background-color: white;
+		background-color: $white;
+    
+    .filters {
+      background-color: $light-blue;
+      overflow: hidden;
+    }
+
+    button {
+      padding: 0 0.9em;
+      float: left;
+      margin: 1em 0.7em;
+      width: em(212);
+      height: em(38);
+      border-radius: 100px;
+      background-color: $white;
+      border: none;
+      text-align: left;
+      
+      i {
+          font-size: em(17);
+          float: left;
+          color: $primary-color;
+        }
+
+      p {
+        font-size: em(14px);
+        color: $dark-gray;
+        letter-spacing: 0.2px;
+        margin: 0 0 0 2em;
+
+        i.fa-angle-down {
+          color: $dark-gray;
+          float: right;
+          font-size: em(22);
+        }
+
+      }
+    }
 	}
 
 	section.map {
@@ -67,23 +108,28 @@ footer {
 	padding: 0.5rem;
 	z-index: 999;
 	width: 100%;
-	p {
+	
+  p {
 		font-size: em(14);
 		margin: 0.7em 1em;
 		float: left;
-		color: white;
-		span {
+		color: $white;
+		
+    span {
 			color: $light-gray;
 		}
 	}
-	ul {
+	
+  ul {
 		float: right;
-		li {
+		
+    li {
 			color: white;
 			display: inline-block;
 			margin: 0.5em 1.25em;
 			}
-			a {
+			
+      a {
 				text-decoration: none;
 				color: white;
 			}

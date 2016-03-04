@@ -456,12 +456,12 @@ header {
   header input[type=search] {
     border-radius: 3px; }
   header button[type=submit] {
-    background-color: #4A4A4A;
+    background-color: #5C5A58;
     border: none;
-    color: white;
+    color: #fff;
     border-radius: 0 3px 3px 0; }
   header ul li {
-    color: white;
+    color: #fff;
     float: right;
     margin: 1.25em; }
 
@@ -479,7 +479,33 @@ header {
     left: 0;
     width: 29.375em;
     height: 100%;
-    background-color: white; }
+    background-color: #fff; }
+    .content section.sidebar .filters {
+      background-color: #D4E6F3;
+      overflow: hidden; }
+    .content section.sidebar button {
+      padding: 0 0.9em;
+      float: left;
+      margin: 1em 0.7em;
+      width: 13.25em;
+      height: 2.375em;
+      border-radius: 100px;
+      background-color: #fff;
+      border: none;
+      text-align: left; }
+      .content section.sidebar button i {
+        font-size: 1.0625em;
+        float: left;
+        color: #6FB2E0; }
+      .content section.sidebar button p {
+        font-size: 0.875em;
+        color: #5C5A58;
+        letter-spacing: 0.2px;
+        margin: 0 0 0 2em; }
+        .content section.sidebar button p i.fa-angle-down {
+          color: #5C5A58;
+          float: right;
+          font-size: 1.375em; }
   .content section.map {
     display: table-cell;
     width: 66.66667%;
@@ -489,7 +515,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #4A4A4A;
+  background-color: #5C5A58;
   padding: 0.5rem;
   z-index: 999;
   width: 100%; }
@@ -497,7 +523,7 @@ footer {
     font-size: 0.875em;
     margin: 0.7em 1em;
     float: left;
-    color: white; }
+    color: #fff; }
     footer p span {
       color: #9B9B9B; }
   footer ul {
