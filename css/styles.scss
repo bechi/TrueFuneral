@@ -1,0 +1,49 @@
+@import '0-plugins/plugings-dir';
+@import '1-modules/modules-dir';
+@import '2-layouts/layouts-dir';
+@import "reset.css";
+
+
+$font: "roboto", helvetica, arial;
+$primary-color: #6FB2E0;
+$dark-gray:	#4A4A4A;
+
+body {
+	font-family: $font;
+	}
+
+header {
+	@include position(fixed, 0 null null 0);
+	background-color: $primary-color;
+	overflow: hidden;
+	padding: 0.25rem 0rem;
+	width: 100%;
+	.logo {
+		float: left;
+		margin: 1.04em; 
+	}
+	form.search-bar {
+		float: left;
+		margin: 0.6em;
+	}
+		input[type=search] {
+			border-radius: 3px; 
+		}
+		button[type=submit] {
+			background-color: $dark-gray;
+			border: none;
+			color: white;
+			border-radius: 0 3px 3px 0 ;
+		}
+			img {
+				height: 18px;
+				opacity: 1;
+			}
+	ul li {
+			color: white;
+			float: right;
+			margin: 1.25em;
+		}
+}
+
+	
