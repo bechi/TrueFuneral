@@ -1,0 +1,187 @@
+header {
+  @include position(fixed, 0 null null 0);
+  z-index: 999;
+  background-color: "$white";
+  overflow: hidden;
+  padding: 0.25rem 0rem;
+  width: 100%;
+
+  .logo {
+    float: left;
+    margin: 1.04em;
+  }
+
+  ul li {
+    color: "$dark-gray";
+    float: right;
+    margin: 1.25em;
+
+    a {
+      color: "$dark-gray";
+    }
+  }
+
+  form.search-bar {
+    float: left;
+    margin: 0.6em;
+  }
+
+    input[type=search] {
+      border-radius: 3px;
+    }
+
+    button[type=submit] {
+      background-color: "$primary-color";
+      border: none;
+      color: "$white";
+      border-radius: 0 3px 3px 0 ;
+    }
+}
+
+button {
+  padding: 0.5em 1.5em;
+  border-radius: 100px;
+  border: none;
+}
+
+button.primary {
+  color: "$white";
+  background-color: "$primary-color";
+}
+
+.content {
+  @include position(relative, 64px null null 0);
+  @include fill-parent();
+  @include row(table);
+
+  section.sidebar {
+    @include position(fixed, 64px null null 0);
+    width: em(470);
+    height: 100%;
+    background-color: "$white";
+
+    .filters {
+      background-color: #EBEBEB;
+      overflow: hidden;
+
+      button {
+        float: left;
+        margin: 1em 0.7em;
+        width: em(212);
+        height: em(38);
+        background-color: "$white";
+        text-align: left;
+
+        i  {
+            font-size: em(17);
+            float: left;
+            color: "$primary-colo"r;
+          }
+
+        p {
+          font-size: em(14px);
+          color: "$dark-gray";
+          letter-spacing: 0.2px;
+          margin: 0 0 0 2em;
+
+          i.fa-angle-down {
+            color: "$dark-gray";
+            float: right;
+            font-size: em(22);
+          }
+        }
+      }
+    }
+
+    .list{
+
+      .item {
+        padding: 1.5em;
+        border-bottom: 1px solid #E8E4E4;
+        overflow: hidden;
+
+        .info {
+          margin-top: 0.5em;
+          float: left;
+
+          h3 a {
+            font-size: em(18);
+            color: "$dark-gray";
+            display: block;
+            margin-bottom: 0.5em;
+          }
+          h5 {
+            font-size: em(15);
+            color: "$light-gray";
+            margin-bottom: 1em;
+            i {
+              font-size: em(17);
+              color: #FFC76E;
+            }
+          }
+        }
+
+        .price {
+          float: right;
+
+          small {
+            font-size: em(12);
+            color: "$light-gray";
+          }
+
+          p {
+            font-size: em(24);
+            color: "$black";
+            margin: 0.1em 0 0.5em 0;
+
+            a i {
+              font-size: em(14);
+              color: "$primary-color";
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.map {
+    @include span-columns(8);
+    @include reset-display;
+    @include pad();
+  }
+}
+
+footer {
+  @include position(fixed, null null 0 0);
+  background-color: "$dark-gray";
+  padding: 0.5rem;
+  z-index: 999;
+  width: 100%;
+
+  p {
+    font-size: em(14);
+    margin: 0.7em 1em;
+    float: left;
+    color: "$white";
+
+    span {
+      color: "$light-gray";
+    }
+  }
+
+  ul {
+    float: right;
+
+    li {
+      color: white;
+      display: inline-block;
+      margin: 0.5em 1.25em;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+  }
+}

@@ -435,6 +435,144 @@ form.search-bar {
       height: 12px;
       opacity: 0.7; }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: "$white";
+  overflow: hidden;
+  padding: 0.25rem 0rem;
+  width: 100%; }
+  header .logo {
+    float: left;
+    margin: 1.04em; }
+  header ul li {
+    color: "$dark-gray";
+    float: right;
+    margin: 1.25em; }
+    header ul li a {
+      color: "$dark-gray"; }
+  header form.search-bar {
+    float: left;
+    margin: 0.6em; }
+  header input[type=search] {
+    border-radius: 3px; }
+  header button[type=submit] {
+    background-color: "$primary-color";
+    border: none;
+    color: "$white";
+    border-radius: 0 3px 3px 0; }
+
+button {
+  padding: 0.5em 1.5em;
+  border-radius: 100px;
+  border: none; }
+
+button.primary {
+  color: "$white";
+  background-color: "$primary-color"; }
+
+.content {
+  position: relative;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+  .content section.sidebar {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 29.375em;
+    height: 100%;
+    background-color: "$white"; }
+    .content section.sidebar .filters {
+      background-color: #EBEBEB;
+      overflow: hidden; }
+      .content section.sidebar .filters button {
+        float: left;
+        margin: 1em 0.7em;
+        width: 13.25em;
+        height: 2.375em;
+        background-color: "$white";
+        text-align: left; }
+        .content section.sidebar .filters button i {
+          font-size: 1.0625em;
+          float: left;
+          color: "$primary-colo" r; }
+        .content section.sidebar .filters button p {
+          font-size: 0.875em;
+          color: "$dark-gray";
+          letter-spacing: 0.2px;
+          margin: 0 0 0 2em; }
+          .content section.sidebar .filters button p i.fa-angle-down {
+            color: "$dark-gray";
+            float: right;
+            font-size: 1.375em; }
+    .content section.sidebar .list .item {
+      padding: 1.5em;
+      border-bottom: 1px solid #E8E4E4;
+      overflow: hidden; }
+      .content section.sidebar .list .item .info {
+        margin-top: 0.5em;
+        float: left; }
+        .content section.sidebar .list .item .info h3 a {
+          font-size: 1.125em;
+          color: "$dark-gray";
+          display: block;
+          margin-bottom: 0.5em; }
+        .content section.sidebar .list .item .info h5 {
+          font-size: 0.9375em;
+          color: "$light-gray";
+          margin-bottom: 1em; }
+          .content section.sidebar .list .item .info h5 i {
+            font-size: 1.0625em;
+            color: #FFC76E; }
+      .content section.sidebar .list .item .price {
+        float: right; }
+        .content section.sidebar .list .item .price small {
+          font-size: 0.75em;
+          color: "$light-gray"; }
+        .content section.sidebar .list .item .price p {
+          font-size: 1.5em;
+          color: "$black";
+          margin: 0.1em 0 0.5em 0; }
+          .content section.sidebar .list .item .price p a i {
+            font-size: 0.875em;
+            color: "$primary-color";
+            vertical-align: middle; }
+  .content section.map {
+    display: table-cell;
+    width: 66.66667%;
+    padding: 2.35765%; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: "$dark-gray";
+  padding: 0.5rem;
+  z-index: 999;
+  width: 100%; }
+  footer p {
+    font-size: 0.875em;
+    margin: 0.7em 1em;
+    float: left;
+    color: "$white"; }
+    footer p span {
+      color: "$light-gray"; }
+  footer ul {
+    float: right; }
+    footer ul li {
+      color: white;
+      display: inline-block;
+      margin: 0.5em 1.25em; }
+    footer ul a {
+      text-decoration: none;
+      color: white; }
+
 a {
   text-decoration: none; }
 
