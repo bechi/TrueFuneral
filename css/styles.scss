@@ -20,7 +20,7 @@ body {
 header {
 	@include position(fixed, 0 null null 0);
 	z-index: 999;
-	background-color: $primary-color;
+	background-color: $white;
 	overflow: hidden;
 	padding: 0.25rem 0rem;
 	width: 100%;
@@ -31,7 +31,7 @@ header {
 	}
 
 	ul li {
-		color: $white;
+		color: $dark-gray;
 		float: right;
 		margin: 1.25em;
 	}
@@ -46,7 +46,7 @@ header {
 		}
 
 		button[type=submit] {
-			background-color: $dark-gray;
+			background-color: $primary-color;
 			border: none;
 			color: $white;
 			border-radius: 0 3px 3px 0 ;
@@ -76,7 +76,7 @@ button.primary {
 		background-color: $white;
 
     .filters {
-      background-color: $light-blue;
+      background-color: #EBEBEB;
       overflow: hidden;
 
 			button {

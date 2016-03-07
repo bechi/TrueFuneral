@@ -443,7 +443,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #6FB2E0;
+  background-color: #fff;
   overflow: hidden;
   padding: 0.25rem 0rem;
   width: 100%; }
@@ -451,7 +451,7 @@ header {
     float: left;
     margin: 1.04em; }
   header ul li {
-    color: #fff;
+    color: #5C5A58;
     float: right;
     margin: 1.25em; }
   header form.search-bar {
@@ -460,7 +460,7 @@ header {
   header input[type=search] {
     border-radius: 3px; }
   header button[type=submit] {
-    background-color: #5C5A58;
+    background-color: #6FB2E0;
     border: none;
     color: #fff;
     border-radius: 0 3px 3px 0; }
@@ -490,7 +490,7 @@ button.primary {
     height: 100%;
     background-color: #fff; }
     .content section.sidebar .filters {
-      background-color: #D4E6F3;
+      background-color: #EBEBEB;
       overflow: hidden; }
       .content section.sidebar .filters button {
         float: left;
