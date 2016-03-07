@@ -450,6 +450,10 @@ header {
   header .logo {
     float: left;
     margin: 1.04em; }
+  header ul li {
+    color: #fff;
+    float: right;
+    margin: 1.25em; }
   header form.search-bar {
     float: left;
     margin: 0.6em; }
@@ -460,10 +464,15 @@ header {
     border: none;
     color: #fff;
     border-radius: 0 3px 3px 0; }
-  header ul li {
-    color: #fff;
-    float: right;
-    margin: 1.25em; }
+
+button {
+  padding: 0.5em 1.5em;
+  border-radius: 100px;
+  border: none; }
+
+button.primary {
+  color: #fff;
+  background-color: #6FB2E0; }
 
 .content {
   position: relative;
@@ -483,29 +492,56 @@ header {
     .content section.sidebar .filters {
       background-color: #D4E6F3;
       overflow: hidden; }
-    .content section.sidebar button {
-      padding: 0 0.9em;
-      float: left;
-      margin: 1em 0.7em;
-      width: 13.25em;
-      height: 2.375em;
-      border-radius: 100px;
-      background-color: #fff;
-      border: none;
-      text-align: left; }
-      .content section.sidebar button i {
-        font-size: 1.0625em;
+      .content section.sidebar .filters button {
         float: left;
-        color: #6FB2E0; }
-      .content section.sidebar button p {
-        font-size: 0.875em;
-        color: #5C5A58;
-        letter-spacing: 0.2px;
-        margin: 0 0 0 2em; }
-        .content section.sidebar button p i.fa-angle-down {
+        margin: 1em 0.7em;
+        width: 13.25em;
+        height: 2.375em;
+        background-color: #fff;
+        text-align: left; }
+        .content section.sidebar .filters button i {
+          font-size: 1.0625em;
+          float: left;
+          color: #6FB2E0; }
+        .content section.sidebar .filters button p {
+          font-size: 0.875em;
           color: #5C5A58;
-          float: right;
-          font-size: 1.375em; }
+          letter-spacing: 0.2px;
+          margin: 0 0 0 2em; }
+          .content section.sidebar .filters button p i.fa-angle-down {
+            color: #5C5A58;
+            float: right;
+            font-size: 1.375em; }
+    .content section.sidebar .list .item {
+      padding: 1.5em;
+      border-bottom: 1px solid #E8E4E4;
+      overflow: hidden; }
+      .content section.sidebar .list .item .info {
+        margin-top: 0.5em;
+        float: left; }
+        .content section.sidebar .list .item .info h3 {
+          font-size: 1.125em;
+          color: #5C5A58;
+          margin-bottom: 0.5em; }
+        .content section.sidebar .list .item .info h5 {
+          font-size: 0.9375em;
+          color: #9B9B9B;
+          margin-bottom: 1em; }
+          .content section.sidebar .list .item .info h5 i {
+            font-size: 1.0625em;
+            color: #FFC76E; }
+      .content section.sidebar .list .item .price {
+        float: right; }
+        .content section.sidebar .list .item .price small {
+          font-size: 0.75em;
+          color: #9B9B9B; }
+        .content section.sidebar .list .item .price p {
+          font-size: 1.5em;
+          color: #000;
+          margin: 0.1em 0 0.5em 0; }
+          .content section.sidebar .list .item .price p i {
+            font-size: 0.875em;
+            color: #6FB2E0; }
   .content section.map {
     display: table-cell;
     width: 66.66667%;
