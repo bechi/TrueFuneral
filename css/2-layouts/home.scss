@@ -46,7 +46,8 @@
     font-size: 15px;
     color: $primary-color;
     letter-spacing: 1px;
-    &.orange {
+    &.orange  a {
+      display: block;
       font-size: 17px;
       color: #FFC76E;
       letter-spacing: 1.5px;

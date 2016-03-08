@@ -691,7 +691,8 @@ footer {
       font-size: 15px;
       color: #6FB2E0;
       letter-spacing: 1px; }
-      .home .content .text h6.orange {
+      .home .content .text h6.orange a {
+        display: block;
         font-size: 17px;
         color: #FFC76E;
         letter-spacing: 1.5px;
