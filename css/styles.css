@@ -674,47 +674,47 @@ footer {
       background: #6FB2E0;
       color: #fff; }
 
-.content {
+.home .content {
   color: #5C5A58;
   padding: 100px;
   line-height: 29px; }
-  .content h4 {
+  .home .content h4 {
     font-size: 20px;
     letter-spacing: 2.5px;
     margin: 0.3em; }
-  .content h6 {
+  .home .content h6 {
     font-size: 15px;
     color: #6FB2E0;
     letter-spacing: 1px; }
-    .content h6.orange {
+    .home .content h6.orange {
       font-size: 17px;
       color: #FFC76E;
       letter-spacing: 1.5px;
       padding-top: 0.9em; }
-  .content p {
+  .home .content p {
     font-size: 16px;
     margin-bottom: 46px; }
-    .content p.title {
+    .home .content p.title {
       font-size: 18px;
       margin-bottom: 55px; }
-  .content img {
+  .home .content img {
     float: left;
     margin-right: 27px; }
-    .content img.title {
+    .home .content img.title {
       margin-right: 50px; }
-  .content .left {
+  .home .content .left {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    .content .left:last-child {
+    .home .content .left:last-child {
       margin-right: 0; }
-  .content .right {
+  .home .content .right {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    .content .right:last-child {
+    .home .content .right:last-child {
       margin-right: 0; }
 
 footer.home {
