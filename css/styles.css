@@ -700,33 +700,29 @@ footer {
       font-size: 16px; }
   .home .content img {
     float: left;
-    margin-right: 27px; }
+    margin-right: 27px;
+    margin-bottom: 40px; }
     .home .content img.title {
       margin-right: 50px; }
   .home .content .left {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%; }
-    .home .content .left:last-child {
-      margin-right: 0; }
+    width: 47%;
+    margin-right: 6%;
+    float: left; }
   .home .content .right {
     float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%; }
-    .home .content .right:last-child {
-      margin-right: 0; }
-  .home .content .middle {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%; }
-    .home .content .middle:last-child {
-      margin-right: 0; }
+    width: 47%; }
 
 footer.home {
-  position: relative; }
+  position: relative;
+  padding: 50px 100px;
+  overflow: hidden; }
+  footer.home .left {
+    float: left;
+    margin-right: 1.5em; }
+  footer.home ul {
+    margin-top: 0.3em; }
+  footer.home p {
+    margin: 0.6em 0 0; }
 
 a {
   text-decoration: none; }
