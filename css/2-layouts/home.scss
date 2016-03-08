@@ -36,7 +36,13 @@
     letter-spacing: 2.5px;
     margin: 0.3em;
   }
-  h6 {
+  p.title {
+    font-size: 18px;
+    margin-bottom:  55px;
+  }
+  .text {
+    height: 105px;
+    h6 {
     font-size: 15px;
     color: $primary-color;
     letter-spacing: 1px;
@@ -44,15 +50,11 @@
       font-size: 17px;
       color: #FFC76E;
       letter-spacing: 1.5px;
-      padding-top: 0.9em;
+      padding-top: 0.6em;
+      }
     }
-  }
-  p {
-    font-size: 16px;
-    margin-bottom: 46px;
-    &.title {
-      font-size: 18px;
-      margin-bottom: 55px;
+    p {
+      font-size: 16px;
     }
   }
   img {
@@ -63,10 +65,13 @@
     }
   }
   .left {
-    @include span-columns(6);
+    @include span-columns(5);
   }
   .right {
-    @include span-columns(6);
+    @include span-columns(5);
+  }
+  .middle {
+    @include span-columns(2);
   }
 }
 
