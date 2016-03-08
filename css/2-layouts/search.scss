@@ -1,7 +1,8 @@
 header {
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
   @include position(fixed, 0 null null 0);
   z-index: 999;
-  background-color: "$white";
+  background-color: $white;
   overflow: hidden;
   padding: 0.25rem 0rem;
   width: 100%;
@@ -12,12 +13,12 @@ header {
   }
 
   ul li {
-    color: "$dark-gray";
+    color: $dark-gray;
     float: right;
     margin: 1.25em;
 
     a {
-      color: "$dark-gray";
+      color: $dark-gray;
     }
   }
 
@@ -31,9 +32,9 @@ header {
     }
 
     button[type=submit] {
-      background-color: "$primary-color";
+      background-color: $primary-color;
       border: none;
-      color: "$white";
+      color: $white;
       border-radius: 0 3px 3px 0 ;
     }
 }
@@ -45,8 +46,8 @@ button {
 }
 
 button.primary {
-  color: "$white";
-  background-color: "$primary-color";
+  color: $white;
+  background-color: $primary-color;
 }
 
 .content {
@@ -58,7 +59,7 @@ button.primary {
     @include position(fixed, 64px null null 0);
     width: em(470);
     height: 100%;
-    background-color: "$white";
+    background-color: $white;
 
     .filters {
       background-color: #EBEBEB;
@@ -69,23 +70,23 @@ button.primary {
         margin: 1em 0.7em;
         width: em(212);
         height: em(38);
-        background-color: "$white";
+        background-color: $white;
         text-align: left;
 
         i  {
             font-size: em(17);
             float: left;
-            color: "$primary-colo"r;
+            color: $primary-color;
           }
 
         p {
           font-size: em(14px);
-          color: "$dark-gray";
+          color: $dark-gray;
           letter-spacing: 0.2px;
           margin: 0 0 0 2em;
 
           i.fa-angle-down {
-            color: "$dark-gray";
+            color: $dark-gray;
             float: right;
             font-size: em(22);
           }
@@ -106,13 +107,13 @@ button.primary {
 
           h3 a {
             font-size: em(18);
-            color: "$dark-gray";
+            color: $dark-gray;
             display: block;
             margin-bottom: 0.5em;
           }
           h5 {
             font-size: em(15);
-            color: "$light-gray";
+            color: $light-gray;
             margin-bottom: 1em;
             i {
               font-size: em(17);
@@ -126,17 +127,17 @@ button.primary {
 
           small {
             font-size: em(12);
-            color: "$light-gray";
+            color: $light-gray;
           }
 
           p {
             font-size: em(24);
-            color: "$black";
+            color: $black;
             margin: 0.1em 0 0.5em 0;
 
             a i {
               font-size: em(14);
-              color: "$primary-color";
+              color: $primary-color;
               vertical-align: middle;
             }
           }
@@ -154,7 +155,7 @@ button.primary {
 
 footer {
   @include position(fixed, null null 0 0);
-  background-color: "$dark-gray";
+  background-color:  $dark-gray;
   padding: 0.5rem;
   z-index: 999;
   width: 100%;
@@ -163,10 +164,10 @@ footer {
     font-size: em(14);
     margin: 0.7em 1em;
     float: left;
-    color: "$white";
+    color: $white;
 
     span {
-      color: "$light-gray";
+      color: $light-gray;
     }
   }
 
