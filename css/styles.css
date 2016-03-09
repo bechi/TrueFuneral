@@ -725,6 +725,31 @@ footer.home {
   footer.home p {
     margin: 0.6em 0 0; }
 
+.profile .content .sidebar {
+  overflow: hidden;
+  width: 40em;
+  padding: 20px 50px; }
+  .profile .content .sidebar ul.list {
+    margin-bottom: 1.5em; }
+  .profile .content .sidebar p {
+    color: #5C5A58;
+    letter-spacing: 0.5px;
+    line-height: 21px; }
+.profile .map {
+  position: absolute;
+  left: 0;
+  margin-top: 1.5em; }
+  .profile .map img {
+    height: 100%; }
+.profile .pricing-details {
+  padding: 50px;
+  margin-left: 40em;
+  background: #D4E6F3;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 64.25px; }
+
 a {
   text-decoration: none; }
 
