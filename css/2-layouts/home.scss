@@ -1,20 +1,55 @@
 .hero  {
+  color: $white;
+  min-height: em(700px);
   header {
-    box-shadow: none;
-    background: transparent;
-    padding: em(60) em(100);
     position: relative;
-    a {
-      color: $white;
+    box-shadow: none;
+    .logo {
+      margin: 0;
+    }
+    &.navigation {
+      background-color: transparent;
+      min-height: none;
+      border-bottom: none;
+      padding: 3em;
+      @include media($mobile) {
+        padding: 0;
+      }
+      nav {
+        float: none;
+      }
     }
   }
+
   h1 {
     font-size: em(46)!important;
     line-height: 1.3em;
-    margin-bottom: 45px !important;
+    margin: 1.5em;
+    @include media($mobile) {
+      display: none;
+    }
   }
+  p {
+    &.title {
+      display: none;
+      margin: 5em 0.5em 1.5em;
+      font-size: em(20px);
+      line-height: em(28px);
+    }
+    &.location {
+      font-size: 13px;
+      display: none;
+    }
+    &.mobile-only {
+      @include media($mobile) {
+        display: block;
+      }
+    }
+  }
+
+
   .accordion-tabs-minimal {
-    margin-bottom: 254px;
+    margin: 2em 1.5em;
     .tab-link {
       color: $light-gray;
       border: none;
@@ -92,3 +127,23 @@ footer.home {
     margin: 0.6em 0 0;
   }
 }
+
+// @media screen and (max-width: 53.75em) {
+//   .hero {
+//     header {
+//       &.navigation {
+//         padding: 0;
+//         .navigation-menu-button {
+//           margin: 0.6em 1.04em;
+//         }
+//         .logo img {
+//           width: 160px;
+//         }
+//       }
+//     }
+
+//     h1 {
+//       display: none;
+//     }
+//   }
+// }

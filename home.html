@@ -3,43 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <script type="text/javascript" src="js/bower_components/jquery-2.2.1.min/index.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="home">
   <div class="hero">
     <div class="hero-inner">
-      <header>
-        <a href="#" class="logo">
-          <img src="img/TF-logo-white.svg" alt="True Funeral">
+      <header class="navigation" role="banner">
+        <a href="javascript:void(0)" class="logo">
+          <img src="img/TF-logo-white.svg" alt="Logo Image" width="183">
         </a>
-        <ul>
-          <li><a href="#">What is Immediate Burial? </a></li>
-          <li><a href="#">What is Direct Cremation? </a></li>
-        </ul>
+        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><i class="fa fa-bars fa-lg"> </i></a>
+        <nav role="navigation">
+          <ul id="js-navigation-menu" class="navigation-menu show">
+            <li class="nav-link"><a href="javascript:void(0)">What is Direct Cremation? </a></li>
+            <li class="nav-link"><a href="javascript:void(0)">What is Immediate Burial?</a></li>
+          </ul>
+        </nav>
       </header>
-      <div class="hero-copy">
-        <h1>Losing a loved one is overwhelming. <br> Planning the funeral shouldn’t have to be.</h1>
-        <ul class="accordion-tabs-minimal">
-          <li class="tab-header-and-content">
-            <a href="#" class="tab-link is-active">Direct Cremation <i class="fa fa-question-circle fa-lg"> </i></a>
-            <div class="tab-content">
-             </div>
-          </li>
-          <li class="tab-header-and-content">
-            <a href="#" class="tab-link">Immediate Burial <i class="fa fa-question-circle fa-lg"> </i></a>
-            <div class="tab-content">
-              <p>tab 2 content</p>
-            </div>
-          </li>
-          <li class="tab-header-and-content">
-            <a href="#" class="tab-link">Both</a>
-            <div class="tab-content">
-              <p>tab 3 content</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+
+      <h1>Losing a loved one is overwhelming. <br> Planning the funeral shouldn’t have to be.</h1>
+      <p class="title mobile-only">Losing a loved one is overwhelming. <br><b>Planning the funeral shouldn’t have to be.</b></p>
+      <ul class="accordion-tabs-minimal">
+        <li class="tab-header-and-content">
+          <a href="#" class="tab-link is-active">Direct Cremation <i class="fa fa-question-circle fa-lg"> </i></a>
+          <div class="tab-content">
+           </div>
+        </li>
+        <li class="tab-header-and-content">
+          <a href="#" class="tab-link">Immediate Burial <i class="fa fa-question-circle fa-lg"> </i></a>
+          <div class="tab-content">
+            <p>tab 2 content</p>
+          </div>
+        </li>
+        <li class="tab-header-and-content">
+          <a href="#" class="tab-link">Both</a>
+          <div class="tab-content">
+            <p>tab 3 content</p>
+          </div>
+        </li>
+      </ul>
+      <p class="location mobile-only"><i class="fa fa-question-circle fa-lg"> </i> USE MY LOCATION</p>
     </div>
   </div>
 
