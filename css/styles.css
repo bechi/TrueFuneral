@@ -684,7 +684,7 @@ footer {
     font-size: 1.25em;
     line-height: 1.75em; }
   .hero p.location {
-    font-size: 13px;
+    font-size: 0.8125em;
     display: none; }
   @media screen and (max-width: 736px) {
     .hero p.mobile-only {
@@ -694,42 +694,42 @@ footer {
     .hero .accordion-tabs-minimal .tab-link {
       color: #9B9B9B;
       border: none;
-      border-radius: 3px 3px 0 0; }
+      border-radius: 0.1875em 0.1875em 0 0; }
       .hero .accordion-tabs-minimal .tab-link.is-active {
         background: #6FB2E0;
         color: #fff; }
 
 .home .content {
   color: #5C5A58;
-  padding: 100px;
-  line-height: 29px; }
+  padding: 6.25em;
+  line-height: 1.8125em; }
   .home .content h4 {
-    font-size: 20px;
-    letter-spacing: 2.5px;
+    font-size: 1.25em;
+    letter-spacing: 0.15625em;
     margin: 0.3em; }
   .home .content p.title {
-    font-size: 18px;
-    margin-bottom: 55px; }
+    font-size: 1.125em;
+    margin-bottom: 3.4375em; }
   .home .content .text {
-    height: 105px; }
+    height: 6.5625em; }
     .home .content .text h6 {
-      font-size: 15px;
+      font-size: 0.9375em;
       color: #6FB2E0;
-      letter-spacing: 1px; }
+      letter-spacing: 0.0625em; }
       .home .content .text h6.orange a {
         display: block;
-        font-size: 17px;
+        font-size: 1.0625em;
         color: #FFC76E;
-        letter-spacing: 1.5px;
+        letter-spacing: 0.09375em;
         padding-top: 0.6em; }
     .home .content .text p {
-      font-size: 16px; }
+      font-size: 1em; }
   .home .content img {
     float: left;
-    margin-right: 27px;
-    margin-bottom: 40px; }
+    margin-right: 1.6875em;
+    margin-bottom: 2.5em; }
     .home .content img.title {
-      margin-right: 50px; }
+      margin-right: 3.125em; }
   .home .content .left {
     width: 47%;
     margin-right: 6%;
@@ -740,7 +740,7 @@ footer {
 
 footer.home {
   position: relative;
-  padding: 50px 100px;
+  padding: 3.125em 6.25em;
   overflow: hidden; }
   footer.home .left {
     float: left;
