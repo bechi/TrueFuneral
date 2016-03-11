@@ -770,11 +770,8 @@ button.primary {
   width: 100%;
   table-layout: fixed; }
   .content section.sidebar {
-    position: fixed;
-    top: 64px;
-    left: 0;
+    position: absolute;
     width: 29.375em;
-    height: 100%;
     background-color: #fff; }
     .content section.sidebar .filters {
       background-color: #EBEBEB;
@@ -833,9 +830,9 @@ button.primary {
             vertical-align: middle; }
   .content .map {
     position: fixed;
-    margin-top: 4em;
-    z-index: -999;
-    margin-left: 29.375em; }
+    top: 4em;
+    left: 29.375em;
+    z-index: -999; }
 
 footer {
   position: fixed;

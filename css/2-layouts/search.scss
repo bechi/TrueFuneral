@@ -77,9 +77,8 @@ button.primary {
   @include row(table);
 
   section.sidebar {
-    @include position(fixed, 64px null null 0);
+    @include position(absolute, null);
     width: em(470);
-    height: 100%;
     background-color: $white;
 
     .filters {
@@ -168,10 +167,8 @@ button.primary {
   }
 
   .map {
-    position: fixed;
-    margin-top: em(64px);
+    @include position(fixed, em(64px) null null em(470));
     z-index: -999;
-    margin-left: em(470px);
   }
 }
 
