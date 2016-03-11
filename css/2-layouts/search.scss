@@ -73,13 +73,16 @@ button.primary {
 
 .content {
   @include position(relative, 64px null null 0);
-  @include fill-parent();
-  @include row(table);
 
   section.sidebar {
     @include position(absolute, null);
     width: em(470);
     background-color: $white;
+    @include media($mobile) {
+      width: 100%;
+      position: relative;
+      margin-bottom: 4em;
+    }
 
     .filters {
       background-color: #EBEBEB;
@@ -124,12 +127,13 @@ button.primary {
         .info {
           margin-top: 0.5em;
           float: left;
-
+          @include ellipsis(60%);
           h3 a {
             font-size: em(18);
             color: $dark-gray;
             display: block;
             margin-bottom: 0.5em;
+            @include ellipsis(100%);
           }
           h5 {
             font-size: em(15);
@@ -169,27 +173,28 @@ button.primary {
   .map {
     @include position(fixed, em(64px) null null em(470));
     z-index: -999;
+    &.only-desktop {
+      @include media($mobile){
+        display: none;
+      }
+    }
+    &.only-mobile {
+      left: 0;
+      top: 0;
+      z-index: 0;
+      position: relative;
+      display: none;
+      @include media($mobile) {
+        display: block;
+      }
+      img {
+          width: 100%;
+        }
+    }
   }
 }
 
 footer {
-  @include position(fixed, null null 0 0);
-  background-color:  $dark-gray;
-  padding: 0.5rem;
-  z-index: 999;
-  width: 100%;
-
-  p {
-    font-size: em(14);
-    margin: 0.7em 1em;
-    float: left;
-    color: $white;
-
-    span {
-      color: $light-gray;
-    }
-  }
-
   ul {
     float: right;
 
@@ -203,5 +208,58 @@ footer {
         text-decoration: none;
         color: white;
       }
+  }
+}
+
+footer {
+  @include position(fixed, null null 0 0);
+  background-color:  $dark-gray;
+  width: 100%;
+  padding: 0.5rem;
+  overflow: hidden;
+  @include media($mobile){
+    position: relative;
+    padding: 2em 2.2em;
+  }
+  .left {
+    float: left;
+    margin-right: 1.5em;
+  }
+  img.logo-bbb {
+    @include media($mobile) {
+      float: right;
+    }
+  }
+  ul {
+    float: right;
+    margin-top: 0.3em;
+    @include media($mobile){
+      margin-top: 5.5em;
+      line-height: 1.8em;
+      float: none;
+    }
+    li {
+      color: white;
+      display: inline-block;
+      margin: 0.5em 1.25em;
+      @include media($mobile){
+        display: block;
+        margin: 0;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  p {
+    font-size: em(14);
+    margin: 0.6em 0 0;
+    float: left;
+    color: $white;
+
+    span {
+      color: $light-gray;
+    }
   }
 }
