@@ -170,7 +170,16 @@ button.primary {
     }
   }
 
+
   .map {
+    #map {
+      width: 3000px;
+      height: 1000px;
+      // @include media($mobile){
+      //   width: em(372px);
+      //   height: em(200px);
+      // }
+    }
     @include position(fixed, em(64px) null null em(470));
     z-index: -999;
     &.only-desktop {
@@ -186,6 +195,9 @@ button.primary {
       display: none;
       @include media($mobile) {
         display: block;
+        width: 100%;
+        height: em(200px);
+        overflow: hidden;
       }
       img {
           width: 100%;

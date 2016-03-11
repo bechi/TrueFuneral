@@ -7,6 +7,8 @@
   <title>Search result</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+            async defer></script>
 </head>
 <body class="search">
   <header class="navigation" role="banner">
@@ -42,7 +44,7 @@
         </button>
       </div>
       <div class="map only-mobile">
-        <img src="https://i.kinja-img.com/gawker-media/image/upload/ojby5fx5vgxsfhihqq1o.png" alt="">
+
       </div>
       <ul class="list">
         <li class="item">
@@ -216,7 +218,18 @@
       </ul>
     </section>
     <div class="map only-desktop">
-      <img src="https://i.kinja-img.com/gawker-media/image/upload/ojby5fx5vgxsfhihqq1o.png" alt="">
+      <div id="map"></div>
+      <script>
+        function initMap() {
+          var mapDiv = document.getElementById('map');
+          var map = new google.maps.Map(mapDiv, {
+            center: {lat: 44.540, lng: -78.546},
+            zoom: 8
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+          async defer></script>
     </div>
   </div>
 

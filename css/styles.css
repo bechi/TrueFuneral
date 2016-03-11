@@ -846,6 +846,9 @@ button.primary {
     top: 4em;
     left: 29.375em;
     z-index: -999; }
+    .content .map #map {
+      width: 3000px;
+      height: 1000px; }
     @media screen and (max-width: 736px) {
       .content .map.only-desktop {
         display: none; } }
@@ -857,7 +860,10 @@ button.primary {
       display: none; }
       @media screen and (max-width: 736px) {
         .content .map.only-mobile {
-          display: block; } }
+          display: block;
+          width: 100%;
+          height: 12.5em;
+          overflow: hidden; } }
       .content .map.only-mobile img {
         width: 100%; }
 
