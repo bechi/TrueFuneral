@@ -2,9 +2,11 @@ $font: "roboto", helvetica, arial;
 $primary-color: #6FB2E0;
 $dark-gray: #5C5A58;
 $light-gray: #9B9B9B;
+$ultra-light-gray: #E5E5E5;
 $white: #fff;
 $light-blue: #D4E6F3;
 $black: #000;
+
 
 $desktop: new-breakpoint(max-width 1200px 12);
 $tablet:  new-breakpoint(max-width 768px 12);

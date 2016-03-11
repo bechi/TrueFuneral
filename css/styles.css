@@ -701,8 +701,11 @@ footer {
 
 .home .content {
   color: #5C5A58;
-  padding: 6.25em;
+  padding: 2em 6.25em 6.25em;
   line-height: 1.8125em; }
+  @media screen and (max-width: 736px) {
+    .home .content {
+      padding: 0; } }
   .home .content h4 {
     font-size: 1.25em;
     letter-spacing: 0.15625em;
@@ -734,9 +737,20 @@ footer {
     width: 47%;
     margin-right: 6%;
     float: left; }
+    @media screen and (max-width: 736px) {
+      .home .content .left {
+        width: 100%;
+        margin-bottom: 2.5em;
+        border-bottom: 1px solid #E5E5E5;
+        padding: 2em 2.2em; } }
   .home .content .right {
     float: left;
     width: 47%; }
+    @media screen and (max-width: 736px) {
+      .home .content .right {
+        width: 100%;
+        padding: 2em 2.2em;
+        margin-bottom: 4em; } }
 
 footer.home {
   position: relative;
