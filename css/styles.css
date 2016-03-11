@@ -756,11 +756,26 @@ footer.home {
   position: relative;
   padding: 3.125em 6.25em;
   overflow: hidden; }
+  @media screen and (max-width: 736px) {
+    footer.home {
+      padding: 2em 2.2em; } }
   footer.home .left {
     float: left;
     margin-right: 1.5em; }
+  @media screen and (max-width: 736px) {
+    footer.home img.logo-bbb {
+      float: right; } }
   footer.home ul {
     margin-top: 0.3em; }
+    @media screen and (max-width: 736px) {
+      footer.home ul {
+        margin-top: 5.5em;
+        line-height: 1.8em;
+        float: none; } }
+    @media screen and (max-width: 736px) {
+      footer.home ul li {
+        display: block;
+        margin: 0; } }
   footer.home p {
     margin: 0.6em 0 0; }
 
