@@ -831,10 +831,11 @@ button.primary {
             font-size: 0.875em;
             color: #6FB2E0;
             vertical-align: middle; }
-  .content section.map {
-    display: table-cell;
-    width: 66.66667%;
-    padding: 2.35765%; }
+  .content .map {
+    position: fixed;
+    margin-top: 4em;
+    z-index: -999;
+    margin-left: 29.375em; }
 
 footer {
   position: fixed;

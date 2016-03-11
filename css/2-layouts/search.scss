@@ -167,10 +167,11 @@ button.primary {
     }
   }
 
-  section.map {
-    @include span-columns(8);
-    @include reset-display;
-    @include pad();
+  .map {
+    position: fixed;
+    margin-top: em(64px);
+    z-index: -999;
+    margin-left: em(470px);
   }
 }
 
