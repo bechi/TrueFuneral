@@ -33,15 +33,30 @@
   </header>
   <div class="content">
     <section class="sidebar">
-      <div class="filters">
-        <button>
-          <i class="fa fa-sort-amount-desc fa-lg"></i>
-          <p> Sorting by lowest <i class="fa fa-angle-down fa-lg"></i></p>
-        </button>
-        <button>
-          <i class="fa fa-filter fa-lg"> </i>
-          <p> Sorting by lowest <i class="fa fa-angle-down fa-lg"></i> </p>
-        </button>
+      <div class="dropdown">
+        <div class="columns-6">
+          <div class="dropdown-container">
+            <p class="dropdown-description"><i class="fa fa-sort-amount-desc fa-lg"> </i></p>
+            <p class="dropdown-button">Sorting by lowest <i class="fa fa-angle-down fa-lg"> </i></p>
+            <ul class="dropdown-menu dropdown-select">
+              <li>Dropdown Menu Item</li>
+              <li>Another Item</li>
+              <li>Item Three</li>
+              <li>The Last One</li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns-6">
+          <div class="dropdown-container">
+            <p class="dropdown-description"><i class="fa fa-filter fa-lg"> </i></p>
+            <p class="dropdown-button">Both services <i class="fa fa-angle-down fa-lg"> </i></p>
+            <ul class="dropdown-menu dropdown-select">
+              <li>Direct Cremation</li>
+              <li>Immediate Burial</li>
+              <li>Both services</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="map only-mobile">
 

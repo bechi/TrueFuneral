@@ -483,6 +483,74 @@ html {
         border-top: 1px solid #dcdcdc;
         float: left; } }
 
+.dropdown {
+  line-height: 1.5em; }
+  .dropdown .dropdown-container {
+    display: inline-block;
+    position: relative;
+    text-align: center; }
+  .dropdown .dropdown-description {
+    background: white;
+    color: #999999;
+    float: left;
+    font-size: 0.7em;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 0.5em 0 1em; }
+    @media screen and (min-width: 53.75em) {
+      .dropdown .dropdown-description {
+        font-size: 1em; } }
+  .dropdown .dropdown-button {
+    background: white;
+    cursor: pointer;
+    float: right;
+    font-size: 0.7em;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 2.5em 0 0.5em;
+    position: relative; }
+    @media screen and (min-width: 53.75em) {
+      .dropdown .dropdown-button {
+        font-size: 1em;
+        padding: 0 2.5em 0 0.5em; } }
+  .dropdown .dropdown-button:hover {
+    background-color: #f7f7f7; }
+  .dropdown .dropdown-menu {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: #F0F0F0;
+    border: 1px solid #C6C6C6;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.21);
+    border-radius: 6px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+    margin: 0;
+    overflow: show;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 228px;
+    z-index: 99999; }
+  .dropdown .dropdown-menu li {
+    border-bottom: 1px solid silver;
+    color: #333;
+    list-style: none;
+    padding: 0.5em; }
+  .dropdown .dropdown-menu li:hover {
+    background: #f7f7f7; }
+  .dropdown .dropdown-menu li:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+  .dropdown .dropdown-menu li:last-child {
+    border: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
+  .dropdown .show-menu {
+    display: block; }
+
 header.navigation {
   background-color: #5C5A58;
   border-bottom: 1px solid #42413f;
@@ -774,29 +842,54 @@ button.primary {
         width: 100%;
         position: relative;
         margin-bottom: 4em; } }
-    .content section.sidebar .filters {
+    .content section.sidebar .dropdown {
       background-color: #EBEBEB;
-      overflow: hidden; }
-      .content section.sidebar .filters button {
+      padding: 0.92em;
+      min-height: 4.25em; }
+      .content section.sidebar .dropdown .columns-6 {
         float: left;
-        margin: 1em 0.7em;
-        width: 13.25em;
-        height: 2.375em;
-        background-color: #fff;
-        text-align: left; }
-        .content section.sidebar .filters button i {
-          font-size: 1.0625em;
-          float: left;
-          color: #6FB2E0; }
-        .content section.sidebar .filters button p {
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .content section.sidebar .dropdown .columns-6:last-child {
+          margin-right: 0; }
+        .content section.sidebar .dropdown .columns-6 .dropdown-container {
+          width: 100%;
+          width: 100%;
+          display: table;
+          width: 100%;
+          table-layout: fixed; }
+        .content section.sidebar .dropdown .columns-6 .dropdown-button {
+          border-bottom-right-radius: 100px;
+          border-top-right-radius: 100px;
+          display: table-cell;
+          width: 75%;
+          padding: 0.35em 2em 0.35em 0.3em;
+          text-align: left;
+          line-height: 2em;
           font-size: 0.875em;
           color: #5C5A58;
           letter-spacing: 0.2px;
-          margin: 0 0 0 2em; }
-          .content section.sidebar .filters button p i.fa-angle-down {
-            color: #5C5A58;
-            float: right;
-            font-size: 1.375em; }
+          display: inline-block;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-wrap: normal; }
+          .content section.sidebar .dropdown .columns-6 .dropdown-button i {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            margin: 0.45em 0.5em 0; }
+        .content section.sidebar .dropdown .columns-6 .dropdown-description {
+          border-bottom-left-radius: 100px;
+          border-top-left-radius: 100px;
+          display: table-cell;
+          width: 25%;
+          padding: 2.35765%;
+          line-height: 2.2em;
+          font-size: 0.8125em;
+          color: #6FB2E0; }
     .content section.sidebar .list .item {
       padding: 1.5em;
       border-bottom: 1px solid #E8E4E4;
