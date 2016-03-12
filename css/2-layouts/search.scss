@@ -42,7 +42,9 @@ header {
       float: right;
       ul li.nav-link {
         float: right;
-        background-color: $white;
+        @include media($mobile){
+          background-color: $white;
+        }
         a {
           color: $dark-gray;
           &:hover {

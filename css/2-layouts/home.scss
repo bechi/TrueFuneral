@@ -15,8 +15,19 @@
       @include media($mobile) {
         padding: 0;
       }
+      .navigation-menu-button {
+        color: $white;
+      }
       nav {
         float: none;
+        ul li.nav-link {
+          a {
+            color: $white;
+            @include media($mobile){
+              color: $dark-gray;
+            }
+          }
+        }
       }
     }
   }

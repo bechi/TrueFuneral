@@ -809,8 +809,10 @@ header.navigation {
   header.navigation nav {
     float: right; }
     header.navigation nav ul li.nav-link {
-      float: right;
-      background-color: #fff; }
+      float: right; }
+      @media screen and (max-width: 736px) {
+        header.navigation nav ul li.nav-link {
+          background-color: #fff; } }
       header.navigation nav ul li.nav-link a {
         color: #5C5A58; }
         header.navigation nav ul li.nav-link a:hover {
@@ -1031,8 +1033,15 @@ footer {
       @media screen and (max-width: 736px) {
         .hero header.navigation {
           padding: 0; } }
+      .hero header.navigation .navigation-menu-button {
+        color: #fff; }
       .hero header.navigation nav {
         float: none; }
+        .hero header.navigation nav ul li.nav-link a {
+          color: #fff; }
+          @media screen and (max-width: 736px) {
+            .hero header.navigation nav ul li.nav-link a {
+              color: #5C5A58; } }
   .hero h1 {
     font-size: 2.875em !important;
     line-height: 1.3em;
