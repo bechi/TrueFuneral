@@ -440,47 +440,70 @@ html {
             font-size: 1.1em;
             max-width: 40%; } }
 
-.accordion-tabs-minimal {
+.accordion-tabs {
   line-height: 1.5;
+  margin-bottom: 1.5em;
   padding: 0; }
-  .accordion-tabs-minimal::after {
+  .accordion-tabs::after {
     clear: both;
     content: "";
     display: table; }
-  .accordion-tabs-minimal .tab-header-and-content {
+  @media screen and (max-width: 40em) {
+    .accordion-tabs {
+      border: 1px solid #dcdcdc;
+      border-radius: 3px; } }
+  .accordion-tabs .tab-header-and-content {
     list-style: none; }
     @media screen and (min-width: 40em) {
-      .accordion-tabs-minimal .tab-header-and-content {
+      .accordion-tabs .tab-header-and-content {
         display: inline; } }
-  .accordion-tabs-minimal .tab-link {
+    .accordion-tabs .tab-header-and-content:first-child .tab-link {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+      @media screen and (max-width: 40em) {
+        .accordion-tabs .tab-header-and-content:first-child .tab-link {
+          border-top: 0; } }
+    @media screen and (max-width: 40em) {
+      .accordion-tabs .tab-header-and-content:last-child .tab-link {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; } }
+  .accordion-tabs .tab-link {
     background-color: #fff;
     border-top: 1px solid #dcdcdc;
     color: #333;
     display: block;
-    padding: 0.75em 1.618em;
+    font-weight: bold;
+    padding: 0.75em 0.809em;
     text-decoration: none; }
     @media screen and (min-width: 40em) {
-      .accordion-tabs-minimal .tab-link {
+      .accordion-tabs .tab-link {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
         border-top: 0;
         display: inline-block; } }
-    .accordion-tabs-minimal .tab-link:hover {
+    .accordion-tabs .tab-link:hover {
       color: #477dca; }
-    .accordion-tabs-minimal .tab-link:focus {
+    .accordion-tabs .tab-link:focus {
       outline: none; }
-    .accordion-tabs-minimal .tab-link.is-active {
-      border-bottom: 0; }
+    .accordion-tabs .tab-link.is-active {
+      background-color: #f7f7f7; }
       @media screen and (min-width: 40em) {
-        .accordion-tabs-minimal .tab-link.is-active {
+        .accordion-tabs .tab-link.is-active {
+          background-color: #f7f7f7;
           border: 1px solid #dcdcdc;
-          border-bottom-color: #fff;
+          border-bottom-color: #f7f7f7;
           margin-bottom: -1px; } }
-  .accordion-tabs-minimal .tab-content {
+  .accordion-tabs .tab-content {
+    background: #f7f7f7;
     display: none;
     padding: 1.5em 1.618em;
     width: 100%; }
     @media screen and (min-width: 40em) {
-      .accordion-tabs-minimal .tab-content {
-        border-top: 1px solid #dcdcdc;
+      .accordion-tabs .tab-content {
+        border: 1px solid #dcdcdc;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
         float: left; } }
 
 .dropdown {
@@ -550,6 +573,38 @@ html {
     border-bottom-right-radius: 3px; }
   .dropdown .show-menu {
     display: block; }
+
+form.search-bar {
+  position: relative; }
+  form.search-bar input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-transition: border-color;
+    -moz-transition: border-color;
+    transition: border-color;
+    background-color: white;
+    border: 1px solid gainsboro;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0;
+    padding: 0.5em 0.5em;
+    position: relative;
+    width: 100%; }
+  form.search-bar button[type=submit] {
+    position: absolute;
+    top: 0em;
+    right: 0em;
+    bottom: 0em;
+    outline: none;
+    padding: 5px 10px; }
+    form.search-bar button[type=submit] img {
+      height: 12px;
+      opacity: 0.7; }
 
 header.navigation {
   background-color: #5C5A58;
@@ -838,6 +893,7 @@ button.primary {
   .content section.sidebar {
     position: absolute;
     width: 29.375em;
+    margin-bottom: 3.8em;
     background-color: #fff; }
     @media screen and (max-width: 736px) {
       .content section.sidebar {
@@ -1060,20 +1116,50 @@ footer {
   @media screen and (max-width: 736px) {
     .hero p.mobile-only {
       display: block; } }
-  .hero .accordion-tabs-minimal {
-    margin: 2em 1.5em; }
-    .hero .accordion-tabs-minimal .tab-link {
+  .hero .accordion-tabs {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 25.58941%;
+    text-align: left; }
+    .hero .accordion-tabs:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 736px) {
+      .hero .accordion-tabs {
+        width: 92%;
+        margin: 2em 4%; } }
+    .hero .accordion-tabs .tab-link {
+      font-size: 0.9375em;
       color: #9B9B9B;
+      letter-spacing: 0.02875em;
+      font-weight: 400;
+      padding: 0.75em 1.5em; }
+      .hero .accordion-tabs .tab-link.is-active {
+        background-color: #6FB2E0;
+        color: #fff;
+        border: none; }
+    .hero .accordion-tabs .tab-content {
+      background-color: #6FB2E0;
       border: none;
-      border-radius: 0.1875em 0.1875em 0 0; }
-      .hero .accordion-tabs-minimal .tab-link.is-active {
-        background: #6FB2E0;
-        color: #fff; }
+      padding: 0.3em; }
+      .hero .accordion-tabs .tab-content form.search-bar input[type=search] {
+        padding: 0.9em;
+        border-radius: 3px; }
+      .hero .accordion-tabs .tab-content form.search-bar button[type=submit] {
+        background-color: #5C5A58;
+        color: #fff;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        padding: 0.5em 1.2em; }
 
 .home .content {
   color: #5C5A58;
   padding: 2em 6.25em 6.25em;
-  line-height: 1.8125em; }
+  line-height: 1.8125em;
+  overflow: hidden; }
   @media screen and (max-width: 736px) {
     .home .content {
       padding: 0; } }

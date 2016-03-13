@@ -79,6 +79,7 @@ button.primary {
   section.sidebar {
     @include position(absolute, null);
     width: em(470);
+    margin-bottom: 3.8em;
     background-color: $white;
     @include media($mobile) {
       width: 100%;
