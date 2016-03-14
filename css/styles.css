@@ -1145,7 +1145,8 @@ footer {
       padding: 0.3em; }
       .hero .accordion-tabs .tab-content form.search-bar input[type=search] {
         padding: 0.9em;
-        border-radius: 3px; }
+        border-radius: 3px;
+        color: #5C5A58; }
       .hero .accordion-tabs .tab-content form.search-bar button[type=submit] {
         background-color: #5C5A58;
         color: #fff;
