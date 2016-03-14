@@ -505,6 +505,8 @@ html {
         border-bottom-right-radius: 3px;
         border-top-right-radius: 3px;
         float: left; } }
+    .accordion-tabs .tab-content.is-open {
+      display: block; }
 
 .dropdown {
   line-height: 1.5em; }

@@ -97,6 +97,10 @@
       border-top-right-radius: $base-border-radius;
       float: left;
     }
+
+    &.is-open {
+      display: block;
+    }
   }
 }
 
