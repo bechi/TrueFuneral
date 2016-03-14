@@ -1166,7 +1166,8 @@ footer {
   background-color: #5C5A58;
   width: 100%;
   padding: 0.5rem;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 999; }
   @media screen and (max-width: 736px) {
     footer {
       position: relative;
@@ -1372,18 +1373,42 @@ footer.home {
   overflow: hidden;
   width: 40em;
   padding: 20px 50px; }
-  .profile .content .sidebar ul.list {
+  @media screen and (max-width: 736px) {
+    .profile .content .sidebar {
+      margin-bottom: 236px; } }
+  .profile .content .sidebar button.back {
+    background: #fff;
+    border: 1px solid #CBCBCB;
+    border-radius: 100px;
+    font-size: 13px;
+    color: #9B9B9B;
+    letter-spacing: 0.54px; }
+  .profile .content .sidebar .list {
     margin-bottom: 1.5em; }
+    .profile .content .sidebar .list .item {
+      padding: 1.2em 0;
+      min-height: 160px; }
+      .profile .content .sidebar .list .item .info h3 a {
+        margin-bottom: 0.2em; }
+      .profile .content .sidebar .list .item .info p {
+        margin-top: 0.7em; }
+      .profile .content .sidebar .list .item .info h5 {
+        margin-bottom: 0.5em; }
   .profile .content .sidebar p {
     color: #5C5A58;
     letter-spacing: 0.5px;
     line-height: 21px; }
-.profile .map {
-  position: absolute;
-  left: 0;
-  margin-top: 1.5em; }
-  .profile .map img {
-    height: 100%; }
+.profile .content .map {
+  display: block;
+  position: fixed;
+  left: 0px;
+  z-index: 999;
+  top: 27em;
+  height: 100%; }
+  .profile .content .map #map {
+    width: 40em; }
+    .profile .content .map #map img {
+      height: 100%; }
 .profile .pricing-details {
   padding: 50px;
   margin-left: 40em;
@@ -1392,6 +1417,8 @@ footer.home {
   height: 100%;
   position: fixed;
   top: 64.25px; }
+.profile footer {
+  position: fixed; }
 
 a {
   text-decoration: none; }

@@ -328,6 +328,7 @@ footer {
   width: 100%;
   padding: 0.5rem;
   overflow: hidden;
+  z-index: 999;
   @include media($mobile){
     position: relative;
     padding: 2em 2.2em;
