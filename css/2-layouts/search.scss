@@ -131,11 +131,10 @@ button.primary {
     }
 
     .list{
-
       .item {
-        padding: 1.5em;
+        padding: 1.2em;
         border-bottom: 1px solid #E8E4E4;
-        overflow: hidden;
+        min-height: em(140px);
 
         .info {
           margin-top: 0.5em;
@@ -176,6 +175,36 @@ button.primary {
               font-size: em(14);
               color: $primary-color;
               vertical-align: middle;
+            }
+          }
+          .tooltip-item {
+            border: none;
+            padding: 0;
+            line-height: 1.2em;
+            .tooltip {
+              text-align: left;
+              left: -125px;
+              bottom: em(36px);
+              width: 275px;
+              padding: 0.8em;
+              box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.11);
+              border-radius: 4px;
+              &:after {
+                bottom: -1.1em;
+              }
+              span {
+                font-size: 14px;
+                line-height: 22px;
+                color: $dark-gray;
+                display: block;
+                margin-bottom: 0.8em;
+              }
+              a {
+                color: $primary-color;
+                display: block;
+                font-size: 14px;
+                line-height: 22px;
+              }
             }
           }
         }
