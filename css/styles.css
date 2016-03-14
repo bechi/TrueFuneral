@@ -1006,6 +1006,59 @@ button.primary {
     @media screen and (max-width: 736px) {
       .content .map.only-desktop {
         display: none; } }
+    .content .map.only-desktop #content {
+      text-align: center;
+      width: 17.5em; }
+      .content .map.only-desktop #content h1 {
+        margin: 0.5em; }
+    .content .map.only-desktop #bodyContent p.ubication {
+      margin: 0 1em;
+      padding: 1em;
+      border-bottom: 1px solid #E5E5E5; }
+      .content .map.only-desktop #bodyContent p.ubication i {
+        color: #6FB2E0;
+        font-size: 0.875em; }
+    .content .map.only-desktop #bodyContent i.fa-star {
+      color: #FFC76E;
+      font-size: 1em; }
+    .content .map.only-desktop #bodyContent .price {
+      padding: 1em;
+      overflow: hidden; }
+      .content .map.only-desktop #bodyContent .price small {
+        font-size: 0.875em;
+        color: #9B9B9B;
+        font-weight: 400; }
+      .content .map.only-desktop #bodyContent .price p {
+        margin: 0.3em 0;
+        font-size: 1.5em;
+        color: #000;
+        font-weight: 400; }
+        .content .map.only-desktop #bodyContent .price p i {
+          font-size: 1.125em;
+          color: #6FB2E0; }
+      .content .map.only-desktop #bodyContent .price .left {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .content .map.only-desktop #bodyContent .price .left:last-child {
+          margin-right: 0; }
+      .content .map.only-desktop #bodyContent .price .right {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-right: 0; }
+        .content .map.only-desktop #bodyContent .price .right:last-child {
+          margin-right: 0; }
+      .content .map.only-desktop #bodyContent .price button {
+        width: 100%;
+        margin: 1em 0 0;
+        padding: 1em;
+        background-color: #6FB2E0;
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 400; }
     .content .map.only-mobile {
       left: 0;
       top: 0;
