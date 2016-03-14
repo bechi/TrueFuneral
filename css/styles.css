@@ -851,7 +851,8 @@ header.navigation {
       background-color: #fff;
       border: 2px solid #DCDCDC;
       border-radius: 4px;
-      padding: 0.9em; }
+      padding: 0.9em;
+      color: #5C5A58; }
     header.navigation .search-bar form button[type=submit] {
       background-color: #6FB2E0;
       color: #fff;
