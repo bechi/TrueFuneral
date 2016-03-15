@@ -76,7 +76,19 @@ button.primary {
 
 .content {
   @include position(relative, 64px null null 0);
-
+  .bg-loading {
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    width: 470px;
+    height: 100%;
+    z-index: 998;
+    padding-top: 20%;
+    text-align: center;
+    p {
+      font-size: 18px;
+      color: $dark-gray;
+    }
+  }
   section.sidebar {
     @include position(absolute, null);
     width: em(470);
