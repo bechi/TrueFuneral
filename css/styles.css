@@ -1186,20 +1186,6 @@ button.primary {
       color: #fff;
       font-size: 1.2em;
       font-weight: 400; }
-  .content .map.only-mobile {
-    left: 0;
-    top: 0;
-    z-index: 0;
-    position: relative;
-    display: none; }
-    @media screen and (max-width: 736px) {
-      .content .map.only-mobile {
-        display: block;
-        width: 100%;
-        height: 12.5em;
-        overflow: hidden; } }
-    .content .map.only-mobile img {
-      width: 100%; }
 
 footer ul {
   float: right; }

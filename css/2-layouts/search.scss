@@ -232,7 +232,6 @@ button.primary {
 
 
   .map {
-
     #map {
       height: 100%;
       position: fixed !important;
@@ -301,22 +300,6 @@ button.primary {
           font-weight: 400;
         }
       }
-    }
-    &.only-mobile {
-      left: 0;
-      top: 0;
-      z-index: 0;
-      position: relative;
-      display: none;
-      @include media($mobile) {
-        display: block;
-        width: 100%;
-        height: em(200px);
-        overflow: hidden;
-      }
-      img {
-          width: 100%;
-        }
     }
   }
 }
