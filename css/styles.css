@@ -1376,7 +1376,8 @@ footer.home {
   @media screen and (max-width: 736px) {
     .profile .content .sidebar {
       width: 100%;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      padding: 1.5em 1.5em 2.5em; } }
   .profile .content .sidebar button.back {
     background: #fff;
     border: 1px solid #CBCBCB;
@@ -1384,13 +1385,29 @@ footer.home {
     font-size: 13px;
     color: #9B9B9B;
     letter-spacing: 0.54px; }
+    @media screen and (max-width: 736px) {
+      .profile .content .sidebar button.back {
+        display: none; } }
   .profile .content .sidebar .list {
     margin-bottom: 1.5em; }
     .profile .content .sidebar .list .item {
       padding: 1.2em 0;
       min-height: 160px; }
+      @media screen and (max-width: 736px) {
+        .profile .content .sidebar .list .item {
+          text-align: center;
+          padding: 0 0 1.5em; } }
+      @media screen and (max-width: 736px) {
+        .profile .content .sidebar .list .item .price {
+          float: none; } }
+      @media screen and (max-width: 736px) {
+        .profile .content .sidebar .list .item .info {
+          float: none; } }
       .profile .content .sidebar .list .item .info h3 a {
         margin-bottom: 0.2em; }
+        @media screen and (max-width: 736px) {
+          .profile .content .sidebar .list .item .info h3 a {
+            display: none; } }
       .profile .content .sidebar .list .item .info p {
         margin-top: 0.7em; }
       .profile .content .sidebar .list .item .info h5 {
