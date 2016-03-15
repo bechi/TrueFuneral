@@ -84,6 +84,9 @@ button.primary {
     z-index: 998;
     padding-top: 20%;
     text-align: center;
+    @include media($mobile) {
+      width: 100%;
+    }
     p {
       font-size: 18px;
       color: $dark-gray;
@@ -104,6 +107,9 @@ button.primary {
       background-color: #EBEBEB;
       padding: 0.92em;
       min-height: em(68px);
+      @include media($mobile){
+        margin-bottom: 130px;
+      }
       .columns-6 {
         @include span-columns(6);
         .dropdown-container {
@@ -226,75 +232,73 @@ button.primary {
 
 
   .map {
+
     #map {
-      width: 3000px;
-      height: 1000px;
-      // @include media($mobile){
-      //   width: em(372px);
-      //   height: em(200px);
-      // }
-    }
-    @include position(fixed, em(64px) null null em(470));
-    z-index: -999;
-    &.only-desktop {
+      height: 100%;
+      position: fixed !important;
+      right: 0;
+      left: 470px;
       @include media($mobile){
-        display: none;
+        top: 68px;
+        left: 0;
+        height: 130px;
+        position: absolute !important;
       }
-      #content {
-        text-align: center;
-        width: em(280px);
-        h1 {
-          margin: 0.5em;
+    }
+    #content {
+      text-align: center;
+      width: em(280px);
+      h1 {
+        margin: 0.5em;
+      }
+    }
+    #bodyContent {
+      p.ubication {
+        margin: 0 1em;
+        padding: 1em;
+        border-bottom: 1px solid $ultra-light-gray;
+        i {
+          color: $primary-color;
+          font-size: em(14px);
         }
       }
-      #bodyContent {
-        p.ubication {
-          margin: 0 1em;
-          padding: 1em;
-          border-bottom: 1px solid $ultra-light-gray;
+      i.fa-star {
+        color: #FFC76E;
+        font-size: em(16px);
+      }
+      .price {
+        padding: 1em;
+        overflow: hidden;
+        small {
+          font-size: em(14px);
+          color: $light-gray;
+          font-weight: 400;
+        }
+        p {
+          margin: 0.3em 0;
+          font-size: em(24px);
+          color: $black;
+          font-weight: 400;
           i {
+            font-size: em(18px);
             color: $primary-color;
-            font-size: em(14px);
           }
         }
-        i.fa-star {
-          color: #FFC76E;
-          font-size: em(16px);
+        .left {
+          @include span-columns(6);
         }
-        .price {
+        .right {
+          @include span-columns(6);
+          margin-right: 0;
+        }
+        button {
+          width: 100%;
+          margin: 1em 0 0;
           padding: 1em;
-          overflow: hidden;
-          small {
-            font-size: em(14px);
-            color: $light-gray;
-            font-weight: 400;
-          }
-          p {
-            margin: 0.3em 0;
-            font-size: em(24px);
-            color: $black;
-            font-weight: 400;
-            i {
-              font-size: em(18px);
-              color: $primary-color;
-            }
-          }
-          .left {
-            @include span-columns(6);
-          }
-          .right {
-            @include span-columns(6);
-            margin-right: 0;
-          }
-          button {
-            width: 100%;
-            margin: 1em 0 0;
-            padding: 1em;
-            background-color: $primary-color;
-            color: $white;
-            font-size: 1.2em;
-            font-weight: 400;
-          }
+          background-color: $primary-color;
+          color: $white;
+          font-size: 1.2em;
+          font-weight: 400;
         }
       }
     }
