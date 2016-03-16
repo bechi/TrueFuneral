@@ -1,0 +1,12 @@
+/.bundle
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/log/*
+!/log/.keep
+/tmp
+/config/database.yml
+/config/application.yml
+/coverage
+/public/system
+/public/assets
+.DS_Store
