@@ -1199,7 +1199,6 @@ header.navigation {
             color: #FFC76E; }
         .content section.sidebar .list .item .info a.button {
           padding: 0.4em 1em;
-          display: inline-block;
           margin: 0;
           background-color: #6FB2E0;
           color: #fff;
@@ -1385,6 +1384,14 @@ header.navigation {
       margin-right: 0; }
       .content .map .bodyContent .price .right:last-child {
         margin-right: 0; }
+  .content .map .bodyContent a.button {
+    background: #6FB2E0;
+    color: white;
+    margin-top: 1em;
+    width: 100%;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 16px; }
 
 footer ul {
   float: right; }
@@ -1766,7 +1773,8 @@ body {
 a.button {
   padding: 0.5em 1.5em;
   border-radius: 100px;
-  border: none; }
+  border: none;
+  display: inline-block; }
 
 .text-primary {
   color: #6FB2E0; }

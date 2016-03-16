@@ -165,7 +165,6 @@ header {
           }
           a.button {
             padding: 0.4em 1em;
-            display: inline-block;
             margin: 0;
             background-color: $primary-color;
             color: $white;
@@ -395,6 +394,15 @@ header {
           @include span-columns(6);
           margin-right: 0;
         }
+      }
+      a.button {
+        background: $primary-color;
+        color: white;
+        margin-top: 1em;
+        width: 100%;
+        padding: 1em;
+        font-weight: 400;
+        font-size: 16px;
       }
     }
   }
