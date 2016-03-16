@@ -1314,7 +1314,8 @@ header.navigation {
             width: 275px;
             padding: 0.8em;
             box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.11);
-            border-radius: 4px; }
+            border-radius: 4px;
+            z-index: 999; }
             .content section.sidebar .list .item .price .tooltip-item .tooltip:after {
               bottom: -1.1em; }
             .content section.sidebar .list .item .price .tooltip-item .tooltip span {
