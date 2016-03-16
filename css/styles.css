@@ -1133,52 +1133,52 @@ button.primary {
         left: 0;
         height: 130px;
         position: absolute !important; } }
-  .content .map #content {
+  .content .map .map-content {
     text-align: center;
     width: 17.5em; }
-    .content .map #content h1 {
+    .content .map .map-content h1 {
       margin: 0.5em; }
-  .content .map #bodyContent p.ubication {
+  .content .map .bodyContent p.ubication {
     margin: 0 1em;
     padding: 1em;
     border-bottom: 1px solid #E5E5E5; }
-    .content .map #bodyContent p.ubication i {
+    .content .map .bodyContent p.ubication i {
       color: #6FB2E0;
       font-size: 0.875em; }
-  .content .map #bodyContent i.fa-star {
+  .content .map .bodyContent i.fa-star {
     color: #FFC76E;
     font-size: 1em; }
-  .content .map #bodyContent .price {
+  .content .map .bodyContent .price {
     padding: 1em;
     overflow: hidden; }
-    .content .map #bodyContent .price small {
+    .content .map .bodyContent .price small {
       font-size: 0.875em;
       color: #9B9B9B;
       font-weight: 400; }
-    .content .map #bodyContent .price p {
+    .content .map .bodyContent .price p {
       margin: 0.3em 0;
       font-size: 1.5em;
       color: #000;
       font-weight: 400; }
-      .content .map #bodyContent .price p i {
+      .content .map .bodyContent .price p i {
         font-size: 1.125em;
         color: #6FB2E0; }
-    .content .map #bodyContent .price .left {
+    .content .map .bodyContent .price .left {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%; }
-      .content .map #bodyContent .price .left:last-child {
+      .content .map .bodyContent .price .left:last-child {
         margin-right: 0; }
-    .content .map #bodyContent .price .right {
+    .content .map .bodyContent .price .right {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
       margin-right: 0; }
-      .content .map #bodyContent .price .right:last-child {
+      .content .map .bodyContent .price .right:last-child {
         margin-right: 0; }
-    .content .map #bodyContent .price button {
+    .content .map .bodyContent .price button {
       width: 100%;
       margin: 1em 0 0;
       padding: 1em;
