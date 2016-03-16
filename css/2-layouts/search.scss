@@ -430,16 +430,33 @@ footer {
   }
   .left {
     float: left;
-    margin-right: 1.5em;
+    img {
+      &.logo {
+        margin-top: 5px;
+        margin-left: 1em;
+        @include media($mobile){
+          margin: 0;
+        }
+      }
+    }
+    span {
+      font-size: 14px;
+      color: $light-gray;
+      margin: 0 10px;
+      @include media($mobile) {
+        display: block;
+        margin: 10px 0;
+      }
+    }
   }
-  img.logo-bbb {
+  .logo-bbb {
+    display: inline-block;
     @include media($mobile) {
       float: right;
     }
   }
   ul {
     float: right;
-    margin-top: 0.3em;
     @include media($mobile){
       margin-top: 5.5em;
       line-height: 1.8em;

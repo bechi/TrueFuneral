@@ -1410,14 +1410,28 @@ footer {
       position: relative;
       padding: 2em 2.2em; } }
   footer .left {
-    float: left;
-    margin-right: 1.5em; }
-  @media screen and (max-width: 736px) {
-    footer img.logo-bbb {
-      float: right; } }
+    float: left; }
+    footer .left img.logo {
+      margin-top: 5px;
+      margin-left: 1em; }
+      @media screen and (max-width: 736px) {
+        footer .left img.logo {
+          margin: 0; } }
+    footer .left span {
+      font-size: 14px;
+      color: #9B9B9B;
+      margin: 0 10px; }
+      @media screen and (max-width: 736px) {
+        footer .left span {
+          display: block;
+          margin: 10px 0; } }
+  footer .logo-bbb {
+    display: inline-block; }
+    @media screen and (max-width: 736px) {
+      footer .logo-bbb {
+        float: right; } }
   footer ul {
-    float: right;
-    margin-top: 0.3em; }
+    float: right; }
     @media screen and (max-width: 736px) {
       footer ul {
         margin-top: 5.5em;
@@ -1621,7 +1635,8 @@ footer.home {
     border-radius: 100px;
     font-size: 13px;
     color: #9B9B9B;
-    letter-spacing: 0.54px; }
+    letter-spacing: 0.54px;
+    padding: 0.35em 0.9em; }
     @media screen and (max-width: 736px) {
       .profile .content .sidebar button.back {
         display: none; } }
@@ -1646,27 +1661,24 @@ footer.home {
           .profile .content .sidebar .list .item .info h3 a {
             display: none; } }
       .profile .content .sidebar .list .item .info p {
-        margin-top: 0.7em; }
+        margin: 0.5em 0; }
       .profile .content .sidebar .list .item .info h5 {
         margin-bottom: 0.5em; }
   .profile .content .sidebar p {
     color: #5C5A58;
     letter-spacing: 0.5px;
     line-height: 21px; }
-.profile .content .map {
-  display: block;
-  position: fixed;
-  left: 0px;
-  z-index: 999;
-  top: 26.4em;
-  height: 100%; }
-  @media screen and (max-width: 736px) {
-    .profile .content .map {
-      display: none; } }
-  .profile .content .map #map {
-    width: 40em; }
-    .profile .content .map #map img {
-      height: 100%; }
+@media screen and (max-width: 736px) {
+  .profile .content .map {
+    display: none; } }
+.profile .content .map #map {
+  width: 40em;
+  top: 414px;
+  left: 0;
+  bottom: 0;
+  height: auto; }
+  .profile .content .map #map img {
+    height: 100%; }
 .profile .pricing-details {
   padding: 50px 40px 40px 44em;
   background: #D4E6F3;
