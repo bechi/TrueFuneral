@@ -1203,9 +1203,10 @@ header.navigation {
           background-color: #6FB2E0;
           color: #fff;
           font-size: 14px; }
-        .content section.sidebar .list .item .info .modal .modal-fade-screen {
-          top: 0;
-          padding: 0; }
+        @media screen and (max-width: 736px) {
+          .content section.sidebar .list .item .info .modal .modal-fade-screen {
+            top: 0;
+            padding: 0; } }
         .content section.sidebar .list .item .info .modal .modal-inner {
           width: 420px;
           height: 530px;

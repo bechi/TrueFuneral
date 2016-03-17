@@ -172,8 +172,10 @@ header {
           }
           .modal {
             .modal-fade-screen {
-              top: 0;
-              padding: 0;
+              @include media($mobile){
+                top: 0;
+                padding: 0;
+              }
             }
             .modal-inner {
               width: 420px;
