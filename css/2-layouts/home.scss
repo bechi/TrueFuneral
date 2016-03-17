@@ -139,11 +139,23 @@
       padding: 0.3em;
       form.search-bar {
         input[type=search] {
+          font-size: 18px;
+          font-style: normal;
+          border: 0;
           padding: 0.9em;
           border-radius: 3px;
           color: $dark-gray;
         }
+        a.location-link {
+          text-transform: uppercase;
+          position: absolute;
+          right: 70px;
+          top: 20px;
+          font-size: 9px;
+          color: $light-gray;
+        }
         button[type=submit] {
+          border:0;
           background-color: $dark-gray;
           color: $white;
           border-top-right-radius: 3px;
