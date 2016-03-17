@@ -423,6 +423,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-help:before {
+  content: "\e90e"; }
+
 .icon-burial:before {
   content: "\e900"; }
 
@@ -444,39 +447,8 @@ html {
 .icon-services:before {
   content: "\e906"; }
 
-.icon-sorting .path1:before {
-  content: "\e907";
-  color: black; }
-
-.icon-sorting .path2:before {
-  content: "\e908";
-  margin-left: -1.5em;
-  color: black; }
-
-.icon-sorting .path3:before {
-  content: "\e909";
-  margin-left: -1.5em;
-  color: black; }
-
-.icon-sorting .path4:before {
-  content: "\e90a";
-  margin-left: -1.5em;
-  color: black; }
-
-.icon-sorting .path5:before {
-  content: "\e90b";
-  margin-left: -1.5em;
-  color: #d8d8d8; }
-
-.icon-sorting .path6:before {
-  content: "\e90c";
-  margin-left: -1.5em;
-  color: #262626; }
-
-.icon-sorting .path7:before {
-  content: "\e90d";
-  margin-left: -1.5em;
-  color: #262626; }
+.icon-sorting:before {
+  content: "\e907"; }
 
 .hero {
   background: url("../img/bg-home.jpg");
@@ -1340,13 +1312,14 @@ header.navigation {
       padding: 0.9em;
       color: #5C5A58; }
     header.navigation .search-bar form button[type=submit] {
+      font-size: 24px;
       background-color: #6FB2E0;
       color: #fff;
       border-radius: 0 4px 4px 0;
       top: 0;
       right: 0;
       bottom: 0;
-      padding: 0 1em; }
+      padding: 0 0.55em; }
     @media screen and (max-width: 600px) {
       header.navigation .search-bar.only-desktop {
         display: none; } }
@@ -1475,13 +1448,13 @@ header.navigation {
           margin-bottom: 1em; }
           .content section.sidebar .list .item .info h5 i {
             font-size: 1.0625em;
-            color: #FFC76E; }
+            color: #9B9B9B; }
         .content section.sidebar .list .item .info a.button {
-          padding: 0.4em 1em;
+          padding: 0.5em 1.53em;
           margin: 0;
           background-color: #6FB2E0;
           color: #fff;
-          font-size: 14px; }
+          font-size: 13px; }
         @media screen and (max-width: 600px) {
           .content section.sidebar .list .item .info .modal .modal-fade-screen {
             top: 0;
@@ -1604,8 +1577,7 @@ header.navigation {
           margin: 0.1em 0 0.5em 0; }
           .content section.sidebar .list .item .price p a i {
             font-size: 0.875em;
-            color: #6FB2E0;
-            vertical-align: middle; }
+            color: #6FB2E0; }
         .content section.sidebar .list .item .price .tooltip-item {
           border: none;
           padding: 0;
@@ -1661,7 +1633,7 @@ header.navigation {
         color: #6FB2E0;
         font-size: 0.875em; }
     .content .map .bodyContent i.fa-star {
-      color: #FFC76E;
+      color: #9B9B9B;
       font-size: 1em; }
     .content .map .bodyContent .price {
       padding: 1em;

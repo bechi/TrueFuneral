@@ -24,6 +24,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-help:before {
+    content: "\e90e";
+}
 .icon-burial:before {
     content: "\e900";
 }
@@ -45,38 +48,7 @@
 .icon-services:before {
     content: "\e906";
 }
-.icon-sorting .path1:before {
+.icon-sorting:before {
     content: "\e907";
-    color: rgb(0, 0, 0);
-}
-.icon-sorting .path2:before {
-    content: "\e908";
-    margin-left: -1.5em;
-    color: rgb(0, 0, 0);
-}
-.icon-sorting .path3:before {
-    content: "\e909";
-    margin-left: -1.5em;
-    color: rgb(0, 0, 0);
-}
-.icon-sorting .path4:before {
-    content: "\e90a";
-    margin-left: -1.5em;
-    color: rgb(0, 0, 0);
-}
-.icon-sorting .path5:before {
-    content: "\e90b";
-    margin-left: -1.5em;
-    color: rgb(216, 216, 216);
-}
-.icon-sorting .path6:before {
-    content: "\e90c";
-    margin-left: -1.5em;
-    color: rgb(38, 38, 38);
-}
-.icon-sorting .path7:before {
-    content: "\e90d";
-    margin-left: -1.5em;
-    color: rgb(38, 38, 38);
 }
 
