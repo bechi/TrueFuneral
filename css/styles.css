@@ -1777,6 +1777,7 @@ footer {
     .hero p.mobile-only {
       display: block; } }
   .hero .accordion-tabs {
+    position: relative;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -1794,15 +1795,22 @@ footer {
       color: #9B9B9B;
       letter-spacing: 0.02875em;
       font-weight: 400;
-      padding: 0.75em 1.5em; }
+      padding: 0.5em 1.5em; }
       .hero .accordion-tabs .tab-link.is-active {
         background-color: #6FB2E0;
         color: #fff;
-        border: none; }
+        border: none;
+        padding: 0.8em 1.5em; }
     .hero .accordion-tabs .tab-content {
+      position: absolute;
+      top: 42px;
       background-color: #6FB2E0;
       border: none;
       padding: 0.3em; }
+      @media screen and (max-width: 768px) {
+        .hero .accordion-tabs .tab-content {
+          position: relative;
+          top: 0; } }
       .hero .accordion-tabs .tab-content form.search-bar input[type=search] {
         font-size: 18px;
         font-style: normal;
