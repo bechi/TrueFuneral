@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 @import url(reset.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -816,31 +815,6 @@ form.search-bar {
 .modal-open {
   overflow: hidden; }
 
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: 'codropsicons';
-  src: url("../fonts/codropsicons/codropsicons.eot");
-  src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../fonts/codropsicons/codropsicons.woff") format("woff"), url("../fonts/codropsicons/codropsicons.ttf") format("truetype"), url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg"); }
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.clearfix:before, .clearfix:after {
-  content: '';
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-body {
-  background: #fff;
-  color: #8a8c7e;
-  font-size: 100%;
-  line-height: 1.25;
-  font-family: 'Lato', 'Avenir Next', Arial, sans-serif; }
-
 a {
   color: #99cc33;
   text-decoration: none;
@@ -907,38 +881,10 @@ a:hover, a:focus {
   margin: 30px auto 0;
   padding: 30px 0; }
 
-.codrops-demos a,
-section button {
-  display: inline-block;
-  background: #a9a9a9;
-  color: #fff;
-  font-weight: 400;
-  padding: 10px 20px;
-  margin: 5px;
-  text-transform: uppercase;
-  border-radius: 2px;
-  letter-spacing: 1px; }
-
 .codrops-demos a:hover,
 .codrops-demos a:active,
 .codrops-demos a.current-demo {
   background: #777; }
-
-section {
-  padding: 1em 2em 5em;
-  text-align: center;
-  font-size: 1.5em; }
-
-section p {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px 0; }
-
-section button {
-  border: none;
-  padding: 15px 30px;
-  outline: none;
-  background: #85b91e; }
 
 .related > a {
   border: 1px solid #99cc33;
@@ -1037,6 +983,7 @@ section button {
   transition: opacity 0.5s, visibility 0s 0.5s; }
 
 .overlay-hugeinc.open {
+  z-index: 9999;
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.5s;
@@ -1740,6 +1687,43 @@ footer {
 .hero {
   color: #fff;
   min-height: 43.75em; }
+  .hero section.hamburguer a {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .hero section.hamburguer a {
+        display: block;
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 9999; } }
+  .hero .overlay {
+    background: rgba(125, 185, 227, 0.95);
+    text-align: left;
+    padding: 1.5em 2em; }
+    .hero .overlay .overlay-close {
+      width: 30px;
+      height: 30px; }
+    .hero .overlay nav {
+      text-align: left;
+      top: 235px;
+      height: auto;
+      width: auto; }
+      .hero .overlay nav ul.footer {
+        padding-top: 35px;
+        font-size: 18px;
+        line-height: 44px; }
+      .hero .overlay nav .line {
+        margin-bottom: 25px;
+        width: 31px;
+        height: 2px;
+        background-color: #fff; }
+    .hero .overlay li span {
+      font-size: 20px;
+      line-height: 26px; }
+    .hero .overlay li p {
+      font-size: 30px;
+      font-weight: 500; }
   .hero header {
     position: relative;
     box-shadow: none; }
@@ -1750,24 +1734,9 @@ footer {
       min-height: none;
       border-bottom: none;
       padding: 3em; }
-      @media screen and (max-width: 736px) {
+      @media screen and (max-width: 768px) {
         .hero header.navigation {
           padding: 0; } }
-      .hero header.navigation .modal.only-mobile {
-        display: none; }
-        @media screen and (max-width: 768px) {
-          .hero header.navigation .modal.only-mobile {
-            display: block;
-            float: right;
-            padding: 1.2em 0.8em; } }
-        .hero header.navigation .modal.only-mobile .modal-fade-screen {
-          padding: 0; }
-          .hero header.navigation .modal.only-mobile .modal-fade-screen .modal-inner {
-            border-radius: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #6FB2E0; }
       .hero header.navigation nav {
         float: none; }
         .hero header.navigation nav ul li.nav-link a {
@@ -2053,7 +2022,7 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: "roboto", helvetica, arial; }
+  font-family: "effra", helvetica, arial; }
 
 a.button {
   padding: 0.5em 1.5em;

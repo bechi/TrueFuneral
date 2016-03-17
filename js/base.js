@@ -127,8 +127,6 @@ $(document).ready(function() {
   })( window );
 
 
-  (function() {
-    console.log("test");
     var triggerBttn = document.getElementById( 'trigger-overlay' ),
       overlay = document.querySelector( 'div.overlay' ),
       closeBttn = overlay.querySelector( 'button.overlay-close' );
@@ -167,7 +165,6 @@ $(document).ready(function() {
 
     triggerBttn.addEventListener( 'click', toggleOverlay );
     closeBttn.addEventListener( 'click', toggleOverlay );
-  });
 
 });
 

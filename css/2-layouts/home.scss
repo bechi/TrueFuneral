@@ -1,6 +1,53 @@
 .hero  {
   color: $white;
   min-height: em(700px);
+  section.hamburguer a {
+    display: none;
+    @include media($tablet){
+      display: block;
+      color: $white;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 9999;
+    }
+  }
+  .overlay {
+    background: rgba(125,185,227,0.95);
+    text-align: left;
+    padding: 1.5em 2em;
+    .overlay-close {
+      width: 30px;
+      height: 30px;
+    }
+    nav {
+      text-align: left;
+      top: 235px;
+      height: auto;
+      width: auto;
+      ul.footer {
+        padding-top: 35px;
+        font-size: 18px;
+        line-height: 44px;
+      }
+      .line {
+        margin-bottom: 25px;
+        width: 31px;
+        height: 2px;
+        background-color: $white;
+      }
+    }
+    li {
+      span {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      p {
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+  }
   header {
     position: relative;
     box-shadow: none;
@@ -12,26 +59,8 @@
       min-height: none;
       border-bottom: none;
       padding: 3em;
-      @include media($mobile) {
+      @include media($tablet) {
         padding: 0;
-      }
-      .modal.only-mobile {
-        display: none;
-        @include media($tablet){
-          display: block;
-          float: right;
-          padding: 1.2em 0.8em;
-        }
-        .modal-fade-screen {
-          padding: 0;
-          .modal-inner {
-            border-radius: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: $primary-color;
-          }
-        }
       }
       nav {
         float: none;
