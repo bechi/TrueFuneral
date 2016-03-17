@@ -1712,18 +1712,19 @@ footer {
       .hero .overlay nav ul.footer {
         padding-top: 35px;
         font-size: 18px;
-        line-height: 44px; }
+        line-height: 44px;
+        display: block; }
       .hero .overlay nav .line {
         margin-bottom: 25px;
         width: 31px;
         height: 2px;
         background-color: #fff; }
     .hero .overlay li span {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 26px; }
     .hero .overlay li p {
-      font-size: 30px;
-      font-weight: 500; }
+      font-size: 25px;
+      font-weight: 700; }
   .hero header {
     position: relative;
     box-shadow: none; }
