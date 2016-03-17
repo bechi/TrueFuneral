@@ -4,9 +4,9 @@
       width: 40em;
       padding: 20px 50px;
       z-index: 998;
+      margin-bottom: 0;
       @include media($mobile){
         width: 100%;
-        margin-bottom: 0;
         padding: 1.5em 1.5em 2.5em;
       }
       button.back {
@@ -61,18 +61,13 @@
       }
     }
     .map {
+      position: fixed;
+      left: 0;
+      bottom: 50px;
+      width: 40em;
+      top: 418px;
       @include media($mobile){
         display: none;
-      }
-      #map {
-        width: 40em;
-        top: 414px;
-        left: 0;
-        bottom: 0;
-        height: auto;
-        img {
-          height: 100%;
-        }
       }
     }
   }
