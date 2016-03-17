@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   var menuToggle = $('#js-mobile-menu').unbind();
   $('#js-navigation-menu').removeClass("show");
 
@@ -129,7 +130,7 @@ $(document).ready(function() {
 
     var triggerBttn = document.getElementById( 'trigger-overlay' ),
       overlay = document.querySelector( 'div.overlay' ),
-      closeBttn = overlay.querySelector( 'button.overlay-close' );
+      closeBttn = overlay.querySelector( 'a.close' );
       transEndEventNames = {
         'WebkitTransition': 'webkitTransitionEnd',
         'MozTransition': 'transitionend',

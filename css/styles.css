@@ -1751,9 +1751,12 @@ footer {
     background: rgba(125, 185, 227, 0.95);
     text-align: left;
     padding: 1.5em 2em; }
-    .hero .overlay .overlay-close {
-      width: 30px;
-      height: 30px; }
+    .hero .overlay .close {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 9999; }
     .hero .overlay nav {
       text-align: left;
       top: 235px;

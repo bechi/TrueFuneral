@@ -16,9 +16,12 @@
     background: rgba(125,185,227,0.95);
     text-align: left;
     padding: 1.5em 2em;
-    .overlay-close {
-      width: 30px;
-      height: 30px;
+    .close {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 9999;
     }
     nav {
       text-align: left;
