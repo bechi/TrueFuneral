@@ -172,7 +172,6 @@ header {
           }
           .modal {
             .modal-inner {
-              overflow: hidden;
               width: 420px;
               height: 530px;
               padding: 0;
@@ -191,10 +190,9 @@ header {
                 font-size: 20px;
               }
               .pricing-details {
-                height: 100%;
                 text-align: left;
                 background: $light-blue;
-                padding: 1em;
+                padding: 1em 1em 2.9em;
                 @include media ($mobile) {
                   padding: 1em 1em 8em;
                   position: relative;
@@ -261,10 +259,6 @@ header {
                     }
                     .table-footer {
                       background: #EDF7FE;
-                      font-size: 14px;
-                      color: $light-gray;
-                      letter-spacing: 0.5px;
-                      line-height: 18px;
                       position: absolute;
                       left: 0;
                       bottom: -59px;
@@ -272,6 +266,12 @@ header {
                       padding: 1em 1.5em;
                       border-bottom-left-radius: 4px;
                       border-bottom-right-radius: 4px;
+                      p {
+                        font-size: 14px;
+                        color: $light-gray;
+                        letter-spacing: 0.5px;
+                        line-height: 18px;
+                      }
                     }
                   }
                 }
