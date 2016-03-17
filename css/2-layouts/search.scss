@@ -8,9 +8,13 @@ header {
     padding: 0.13rem 0;
     width: 100%;
     border: none;
-    .logo {
+    .logo img {
+      width: 183px;
       margin: 0.4em 0 0;
       float: left;
+      @include media($tablet) {
+        width: 150px;
+      }
     }
     .search-bar {
       float: left;

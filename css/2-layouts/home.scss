@@ -52,26 +52,34 @@
   header {
     position: relative;
     box-shadow: none;
-    .logo {
-      margin: 0;
-    }
     &.navigation {
       background-color: transparent;
       min-height: none;
       border-bottom: none;
-      padding: 3em;
+      padding: 60px 72px 60px 100px;
+      text-align: left;
       @include media($tablet) {
         padding: 0;
       }
       nav {
-        float: none;
+        min-height: 0;
         ul li.nav-link {
+          line-height: 1.8;
           a {
             color: $white;
             @include media($mobile){
               color: $dark-gray;
             }
           }
+        }
+      }
+      .logo-tf img {
+        margin: 0;
+        width: 183px;
+        @include media($tablet) {
+          width: 150px;
+          padding: 0;
+          margin: 30px;
         }
       }
     }
