@@ -1898,17 +1898,18 @@ footer {
         position: absolute;
         right: 70px;
         top: 20px;
-        font-size: 9px;
+        font-size: 11px;
         color: #9B9B9B; }
       .hero .accordion-tabs .tab-content form.search-bar button[type=submit] {
         border: 0;
+        font-size: 24px;
         background-color: #5C5A58;
         color: #fff;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
-        padding: 0.5em 1.2em; }
+        padding: 0.5em 0.8em; }
 
 .home .content {
   color: #5C5A58;
