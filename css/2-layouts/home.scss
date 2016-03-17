@@ -123,6 +123,7 @@
     }
     text-align: left;
     .tab-link {
+      transition: all 350ms;
       font-size: em(15px);
       color: $light-gray;
       letter-spacing: em(0.46px);
