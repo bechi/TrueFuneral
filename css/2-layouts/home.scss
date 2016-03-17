@@ -15,8 +15,23 @@
       @include media($mobile) {
         padding: 0;
       }
-      .navigation-menu-button {
-        color: $white;
+      .modal.only-mobile {
+        display: none;
+        @include media($tablet){
+          display: block;
+          float: right;
+          padding: 1.2em 0.8em;
+        }
+        .modal-fade-screen {
+          padding: 0;
+          .modal-inner {
+            border-radius: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $primary-color;
+          }
+        }
       }
       nav {
         float: none;
