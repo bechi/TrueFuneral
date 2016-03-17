@@ -110,7 +110,7 @@
       display: none;
     }
     &.mobile-only {
-      @include media($mobile) {
+      @include media($tablet) {
         display: block;
       }
     }
@@ -118,9 +118,10 @@
 
   .accordion-tabs {
     position: relative;
+    border:none;
     @include span-columns(6);
     @include shift(3);
-    @include media($mobile) {
+    @include media($tablet) {
       width: 92%;
       margin: 2em 4%;
     }
@@ -165,6 +166,9 @@
           top: 20px;
           font-size: 11px;
           color: $light-gray;
+          @include media($tablet) {
+            display: none;
+          }
         }
         button[type=submit] {
           border:0;

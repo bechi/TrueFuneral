@@ -1822,11 +1822,12 @@ footer {
   .hero p.location {
     font-size: 0.8125em;
     display: none; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .hero p.mobile-only {
       display: block; } }
   .hero .accordion-tabs {
     position: relative;
+    border: none;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -1835,7 +1836,7 @@ footer {
     text-align: left; }
     .hero .accordion-tabs:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
       .hero .accordion-tabs {
         width: 92%;
         margin: 2em 4%; } }
@@ -1875,6 +1876,9 @@ footer {
         top: 20px;
         font-size: 11px;
         color: #9B9B9B; }
+        @media screen and (max-width: 768px) {
+          .hero .accordion-tabs .tab-content form.search-bar a.location-link {
+            display: none; } }
       .hero .accordion-tabs .tab-content form.search-bar button[type=submit] {
         border: 0;
         font-size: 24px;
