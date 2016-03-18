@@ -1,4 +1,130 @@
 .profile {
+  section.hamburguer a {
+    display: none;
+    @include media($tablet){
+      display: block;
+      color: $dark-gray;
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      z-index: 9999;
+      border: 2px solid rgba(255,255,255,0.20);
+      border-radius: 100%;
+      padding: 0.9em 0.8em;
+    }
+  }
+  .overlay {
+    background: rgba(125,185,227,0.95);
+    text-align: left;
+    padding: 1.5em 2em;
+    .close {
+      display: block;
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      z-index: 9999;
+      padding: 0.9em 1em;
+      color: $white;
+    }
+    nav {
+      text-align: left;
+      top: 235px;
+      height: auto;
+      width: auto;
+      ul.footer {
+        padding-top: 35px;
+        font-size: 18px;
+        line-height: 44px;
+        display: block;
+      }
+      .line {
+        margin-bottom: 25px;
+        width: 31px;
+        height: 2px;
+        background-color: $white;
+      }
+    }
+    li {
+      span {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      p {
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  header {
+    &.navigation {
+      @include position(fixed, 0 null null 0);
+      box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
+      z-index: 999;
+      background-color: $white;
+      overflow: hidden;
+      padding: 0.13rem 0;
+      width: 100%;
+      border: none;
+      .logo img {
+        width: 183px;
+        margin: 0.4em 0 0;
+        float: left;
+        @include media($tablet) {
+          width: 150px;
+        }
+      }
+      .search-bar {
+        float: left;
+        padding: 0.4em;
+        form {
+          input[type=search] {
+            background-color: $white;
+            border: 2px solid #DCDCDC;
+            border-radius: 4px;
+            padding: 0.9em;
+            color: $dark-gray;
+          }
+          button[type=submit] {
+            font-size: 24px;
+            background-color: $primary-color;
+            color: $white;
+            border-radius: 0 4px 4px 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0 0.55em;
+          }
+        }
+        &.only-desktop {
+          @include media($mobile){
+            display: none;
+          }
+        }
+      }
+      nav {
+        float: right;
+        ul li.nav-link {
+          float: right;
+          @include media($mobile){
+            background-color: $white;
+          }
+          a {
+            color: $dark-gray;
+            &:hover {
+              color: $dark-gray;
+            }
+          }
+        }
+      }
+      .navigation-menu-button {
+        color: $dark-gray;
+        &:hover {
+          color: $dark-gray;
+        }
+      }
+    }
+  }
   .content {
     .sidebar {
       width: 40em;
