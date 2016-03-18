@@ -788,7 +788,7 @@ form.search-bar {
   z-index: 99999999999; }
   @media screen and (min-width: 53.75em) {
     .modal .modal-fade-screen {
-      padding-top: 7em; } }
+      padding-top: 5em; } }
   .modal .modal-fade-screen .modal-bg {
     position: absolute;
     top: 0;
@@ -1528,6 +1528,7 @@ header.navigation {
             background-color: #549CCE; }
         .content section.sidebar .list .item .info .modal .modal-inner {
           width: 424px;
+          min-height: 533px;
           padding: 0;
           text-align: center;
           box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.14), 0px 8px 15px 0px rgba(0, 0, 0, 0.15);
