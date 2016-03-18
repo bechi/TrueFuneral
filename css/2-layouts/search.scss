@@ -233,15 +233,8 @@
               font-size: 13px;
             }
             .modal {
-              .modal-fade-screen {
-                @include media($mobile){
-                  top: 0;
-                  padding: 0;
-                }
-              }
               .modal-inner {
-                width: 420px;
-                height: 530px;
+                width: 424px;
                 padding: 0;
                 text-align: center;
                 box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.14), 0px 8px 15px 0px rgba(0,0,0,0.15);
