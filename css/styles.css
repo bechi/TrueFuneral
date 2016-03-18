@@ -1888,17 +1888,17 @@ footer {
             padding: 0;
             margin: 30px; } }
   .hero h1 {
-    font-size: 2.875em !important;
+    font-size: 40px;
     line-height: 1.3em;
-    margin: 1.5em; }
+    margin: 2em 1.3em 1.3em; }
+    @media screen and (max-width: 768px) {
+      .hero h1 {
+        font-size: 30px;
+        margin: 3em 0.5em 0.5em; } }
     @media screen and (max-width: 600px) {
       .hero h1 {
-        display: none; } }
-  .hero p.title {
-    display: none;
-    margin: 5em 0.5em 1.5em;
-    font-size: 1.25em;
-    line-height: 1.75em; }
+        font-size: 19px;
+        margin: 4em 0.5em 0.5em; } }
   .hero p.location {
     font-size: 0.8125em;
     display: none; }

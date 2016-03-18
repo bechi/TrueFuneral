@@ -102,20 +102,19 @@
 
 
   h1 {
-    font-size: em(46)!important;
+    font-size: 40px;
     line-height: 1.3em;
-    margin: 1.5em;
+    margin: 2em 1.3em 1.3em;
+    @include media($tablet){
+      font-size: 30px;
+      margin: 3em 0.5em 0.5em;
+    }
     @include media($mobile) {
-      display: none;
+      font-size: 19px;
+      margin: 4em 0.5em 0.5em;
     }
   }
   p {
-    &.title {
-      display: none;
-      margin: 5em 0.5em 1.5em;
-      font-size: em(20px);
-      line-height: em(28px);
-    }
     &.location {
       font-size: em(13px);
       display: none;
