@@ -132,8 +132,8 @@
   .accordion-tabs {
     position: relative;
     border:none;
-    @include span-columns(6);
-    @include shift(3);
+    @include span-columns(8);
+    @include shift(2);
     @include media($tablet) {
       width: 92%;
       margin: 2em 4%;
