@@ -5,7 +5,6 @@
   <script type="text/javascript" src="js/bower_components/jquery-2.2.1.min/index.js"></script>
   <script type="text/javascript" src="js/base.js"></script>
   <title>Profile</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </head>
@@ -14,7 +13,7 @@
     <a href="home.html" class="logo">
       <img src="img/TF-logo.svg" alt="True Funeral">
     </a>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><i class="fa fa-bars fa-lg"> </i></a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><i class="icon-hamburguer"> </i></a>
     <div class="search-bar only-desktop">
       <form role="search">
         <input type="search" placeholder="Enter Search" />
@@ -33,7 +32,7 @@
 
   <div class="content">
     <section class="sidebar">
-      <button class="back"> <i class="fa fa-angle-left fa-lg"></i> Back to search result</button>
+      <button class="back"> <i class="icon-arrow-left"></i> Back to search result</button>
       <ul class="list">
         <li class="item">
           <div class="price">
@@ -42,11 +41,11 @@
           <div class="info">
             <h3><a href="#">2. Funeral Home Name </a></h3>
             <h5>
-              <i class="fa fa-star fa-lg"> </i>
-              <i class="fa fa-star fa-lg"> </i>
-              <i class="fa fa-star fa-lg"> </i>
-              <i class="fa fa-star fa-lg"> </i>
-              <i class="fa fa-star fa-lg"> </i>
+              <i class="icon-star"> </i>
+              <i class="icon-star"> </i>
+              <i class="icon-star"> </i>
+              <i class="icon-star"> </i>
+              <i class="icon-star"> </i>
               <small>2 miles away</small>
             </h5>
             <p><i class="icon-pin text-primary"></i> 148 San Antonio St</p>
@@ -71,7 +70,7 @@
                 '</div>'+
                 '<h1 id="firstHeading"><img src="img/logo-harrell.png" alt="" width="150"></h1>'+
                 '<div id="bodyContent">'+
-                '<small><i class="fa fa-star fa-lg"> </i><i class="fa fa-star fa-lg"> </i> <i class="fa fa-star fa-lg"> </i> <i class="fa fa-star fa-lg"> </i><i class="fa fa-star fa-lg"></i>16 ratings</small><p class="ubication"><i class="fa fa-search fa-lg"></i> 148 San Antonio St</p> <div class="price"><div class="left"><small>Direct cremation</small><p><a href="#"> <img src="img/icon-cremation.png" alt="" width="11"></a> $1,600<a href="#"></a> </p></div><div class="right"><small>Direct cremation</small><p> <a href="#"> <img src="img/icon-burial.png" alt="" width="11"> </a> $1,600<a href="#"></a></p></div><button> <i class="fa fa-phone fa-lg"> </i> Contact </button></div>';
+                '<small><i class="icon-star"> </i><i class="icon-star"> </i> <i class="icon-star"> </i> <i class="icon-star"> </i><i class="icon-star"></i>16 ratings</small><p class="ubication"><i class="icon-pin"></i> 148 San Antonio St</p> <div class="price"><div class="left"><small>Direct cremation</small><p><a href="#"> <img src="img/icon-cremation.png" alt="" width="11"></a> $1,600<a href="#"></a> </p></div><div class="right"><small>Direct cremation</small><p> <a href="#"> <img src="img/icon-burial.png" alt="" width="11"> </a> $1,600<a href="#"></a></p></div><a class="button"> <i class="icon-phone"> </i> Contact </a></div>';
 
             var infowindow = new google.maps.InfoWindow({
               content: contentString

@@ -423,6 +423,24 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-arrow-down:before {
+  content: "\e908"; }
+
+.icon-arrow-left:before {
+  content: "\e909"; }
+
+.icon-arrow-right:before {
+  content: "\e90a"; }
+
+.icon-arrow-top:before {
+  content: "\e90b"; }
+
+.icon-hamburguer:before {
+  content: "\e90c"; }
+
+.icon-star:before {
+  content: "\e90d"; }
+
 .icon-help:before {
   content: "\e90e"; }
 
@@ -1405,9 +1423,10 @@ header.navigation {
           white-space: nowrap;
           word-wrap: normal; }
           .content section.sidebar .dropdown .columns-6 .dropdown-button i {
+            font-size: 9px;
             position: absolute;
-            top: 5px;
-            right: 5px;
+            top: 12px;
+            right: 8px;
             margin: 0.45em 0.5em 0; }
         .content section.sidebar .dropdown .columns-6 .dropdown-description {
           border-bottom-left-radius: 100px;
@@ -1447,7 +1466,6 @@ header.navigation {
           color: #9B9B9B;
           margin-bottom: 1em; }
           .content section.sidebar .list .item .info h5 i {
-            font-size: 1.0625em;
             color: #9B9B9B; }
         .content section.sidebar .list .item .info a.button {
           padding: 0.5em 1.53em;

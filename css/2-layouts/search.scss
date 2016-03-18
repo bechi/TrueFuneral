@@ -123,9 +123,10 @@ header {
           letter-spacing: 0.2px;
           @include ellipsis(100%);
           i {
+            font-size: 9px;
             position: absolute;
-            top: 5px;
-            right: 5px;
+            top: 12px;
+            right: 8px;
             margin: 0.45em 0.5em 0;
           }
         }
@@ -164,7 +165,6 @@ header {
             color: $light-gray;
             margin-bottom: 1em;
             i {
-              font-size: em(17);
               color: $light-gray;
             }
           }
