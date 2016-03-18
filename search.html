@@ -244,6 +244,14 @@
             icon: 'img/pin-1.png'
           });
 
+          google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map);
+          //Change the marker icon
+          marker.setIcon('img/close-windows-map.svg');
+          });
+
+
+
           marker.addListener('click', function() {
             infowindow.open(map, marker);
           });
