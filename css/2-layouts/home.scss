@@ -81,6 +81,9 @@
             @include media($mobile){
               color: $dark-gray;
             }
+            &:hover {
+              opacity: 0.5;
+            }
           }
         }
       }
@@ -116,6 +119,9 @@
     &.location {
       font-size: em(13px);
       display: none;
+      &:hover {
+        opacity: 0.5;
+      }
     }
     &.mobile-only {
       @include media($tablet) {
@@ -177,6 +183,9 @@
           @include media($tablet) {
             display: none;
           }
+          &:hover {
+            color: $primary-color;
+          }
         }
         button[type=submit] {
           border:0;
@@ -188,6 +197,13 @@
           border-bottom-left-radius: 0;
           border-top-left-radius: 0;
           padding: 0.5em 0.8em;
+          &:hover {
+            background-color: $primary-color;
+            i {
+              transform: scale(1.1);
+              display: block;
+            }
+          }
         }
       }
     }

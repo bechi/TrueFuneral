@@ -111,7 +111,7 @@
           a {
             color: $dark-gray;
             &:hover {
-              color: $dark-gray;
+              color: $primary-color;
             }
           }
         }
@@ -231,6 +231,9 @@
               background-color: $primary-color;
               color: $white;
               font-size: 13px;
+              &:hover {
+                background-color: $dark-blue;
+              }
             }
             .modal {
               .modal-inner {

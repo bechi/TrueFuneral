@@ -1402,7 +1402,7 @@ header.navigation {
       header.navigation nav ul li.nav-link a {
         color: #5C5A58; }
         header.navigation nav ul li.nav-link a:hover {
-          color: #5C5A58; }
+          color: #6FB2E0; }
   header.navigation .navigation-menu-button {
     color: #5C5A58; }
     header.navigation .navigation-menu-button:hover {
@@ -1524,6 +1524,8 @@ header.navigation {
           background-color: #6FB2E0;
           color: #fff;
           font-size: 13px; }
+          .content section.sidebar .list .item .info a.button:hover {
+            background-color: #549CCE; }
         .content section.sidebar .list .item .info .modal .modal-inner {
           width: 424px;
           padding: 0;
@@ -1875,6 +1877,8 @@ footer {
             @media screen and (max-width: 600px) {
               .hero header.navigation nav ul li.nav-link a {
                 color: #5C5A58; } }
+            .hero header.navigation nav ul li.nav-link a:hover {
+              opacity: 0.5; }
       .hero header.navigation .logo-tf img {
         margin: 0;
         width: 183px; }
@@ -1898,6 +1902,8 @@ footer {
   .hero p.location {
     font-size: 0.8125em;
     display: none; }
+    .hero p.location:hover {
+      opacity: 0.5; }
   @media screen and (max-width: 768px) {
     .hero p.mobile-only {
       display: block; } }
@@ -1955,6 +1961,8 @@ footer {
         @media screen and (max-width: 768px) {
           .hero .accordion-tabs .tab-content form.search-bar a.location-link {
             display: none; } }
+        .hero .accordion-tabs .tab-content form.search-bar a.location-link:hover {
+          color: #6FB2E0; }
       .hero .accordion-tabs .tab-content form.search-bar button[type=submit] {
         border: 0;
         font-size: 24px;
@@ -1965,6 +1973,11 @@ footer {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         padding: 0.5em 0.8em; }
+        .hero .accordion-tabs .tab-content form.search-bar button[type=submit]:hover {
+          background-color: #6FB2E0; }
+          .hero .accordion-tabs .tab-content form.search-bar button[type=submit]:hover i {
+            transform: scale(1.1);
+            display: block; }
 
 .home .content {
   color: #5C5A58;
@@ -2098,60 +2111,6 @@ footer.home {
   .profile .overlay li p {
     font-size: 25px;
     font-weight: 700; }
-.profile header.navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  z-index: 999;
-  background-color: #fff;
-  overflow: hidden;
-  padding: 0.13rem 0;
-  width: 100%;
-  border: none; }
-  .profile header.navigation .logo img {
-    width: 183px;
-    margin: 0.4em 0 0;
-    float: left; }
-    @media screen and (max-width: 768px) {
-      .profile header.navigation .logo img {
-        width: 150px; } }
-  .profile header.navigation .search-bar {
-    float: left;
-    padding: 0.4em; }
-    .profile header.navigation .search-bar form input[type=search] {
-      background-color: #fff;
-      border: 2px solid #DCDCDC;
-      border-radius: 4px;
-      padding: 0.9em;
-      color: #5C5A58; }
-    .profile header.navigation .search-bar form button[type=submit] {
-      font-size: 24px;
-      background-color: #6FB2E0;
-      color: #fff;
-      border-radius: 0 4px 4px 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      padding: 0 0.55em; }
-    @media screen and (max-width: 600px) {
-      .profile header.navigation .search-bar.only-desktop {
-        display: none; } }
-  .profile header.navigation nav {
-    float: right; }
-    .profile header.navigation nav ul li.nav-link {
-      float: right; }
-      @media screen and (max-width: 600px) {
-        .profile header.navigation nav ul li.nav-link {
-          background-color: #fff; } }
-      .profile header.navigation nav ul li.nav-link a {
-        color: #5C5A58; }
-        .profile header.navigation nav ul li.nav-link a:hover {
-          color: #5C5A58; }
-  .profile header.navigation .navigation-menu-button {
-    color: #5C5A58; }
-    .profile header.navigation .navigation-menu-button:hover {
-      color: #5C5A58; }
 .profile .content .sidebar {
   width: 40em;
   padding: 20px 50px;
@@ -2169,6 +2128,9 @@ footer.home {
     color: #9B9B9B;
     letter-spacing: 0.54px;
     padding: 0.35em 0.9em; }
+    .profile .content .sidebar button.back:hover {
+      background-color: #CBCBCB;
+      color: #fff; }
     @media screen and (max-width: 600px) {
       .profile .content .sidebar button.back {
         display: none; } }
