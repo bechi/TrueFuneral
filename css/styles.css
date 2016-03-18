@@ -423,6 +423,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-close:before {
+  content: "\e90f"; }
+
 .icon-arrow-down:before {
   content: "\e908"; }
 
@@ -1302,7 +1305,53 @@ header.navigation {
           box-sizing: border-box;
           display: block; } }
 
-header.navigation {
+.search section.hamburguer a {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .search section.hamburguer a {
+      display: block;
+      color: #5C5A58;
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      z-index: 9999;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 100%;
+      padding: 0.9em 0.8em; } }
+.search .overlay {
+  background: rgba(125, 185, 227, 0.95);
+  text-align: left;
+  padding: 1.5em 2em; }
+  .search .overlay .close {
+    display: block;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    z-index: 9999;
+    padding: 0.9em 1em;
+    color: #fff; }
+  .search .overlay nav {
+    text-align: left;
+    top: 235px;
+    height: auto;
+    width: auto; }
+    .search .overlay nav ul.footer {
+      padding-top: 35px;
+      font-size: 18px;
+      line-height: 44px;
+      display: block; }
+    .search .overlay nav .line {
+      margin-bottom: 25px;
+      width: 31px;
+      height: 2px;
+      background-color: #fff; }
+  .search .overlay li span {
+    font-size: 18px;
+    line-height: 26px; }
+  .search .overlay li p {
+    font-size: 25px;
+    font-weight: 700; }
+.search header.navigation {
   position: fixed;
   top: 0;
   left: 0;
@@ -1313,23 +1362,23 @@ header.navigation {
   padding: 0.13rem 0;
   width: 100%;
   border: none; }
-  header.navigation .logo img {
+  .search header.navigation .logo img {
     width: 183px;
     margin: 0.4em 0 0;
     float: left; }
     @media screen and (max-width: 768px) {
-      header.navigation .logo img {
+      .search header.navigation .logo img {
         width: 150px; } }
-  header.navigation .search-bar {
+  .search header.navigation .search-bar {
     float: left;
     padding: 0.4em; }
-    header.navigation .search-bar form input[type=search] {
+    .search header.navigation .search-bar form input[type=search] {
       background-color: #fff;
       border: 2px solid #DCDCDC;
       border-radius: 4px;
       padding: 0.9em;
       color: #5C5A58; }
-    header.navigation .search-bar form button[type=submit] {
+    .search header.navigation .search-bar form button[type=submit] {
       font-size: 24px;
       background-color: #6FB2E0;
       color: #fff;
@@ -1339,29 +1388,28 @@ header.navigation {
       bottom: 0;
       padding: 0 0.55em; }
     @media screen and (max-width: 600px) {
-      header.navigation .search-bar.only-desktop {
+      .search header.navigation .search-bar.only-desktop {
         display: none; } }
-  header.navigation nav {
+  .search header.navigation nav {
     float: right; }
-    header.navigation nav ul li.nav-link {
+    .search header.navigation nav ul li.nav-link {
       float: right; }
       @media screen and (max-width: 600px) {
-        header.navigation nav ul li.nav-link {
+        .search header.navigation nav ul li.nav-link {
           background-color: #fff; } }
-      header.navigation nav ul li.nav-link a {
+      .search header.navigation nav ul li.nav-link a {
         color: #5C5A58; }
-        header.navigation nav ul li.nav-link a:hover {
+        .search header.navigation nav ul li.nav-link a:hover {
           color: #5C5A58; }
-  header.navigation .navigation-menu-button {
+  .search header.navigation .navigation-menu-button {
     color: #5C5A58; }
-    header.navigation .navigation-menu-button:hover {
+    .search header.navigation .navigation-menu-button:hover {
       color: #5C5A58; }
-
-.content {
+.search .content {
   position: relative;
   top: 64px;
   left: 0; }
-  .content .bg-loading {
+  .search .content .bg-loading {
     background: rgba(255, 255, 255, 0.95);
     position: fixed;
     width: 470px;
@@ -1370,42 +1418,42 @@ header.navigation {
     padding-top: 20%;
     text-align: center; }
     @media screen and (max-width: 600px) {
-      .content .bg-loading {
+      .search .content .bg-loading {
         width: 100%; } }
-    .content .bg-loading p {
+    .search .content .bg-loading p {
       font-size: 18px;
       color: #5C5A58; }
-  .content section.sidebar {
+  .search .content section.sidebar {
     position: absolute;
     width: 29.375em;
     margin-bottom: 3.8em;
     background-color: #fff; }
     @media screen and (max-width: 600px) {
-      .content section.sidebar {
+      .search .content section.sidebar {
         width: 100%;
         position: relative;
         margin-bottom: 4em; } }
-    .content section.sidebar .dropdown {
+    .search .content section.sidebar .dropdown {
       background-color: #EBEBEB;
       padding: 0.92em;
       min-height: 4.25em; }
       @media screen and (max-width: 600px) {
-        .content section.sidebar .dropdown {
+        .search .content section.sidebar .dropdown {
           margin-bottom: 130px; } }
-      .content section.sidebar .dropdown .columns-6 {
+      .search .content section.sidebar .dropdown .columns-6 {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        .content section.sidebar .dropdown .columns-6:last-child {
+        .search .content section.sidebar .dropdown .columns-6:last-child {
           margin-right: 0; }
-        .content section.sidebar .dropdown .columns-6 .dropdown-container {
+        .search .content section.sidebar .dropdown .columns-6 .dropdown-container {
           width: 100%;
           width: 100%;
           display: table;
           width: 100%;
           table-layout: fixed; }
-        .content section.sidebar .dropdown .columns-6 .dropdown-button {
+        .search .content section.sidebar .dropdown .columns-6 .dropdown-button {
           border-bottom-right-radius: 100px;
           border-top-right-radius: 100px;
           display: table-cell;
@@ -1422,13 +1470,13 @@ header.navigation {
           text-overflow: ellipsis;
           white-space: nowrap;
           word-wrap: normal; }
-          .content section.sidebar .dropdown .columns-6 .dropdown-button i {
+          .search .content section.sidebar .dropdown .columns-6 .dropdown-button i {
             font-size: 9px;
             position: absolute;
             top: 12px;
             right: 8px;
             margin: 0.45em 0.5em 0; }
-        .content section.sidebar .dropdown .columns-6 .dropdown-description {
+        .search .content section.sidebar .dropdown .columns-6 .dropdown-description {
           border-bottom-left-radius: 100px;
           border-top-left-radius: 100px;
           display: table-cell;
@@ -1437,11 +1485,11 @@ header.navigation {
           line-height: 2.2em;
           font-size: 0.8125em;
           color: #6FB2E0; }
-    .content section.sidebar .list .item {
+    .search .content section.sidebar .list .item {
       padding: 1.2em;
       border-bottom: 1px solid #E8E4E4;
       min-height: 8.75em; }
-      .content section.sidebar .list .item .info {
+      .search .content section.sidebar .list .item .info {
         margin-top: 0.5em;
         float: left;
         display: inline-block;
@@ -1450,7 +1498,7 @@ header.navigation {
         text-overflow: ellipsis;
         white-space: nowrap;
         word-wrap: normal; }
-        .content section.sidebar .list .item .info h3 a {
+        .search .content section.sidebar .list .item .info h3 a {
           font-size: 1.125em;
           color: #5C5A58;
           display: block;
@@ -1461,23 +1509,23 @@ header.navigation {
           text-overflow: ellipsis;
           white-space: nowrap;
           word-wrap: normal; }
-        .content section.sidebar .list .item .info h5 {
+        .search .content section.sidebar .list .item .info h5 {
           font-size: 0.9375em;
           color: #9B9B9B;
           margin-bottom: 1em; }
-          .content section.sidebar .list .item .info h5 i {
+          .search .content section.sidebar .list .item .info h5 i {
             color: #9B9B9B; }
-        .content section.sidebar .list .item .info a.button {
+        .search .content section.sidebar .list .item .info a.button {
           padding: 0.5em 1.53em;
           margin: 0;
           background-color: #6FB2E0;
           color: #fff;
           font-size: 13px; }
         @media screen and (max-width: 600px) {
-          .content section.sidebar .list .item .info .modal .modal-fade-screen {
+          .search .content section.sidebar .list .item .info .modal .modal-fade-screen {
             top: 0;
             padding: 0; } }
-        .content section.sidebar .list .item .info .modal .modal-inner {
+        .search .content section.sidebar .list .item .info .modal .modal-inner {
           width: 420px;
           height: 530px;
           padding: 0;
@@ -1485,18 +1533,18 @@ header.navigation {
           box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.14), 0px 8px 15px 0px rgba(0, 0, 0, 0.15);
           border-radius: 5px; }
           @media screen and (max-width: 600px) {
-            .content section.sidebar .list .item .info .modal .modal-inner {
+            .search .content section.sidebar .list .item .info .modal .modal-inner {
               top: 60px;
               height: 100%;
               width: 100%;
               border-radius: 0; } }
-          .content section.sidebar .list .item .info .modal .modal-inner header.navigation.only-mobile {
+          .search .content section.sidebar .list .item .info .modal .modal-inner header.navigation.only-mobile {
             display: none;
             padding: 0; }
             @media screen and (max-width: 600px) {
-              .content section.sidebar .list .item .info .modal .modal-inner header.navigation.only-mobile {
+              .search .content section.sidebar .list .item .info .modal .modal-inner header.navigation.only-mobile {
                 display: block; } }
-            .content section.sidebar .list .item .info .modal .modal-inner header.navigation.only-mobile a.back {
+            .search .content section.sidebar .list .item .info .modal .modal-inner header.navigation.only-mobile a.back {
               background-color: #6FB2E0;
               padding: 0.6em;
               display: block;
@@ -1505,30 +1553,30 @@ header.navigation {
               height: 60px;
               font-size: 25px;
               color: #fff; }
-          .content section.sidebar .list .item .info .modal .modal-inner .pad-2 {
+          .search .content section.sidebar .list .item .info .modal .modal-inner .pad-2 {
             padding: 2em; }
-          .content section.sidebar .list .item .info .modal .modal-inner .phone {
+          .search .content section.sidebar .list .item .info .modal .modal-inner .phone {
             background: #5C5A58;
             padding: 1em;
             text-align: center;
             min-height: 61px;
             color: #fff;
             font-size: 20px; }
-          .content section.sidebar .list .item .info .modal .modal-inner .pricing-details {
+          .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details {
             text-align: left;
             background: #D4E6F3;
             padding: 1em 1em 2.9em; }
             @media screen and (max-width: 600px) {
-              .content section.sidebar .list .item .info .modal .modal-inner .pricing-details {
+              .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details {
                 padding: 1em 1em 8em;
                 position: relative;
                 top: 0; } }
-            .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs {
+            .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs {
               border: 0; }
               @media screen and (max-width: 600px) {
-                .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content {
+                .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content {
                   display: inline; } }
-              .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-link {
+              .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-link {
                 background: #F4F8FC;
                 font-size: 15px;
                 color: #9B9B9B;
@@ -1536,41 +1584,41 @@ header.navigation {
                 font-weight: 400;
                 padding: 0.75em 1.5em; }
                 @media screen and (max-width: 600px) {
-                  .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-link {
+                  .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-link {
                     border-top: 0;
                     display: inline-block; } }
-                .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-link.is-active {
+                .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-link.is-active {
                   border: none;
                   color: #6FB2E0;
                   background-color: #fff; }
-              .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content {
+              .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content {
                 background: #fff;
                 border: none;
                 position: relative; }
                 @media screen and (max-width: 600px) {
-                  .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content {
+                  .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content {
                     float: left; } }
-                .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table {
+                .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table {
                   width: 100%; }
-                  .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr td {
+                  .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr td {
                     font-size: 17px;
                     color: #9B9B9B;
                     display: block;
                     float: left; }
-                    .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr td.right {
+                    .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr td.right {
                       display: block;
                       color: #5C5A58;
                       float: right; }
-                  .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr.total {
+                  .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr.total {
                     margin-top: 0.8em;
                     padding: 0.5em 0;
                     display: block;
                     border-top: 1px solid #E5E5E5; }
-                    .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr.total .left {
+                    .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr.total .left {
                       margin-top: 0.5em; }
-                    .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr.total .right {
+                    .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr.total .right {
                       font-size: 28px; }
-              .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .table-footer {
+              .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .table-footer {
                 background: #EDF7FE;
                 position: absolute;
                 left: 0;
@@ -1579,28 +1627,28 @@ header.navigation {
                 padding: 1em 1.5em;
                 border-bottom-left-radius: 4px;
                 border-bottom-right-radius: 4px; }
-                .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .table-footer p {
+                .search .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .table-footer p {
                   font-size: 14px;
                   color: #9B9B9B;
                   letter-spacing: 0.5px;
                   line-height: 18px; }
-      .content section.sidebar .list .item .price {
+      .search .content section.sidebar .list .item .price {
         float: right; }
-        .content section.sidebar .list .item .price small {
+        .search .content section.sidebar .list .item .price small {
           font-size: 0.75em;
           color: #9B9B9B; }
-        .content section.sidebar .list .item .price p {
+        .search .content section.sidebar .list .item .price p {
           font-size: 1.5em;
           color: #000;
           margin: 0.1em 0 0.5em 0; }
-          .content section.sidebar .list .item .price p a i {
+          .search .content section.sidebar .list .item .price p a i {
             font-size: 0.875em;
             color: #6FB2E0; }
-        .content section.sidebar .list .item .price .tooltip-item {
+        .search .content section.sidebar .list .item .price .tooltip-item {
           border: none;
           padding: 0;
           line-height: 1.2em; }
-          .content section.sidebar .list .item .price .tooltip-item .tooltip {
+          .search .content section.sidebar .list .item .price .tooltip-item .tooltip {
             text-align: left;
             left: -125px;
             bottom: 2.25em;
@@ -1609,81 +1657,81 @@ header.navigation {
             box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.11);
             border-radius: 4px;
             z-index: 999; }
-            .content section.sidebar .list .item .price .tooltip-item .tooltip:after {
+            .search .content section.sidebar .list .item .price .tooltip-item .tooltip:after {
               bottom: -1.1em; }
-            .content section.sidebar .list .item .price .tooltip-item .tooltip span {
+            .search .content section.sidebar .list .item .price .tooltip-item .tooltip span {
               font-size: 14px;
               line-height: 22px;
               color: #5C5A58;
               display: block;
               margin-bottom: 0.8em; }
-            .content section.sidebar .list .item .price .tooltip-item .tooltip a {
+            .search .content section.sidebar .list .item .price .tooltip-item .tooltip a {
               color: #6FB2E0;
               display: block;
               font-size: 14px;
               line-height: 22px; }
-  .content .map {
+  .search .content .map {
     position: fixed;
     right: 0;
     left: 470px;
     bottom: 50px;
     top: 64px; }
     @media screen and (max-width: 600px) {
-      .content .map {
+      .search .content .map {
         position: absolute;
         top: 68px;
         left: 0;
         height: 130px;
         overflow: hidden; } }
-    .content .map #map {
+    .search .content .map #map {
       width: 100%;
       height: 100%; }
-    .content .map .map-content {
+    .search .content .map .map-content {
       text-align: center;
       width: 17.5em; }
-      .content .map .map-content h1 {
+      .search .content .map .map-content h1 {
         margin: 0.5em; }
-    .content .map .bodyContent p.ubication {
+    .search .content .map .bodyContent p.ubication {
       margin: 0 1em;
       padding: 1em;
       border-bottom: 1px solid #E5E5E5; }
-      .content .map .bodyContent p.ubication i {
+      .search .content .map .bodyContent p.ubication i {
         color: #6FB2E0;
         font-size: 0.875em; }
-    .content .map .bodyContent i.icon-star {
+    .search .content .map .bodyContent i.icon-star {
       color: #9B9B9B;
       font-size: 1em; }
-    .content .map .bodyContent .price {
+    .search .content .map .bodyContent .price {
       padding: 1em;
       overflow: hidden; }
-      .content .map .bodyContent .price small {
+      .search .content .map .bodyContent .price small {
         font-size: 0.875em;
         color: #9B9B9B;
         font-weight: 400; }
-      .content .map .bodyContent .price p {
+      .search .content .map .bodyContent .price p {
         margin: 0.3em 0;
         font-size: 1.5em;
         color: #000;
         font-weight: 400; }
-        .content .map .bodyContent .price p i {
+        .search .content .map .bodyContent .price p i {
           font-size: 1.125em;
           color: #6FB2E0; }
-      .content .map .bodyContent .price .left {
+      .search .content .map .bodyContent .price .left {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        .content .map .bodyContent .price .left:last-child {
+        .search .content .map .bodyContent .price .left:last-child {
           margin-right: 0; }
-      .content .map .bodyContent .price .right {
+      .search .content .map .bodyContent .price .right {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%;
         margin-right: 0; }
-        .content .map .bodyContent .price .right:last-child {
+        .search .content .map .bodyContent .price .right:last-child {
           margin-right: 0; }
-    .content .map .bodyContent a.button {
+    .search .content .map .bodyContent a.button {
       background: #6FB2E0;
       color: white;
       margin-top: 1em;
@@ -1691,8 +1739,7 @@ header.navigation {
       padding: 1em;
       font-weight: 400;
       font-size: 16px; }
-
-footer {
+.search footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -1702,54 +1749,54 @@ footer {
   overflow: hidden;
   z-index: 999; }
   @media screen and (max-width: 600px) {
-    footer {
+    .search footer {
       position: relative;
       padding: 2em 2.2em; } }
-  footer .left {
+  .search footer .left {
     float: left; }
-    footer .left img.logo {
+    .search footer .left img.logo {
       margin-top: 5px;
       margin-left: 1em; }
       @media screen and (max-width: 600px) {
-        footer .left img.logo {
+        .search footer .left img.logo {
           margin: 0; } }
-    footer .left span {
+    .search footer .left span {
       font-size: 14px;
       color: #9B9B9B;
       margin: 0 10px; }
       @media screen and (max-width: 600px) {
-        footer .left span {
+        .search footer .left span {
           display: block;
           margin: 10px 0; } }
-  footer .logo-bbb {
+  .search footer .logo-bbb {
     display: inline-block; }
     @media screen and (max-width: 600px) {
-      footer .logo-bbb {
+      .search footer .logo-bbb {
         float: right; } }
-  footer ul {
+  .search footer ul {
     float: right; }
     @media screen and (max-width: 600px) {
-      footer ul {
+      .search footer ul {
         margin-top: 5.5em;
         line-height: 1.8em;
         float: none; } }
-    footer ul li {
+    .search footer ul li {
       color: white;
       display: inline-block;
       margin: 0.5em 1.25em; }
       @media screen and (max-width: 600px) {
-        footer ul li {
+        .search footer ul li {
           display: block;
           margin: 0; } }
-    footer ul a {
+    .search footer ul a {
       text-decoration: none;
       color: white; }
-  footer p {
+  .search footer p {
     font-size: 0.875em;
     margin: 0.6em 0 0;
     float: left;
     color: #fff; }
-    footer p span {
+    .search footer p span {
       color: #9B9B9B; }
 
 .hero {
@@ -1764,7 +1811,10 @@ footer {
         position: absolute;
         right: 20px;
         top: 20px;
-        z-index: 9999; } }
+        z-index: 9999;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 100%;
+        padding: 0.9em 0.8em; } }
   .hero .overlay {
     background: rgba(125, 185, 227, 0.95);
     text-align: left;
@@ -1774,7 +1824,11 @@ footer {
       position: absolute;
       right: 20px;
       top: 20px;
-      z-index: 9999; }
+      z-index: 9999;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 100%;
+      padding: 0.9em 1em;
+      color: #fff; }
     .hero .overlay nav {
       text-align: left;
       top: 235px;
@@ -1809,7 +1863,8 @@ footer {
         .hero header.navigation {
           padding: 0; } }
       .hero header.navigation nav {
-        min-height: 0; }
+        min-height: 0;
+        float: right; }
         .hero header.navigation nav ul li.nav-link {
           line-height: 1.8; }
           .hero header.navigation nav ul li.nav-link a {

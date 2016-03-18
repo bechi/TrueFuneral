@@ -4,16 +4,46 @@
   <meta charset="UTF-8">
   <script type="text/javascript" src="js/bower_components/jquery-2.2.1.min/index.js"></script>
   <script type="text/javascript" src="js/base.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
   <title>Search result</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </head>
 <body class="search">
+
+  <section class="hamburguer">
+    <a id="trigger-overlay" type="button"><i class="icon-hamburguer"> </i></a>
+  </section>
+  <div class="overlay overlay-hugeinc">
+    <a type="button" class="close"><i class="icon-close"></i> </a>
+    <a href="home.html" class="logo-tf">
+      <img src="img/TF-logo-white.svg" alt="Logo Image" width="150">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">
+          <span>What is</span>
+          <p>Direct Cremation?</p>
+        </a></li>
+        <li><a href="#">
+          <span>What is</span>
+          <p>Direct Cremation?</p>
+        </a></li>
+      </ul>
+      <ul class="footer">
+        <div class="line"></div>
+
+        <li><a href=""> About Us </a></li>
+        <li><a href=""> Privacy Policy </a></li>
+        <li><a href=""> Terms & Conditions </a></li>
+      </ul>
+    </nav>
+  </div>
+
   <header class="navigation" role="banner">
     <a href="home.html" class="logo">
       <img src="img/TF-logo.svg" alt="True Funeral">
     </a>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><i class="icon-hamburguer"> </i></a>
     <div class="search-bar only-desktop">
       <form role="search">
         <input type="search" placeholder="Enter Search" />

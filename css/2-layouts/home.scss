@@ -10,6 +10,9 @@
       right: 20px;
       top: 20px;
       z-index: 9999;
+      border: 2px solid rgba(255,255,255,0.20);
+      border-radius: 100%;
+      padding: 0.9em 0.8em;
     }
   }
   .overlay {
@@ -22,6 +25,10 @@
       right: 20px;
       top: 20px;
       z-index: 9999;
+      border: 2px solid rgba(255,255,255,0.20);
+      border-radius: 100%;
+      padding: 0.9em 1em;
+      color: $white;
     }
     nav {
       text-align: left;
@@ -66,6 +73,7 @@
       }
       nav {
         min-height: 0;
+        float: right;
         ul li.nav-link {
           line-height: 1.8;
           a {
