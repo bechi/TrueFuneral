@@ -531,11 +531,15 @@
       @include media($mobile) {
         float: right;
       }
+      @include media ($small-mobile){
+        float: none;
+        display: block
+      }
     }
     ul {
       float: right;
       @include media($mobile){
-        margin-top: 5.5em;
+        margin-top: 5em;
         line-height: 1.8em;
         float: none;
       }

@@ -1772,11 +1772,15 @@ footer {
     @media screen and (max-width: 600px) {
       footer .logo-bbb {
         float: right; } }
+    @media screen and (max-width: 400px) {
+      footer .logo-bbb {
+        float: none;
+        display: block; } }
   footer ul {
     float: right; }
     @media screen and (max-width: 600px) {
       footer ul {
-        margin-top: 5.5em;
+        margin-top: 5em;
         line-height: 1.8em;
         float: none; } }
     footer ul li {
@@ -2029,6 +2033,11 @@ footer.home {
   @media screen and (max-width: 600px) {
     footer.home img.logo-bbb {
       float: right; } }
+  @media screen and (max-width: 400px) {
+    footer.home img.logo-bbb {
+      display: block;
+      float: none;
+      margin-top: 55px; } }
   footer.home ul {
     margin-top: 0.3em; }
     @media screen and (max-width: 600px) {
