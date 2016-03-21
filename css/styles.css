@@ -2452,6 +2452,25 @@ section.search {
           transform: scale(1.1);
           display: block; }
 
+.ib {
+  background-color: #F0F0F0; }
+  .ib .hero {
+    background: url("../img/ib-hero.jpg");
+    position: absolute;
+    width: 100%; }
+    .ib .hero h1 {
+      margin-bottom: 0.5em; }
+    .ib .hero p {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 34.11922%;
+      line-height: 1.7;
+      font-size: 18px; }
+      .ib .hero p:last-child {
+        margin-right: 0; }
+
 a {
   text-decoration: none; }
 

@@ -1,0 +1,17 @@
+.ib {
+  background-color: #F0F0F0;
+  .hero {
+    background: url("../img/ib-hero.jpg");
+    position: absolute;
+    width: 100%;
+    h1 {
+      margin-bottom: 0.5em;
+    }
+    p {
+      @include span-columns(4);
+      @include shift(4);
+      line-height: 1.7;
+      font-size: 18px;
+    }
+  }
+}
