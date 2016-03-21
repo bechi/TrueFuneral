@@ -6,12 +6,22 @@
     width: 100%;
     h1 {
       margin-bottom: 0.5em;
+      font-size: 22px;
+      @include media($mobile){
+        font-weight: 700;
+        margin-bottom: 2em;
+      }
     }
     p {
       @include span-columns(4);
       @include shift(4);
       line-height: 1.7;
       font-size: 18px;
+      @include media($mobile) {
+        width: 100%;
+        padding: 0 2em;
+        margin-left: 0;
+      }
     }
   }
 }
@@ -21,9 +31,6 @@
   max-width: 1024px;
   margin: 0 auto;
   padding: 600px 10px 50px;
-  @include media($mobile) {
-    padding: 300px 15px 50px 15px;
-  }
 
   .step {
     min-height: 250px;
@@ -39,6 +46,9 @@
             transform: translateY(100px) scale(0.9);
     -webkit-transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
+    @include media($mobile){
+      min-height: 310px;
+    }
     &.animated {
       opacity: 1;
       -webkit-transform: translateY(0) scale(1);
@@ -48,7 +58,7 @@
         transform: scale(1);
         padding: 40px;
         @include media($mobile) {
-          padding: 20px;
+          padding: 15px;
         }
       }
     }
@@ -76,12 +86,12 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
     @include media($mobile) {
-      width: 120px;
-      height: 120px;
-      line-height: 68px;
-      left: -35px;
-      bottom: -40px;
-      font-size: 34px;
+      width: 100px;
+      height: 100px;
+      line-height: 62px;
+      left: -25px;
+      bottom: 235px;
+      font-size: 30px;
     }
   }
 
@@ -93,12 +103,20 @@
     padding-right: 20px;
     &.m25t {
       margin-top: 25px;
+      @include media($mobile){
+        padding: 0;
+        width: 100%;
+        img {
+          width: 140px
+        }
+      }
     }
     @include media($mobile) {
       padding-right: 50px;
+      margin: auto;
+      float: none;
       img {
         width: 90px;
-        height: auto;
       }
     }
   }
@@ -121,7 +139,8 @@
     }
     @include media($mobile) {
       padding-left: 0px;
-      top: 0;
+      text-align: center;
+      width: 100%;
     }
   }
 }
@@ -139,11 +158,20 @@ section.not-included {
       font-size: 34px;
       color: $dark-gray;
       margin: 0 1em 2.5em;
+      line-height: 1.3;
+      @include media($mobile) {
+        font-weight: 100;
+        margin: 0 0 2.5em;
+      }
     }
     .column-3 {
       width: 20%;
       margin-right: 6.66%;
       float: left;
+      @include media($mobile) {
+        width: 100%;
+        float: none;
+      }
       &.mr0 {
         margin-right: 0;
       }
@@ -151,6 +179,10 @@ section.not-included {
         height: 135px;
         display: block;
         margin: 0 auto 2.5em;
+        @include media($mobile){
+          margin: 4em auto 1em;
+          height: 100px;
+        }
       }
       h3 {
         color: $primary-color;
@@ -171,6 +203,9 @@ section.search {
   overflow: hidden;
   padding: 100px 10px;
   text-align: center;
+  @include media($mobile){
+    display: none;
+  }
   .container {
     padding: 0 10px;
   }

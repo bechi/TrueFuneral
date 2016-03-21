@@ -1,17 +1,27 @@
 .ib {
   background-color: #F0F0F0;
   .hero {
-    background: url("../img/ib-hero.jpg");
+    background: url("../img/cremation-hero.jpg");
     position: absolute;
     width: 100%;
     h1 {
       margin-bottom: 0.5em;
+      font-size: 22px;
+      @include media($mobile){
+        font-weight: 700;
+        margin-bottom: 2em;
+      }
     }
     p {
       @include span-columns(4);
       @include shift(4);
       line-height: 1.7;
       font-size: 18px;
+      @include media($mobile) {
+        width: 100%;
+        padding: 0 2em;
+        margin-left: 0;
+      }
     }
   }
 }
