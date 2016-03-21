@@ -167,5 +167,12 @@ $(document).ready(function() {
     triggerBttn.addEventListener( 'click', toggleOverlay );
     closeBttn.addEventListener( 'click', toggleOverlay );
 
+
+   $('.step').waypoint(function(){
+       $(this.element).toggleClass('animated');
+    }, {
+      offset: '95%'
+    });
+
 });
 
