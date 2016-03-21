@@ -307,6 +307,9 @@ footer.home {
         display: block;
         margin: 0;
       }
+      &:hover a {
+        color: $light-gray;
+      }
     }
   }
   p {

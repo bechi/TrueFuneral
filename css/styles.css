@@ -1794,6 +1794,8 @@ footer {
         footer ul li {
           display: block;
           margin: 0; } }
+      footer ul li:hover a {
+        color: #9B9B9B; }
     footer ul a {
       text-decoration: none;
       color: white; }
@@ -2063,6 +2065,8 @@ footer.home {
       footer.home ul li {
         display: block;
         margin: 0; } }
+    footer.home ul li:hover a {
+      color: #9B9B9B; }
   footer.home p {
     margin: 0.6em 0 0; }
 
