@@ -154,48 +154,35 @@
         margin-bottom: 4em;
       }
 
-      .dropdown {
+      .filters {
         background-color: #EBEBEB;
         padding: 0.92em;
         min-height: em(68px);
         @include media($mobile){
           margin-bottom: 130px;
         }
-        .columns-6 {
+        select.columns-6 {
           @include span-columns(6);
-          .dropdown-container {
-            width: 100%;
-            @include fill-parent();
-            @include row(table);
+          -webkit-appearance:none;
+          font-size: 14px;
+          color: $dark-gray;
+          letter-spacing: 0.2px;
+          line-height: 18px;
+          border-radius: 100px;
+          padding: 0 1em 0 2.3em;
+          height: 38px;
+          border: none;
+          &.sorting {
+            background: url(../img/icon-sorting.png) no-repeat left;
+            background-size: 18px;
+            background-position-x: 10px;
+            background-color: #fff;
           }
-          .dropdown-button {
-            border-bottom-right-radius: 100px;
-            border-top-right-radius: 100px;
-            @include span-columns(9);
-            padding: 0.35em 2em 0.35em 0.3em;
-            text-align: left;
-            line-height: 2em;
-            font-size: em(14px);
-            color: $dark-gray;
-            letter-spacing: 0.2px;
-            @include ellipsis(100%);
-            i {
-              font-size: 9px;
-              position: absolute;
-              top: 12px;
-              right: 8px;
-              margin: 0.45em 0.5em 0;
-            }
-          }
-          .dropdown-description {
-            border-bottom-left-radius: 100px;
-            border-top-left-radius: 100px;
-            @include span-columns(3);
-            @include reset-display;
-            @include pad();
-            line-height: 2.2em;
-            font-size: em(13px);
-            color: $primary-color;
+          &.filter {
+            background: url(../img/icon-filter.png) no-repeat left;
+            background-size: 15px;
+            background-position-x: 10px;
+            background-color: #fff;
           }
         }
       }
