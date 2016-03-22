@@ -1443,32 +1443,41 @@ header.navigation {
       @media screen and (max-width: 600px) {
         .content section.sidebar .filters {
           margin-bottom: 130px; } }
-      .content section.sidebar .filters select.columns-6 {
+      .content section.sidebar .filters .select-box {
+        position: relative;
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 48.82117%;
-        -webkit-appearance: none;
-        font-size: 14px;
-        color: #5C5A58;
-        letter-spacing: 0.2px;
-        line-height: 18px;
-        border-radius: 100px;
-        padding: 0 1em 0 2.3em;
-        height: 38px;
-        border: none; }
-        .content section.sidebar .filters select.columns-6:last-child {
+        width: 48.82117%; }
+        .content section.sidebar .filters .select-box:last-child {
           margin-right: 0; }
-        .content section.sidebar .filters select.columns-6.sorting {
-          background: url(../img/icon-sorting.png) no-repeat left;
-          background-size: 18px;
-          background-position-x: 10px;
-          background-color: #fff; }
-        .content section.sidebar .filters select.columns-6.filter {
-          background: url(../img/icon-filter.png) no-repeat left;
-          background-size: 15px;
-          background-position-x: 10px;
-          background-color: #fff; }
+        .content section.sidebar .filters .select-box select {
+          -webkit-appearance: none;
+          font-size: 14px;
+          color: #5C5A58;
+          letter-spacing: 0.2px;
+          line-height: 18px;
+          border-radius: 100px;
+          padding: 0 1em 0 2.5em;
+          height: 38px;
+          border: none;
+          width: 100%; }
+          .content section.sidebar .filters .select-box select.sorting {
+            background: url(../img/icon-sorting.png) no-repeat left;
+            background-size: 18px;
+            background-position-x: 10px;
+            background-color: #fff; }
+          .content section.sidebar .filters .select-box select.filter {
+            background: url(../img/icon-filter.png) no-repeat left;
+            background-size: 15px;
+            background-position-x: 10px;
+            background-color: #fff; }
+        .content section.sidebar .filters .select-box i {
+          position: absolute;
+          top: 16px;
+          right: 13px;
+          font-size: 7px;
+          color: #5C5A58; }
     .content section.sidebar .list .item {
       padding: 1.2em;
       border-bottom: 1px solid #E8E4E4;

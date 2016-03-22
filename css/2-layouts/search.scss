@@ -161,28 +161,39 @@
         @include media($mobile){
           margin-bottom: 130px;
         }
-        select.columns-6 {
+        .select-box {
+          position: relative;
           @include span-columns(6);
-          -webkit-appearance:none;
-          font-size: 14px;
-          color: $dark-gray;
-          letter-spacing: 0.2px;
-          line-height: 18px;
-          border-radius: 100px;
-          padding: 0 1em 0 2.3em;
-          height: 38px;
-          border: none;
-          &.sorting {
-            background: url(../img/icon-sorting.png) no-repeat left;
-            background-size: 18px;
-            background-position-x: 10px;
-            background-color: #fff;
+          select {
+            -webkit-appearance:none;
+            font-size: 14px;
+            color: $dark-gray;
+            letter-spacing: 0.2px;
+            line-height: 18px;
+            border-radius: 100px;
+            padding: 0 1em 0 2.5em;
+            height: 38px;
+            border: none;
+            width: 100%;
+            &.sorting {
+              background: url(../img/icon-sorting.png) no-repeat left;
+              background-size: 18px;
+              background-position-x: 10px;
+              background-color: #fff;
+            }
+            &.filter {
+              background: url(../img/icon-filter.png) no-repeat left;
+              background-size: 15px;
+              background-position-x: 10px;
+              background-color: #fff;
+            }
           }
-          &.filter {
-            background: url(../img/icon-filter.png) no-repeat left;
-            background-size: 15px;
-            background-position-x: 10px;
-            background-color: #fff;
+          i {
+            position: absolute;
+            top: 16px;
+            right: 13px;
+            font-size: 7px;
+            color: $dark-gray;
           }
         }
       }
