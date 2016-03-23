@@ -2177,12 +2177,16 @@ footer.home {
 .cremation {
   background-color: #F0F0F0; }
   .cremation .hero {
-    background: url("../img/cremation-hero.jpg");
+    background: #5C5A58;
     position: absolute;
-    width: 100%; }
+    width: 100%;
+    min-height: 540px; }
     .cremation .hero h1 {
-      margin-bottom: 0.5em;
-      font-size: 22px; }
+      margin: 1em 1.3em 0.3em;
+      font-size: 40px;
+      font-weight: 100; }
+      .cremation .hero h1 b {
+        border-bottom: 3px solid #6FB2E0; }
       @media screen and (max-width: 600px) {
         .cremation .hero h1 {
           font-weight: 700;
@@ -2207,57 +2211,28 @@ footer.home {
   line-height: 1.5em;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 600px 10px 50px; }
+  padding: 430px 10px 50px; }
   .container .step {
-    min-height: 250px;
+    max-height: 200px;
     background: white;
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
     position: relative;
-    padding: 58px 50px 50px 50px;
+    padding: 55px;
     overflow: hidden;
-    margin-bottom: 50px;
-    opacity: 0;
-    -webkit-transform: translateY(100px) scale(0.9);
-    transform: translateY(100px) scale(0.9);
-    -webkit-transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
-    transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1); }
+    margin-bottom: 15px; }
     @media screen and (max-width: 600px) {
       .container .step {
         min-height: 310px; } }
-    .container .step.animated {
-      opacity: 1;
-      -webkit-transform: translateY(0) scale(1);
-      transform: translateY(0) scale(1); }
-      .container .step.animated .number {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        padding: 40px; }
-        @media screen and (max-width: 600px) {
-          .container .step.animated .number {
-            padding: 15px; } }
     @media screen and (max-width: 600px) {
       .container .step {
         margin-bottom: 30px; } }
   .container .number {
-    color: white;
-    background: #FFC76E;
-    border-radius: 50%;
-    width: 260px;
-    height: 260px;
-    line-height: 176px;
-    text-align: center;
-    font-size: 68px;
-    position: absolute;
-    left: -70px;
-    bottom: -80px;
-    border: 2px solid #FFC76E;
-    padding: 0px;
-    background-clip: content-box;
-    -webkit-transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
-    transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5); }
+    color: #FFC76E;
+    font-size: 100px;
+    font-weight: 700;
+    float: left;
+    padding: 30px 50px; }
     @media screen and (max-width: 600px) {
       .container .number {
         width: 100px;
@@ -2268,10 +2243,8 @@ footer.home {
         font-size: 30px; } }
   .container .icon {
     width: 35%;
-    margin-left: 164px;
-    float: left;
-    text-align: center;
-    padding-right: 20px; }
+    float: right;
+    text-align: center; }
     .container .icon.m25t {
       margin-top: 25px; }
       @media screen and (max-width: 600px) {
@@ -2291,14 +2264,14 @@ footer.home {
     width: 45%;
     float: left;
     padding-left: 50px;
-    position: relative;
-    top: 20px; }
+    position: relative; }
     .container .text h3 {
       color: #6FB2E0;
       font-size: 21px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      margin: 0; }
+      margin: 0;
+      font-weight: 700; }
     .container .text p {
       color: #5C5A58;
       margin: 10px 0 0 0; }
@@ -2312,16 +2285,18 @@ section.not-included {
   background: #fff;
   width: 100%;
   overflow: hidden;
-  padding: 70px 10px; }
+  padding: 70px 50px; }
   section.not-included .container {
     padding: 0 10px;
     font-size: 18px;
-    text-align: center; }
+    text-align: center;
+    max-width: 1280px; }
     section.not-included .container h2 {
       font-size: 34px;
       color: #5C5A58;
       margin: 0 1em 2.5em;
-      line-height: 1.3; }
+      line-height: 1.3;
+      font-weight: 100; }
       @media screen and (max-width: 600px) {
         section.not-included .container h2 {
           font-weight: 100;
@@ -2347,7 +2322,8 @@ section.not-included {
       section.not-included .container .column-3 h3 {
         color: #6FB2E0;
         letter-spacing: 1.2px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        margin-bottom: 0.5em; }
       section.not-included .container .column-3 p {
         color: #5C5A58;
         line-height: 26px; }
@@ -2366,7 +2342,8 @@ section.search {
   section.search h2 {
     font-size: 34px;
     color: #fff;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    font-weight: 100; }
   section.search form.search-bar {
     float: left;
     display: block;
@@ -2413,12 +2390,16 @@ section.search {
 .ib {
   background-color: #F0F0F0; }
   .ib .hero {
-    background: url("../img/cremation-hero.jpg");
+    background: #5C5A58;
     position: absolute;
-    width: 100%; }
+    width: 100%;
+    min-height: 540px; }
     .ib .hero h1 {
-      margin-bottom: 0.5em;
-      font-size: 22px; }
+      margin: 1em 1.3em 0.3em;
+      font-size: 40px;
+      font-weight: 100; }
+      .ib .hero h1 b {
+        border-bottom: 3px solid #6FB2E0; }
       @media screen and (max-width: 600px) {
         .ib .hero h1 {
           font-weight: 700;

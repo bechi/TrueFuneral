@@ -1,12 +1,17 @@
 .cremation {
   background-color: #F0F0F0;
   .hero {
-    background: url("../img/cremation-hero.jpg");
+    background:$dark-gray;
     position: absolute;
     width: 100%;
+    min-height: 540px;
     h1 {
-      margin-bottom: 0.5em;
-      font-size: 22px;
+      margin: 1em 1.3em 0.3em;
+      font-size: 40px;
+      font-weight: 100;
+      b {
+        border-bottom: 3px solid $primary-color;
+      }
       @include media($mobile){
         font-weight: 700;
         margin-bottom: 2em;
@@ -30,61 +35,30 @@
   line-height: 1.5em;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 600px 10px 50px;
+  padding: 430px 10px 50px;
 
   .step {
-    min-height: 250px;
+    max-height: 200px;
     background: white;
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
     position: relative;
-    padding: 58px 50px 50px 50px;
+    padding: 55px;
     overflow: hidden;
-    margin-bottom: 50px;
-    opacity: 0;
-    -webkit-transform: translateY(100px) scale(0.9);
-            transform: translateY(100px) scale(0.9);
-    -webkit-transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
-    transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
+    margin-bottom: 15px;
     @include media($mobile){
       min-height: 310px;
-    }
-    &.animated {
-      opacity: 1;
-      -webkit-transform: translateY(0) scale(1);
-      transform: translateY(0) scale(1);
-      .number {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        padding: 40px;
-        @include media($mobile) {
-          padding: 15px;
-        }
-      }
     }
     @include media($mobile) {
       margin-bottom: 30px;
     }
   }
   .number {
-    color: white;
-    background: #FFC76E;
-    border-radius: 50%;
-    width: 260px;
-    height: 260px;
-    line-height: 176px;
-    text-align: center;
-    font-size: 68px;
-    position: absolute;
-    left: -70px;
-    bottom: -80px;
-    border: 2px solid #FFC76E;
-    padding: 0px;
-    background-clip: content-box;
-    -webkit-transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
-    transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    color: #FFC76E;
+    font-size: 100px;
+    font-weight: 700;
+    float: left;
+    padding: 30px 50px;
     @include media($mobile) {
       width: 100px;
       height: 100px;
@@ -97,10 +71,8 @@
 
   .icon {
     width: 35%;
-    margin-left: 164px;
-    float: left;
+    float: right;
     text-align: center;
-    padding-right: 20px;
     &.m25t {
       margin-top: 25px;
       @include media($mobile){
@@ -125,13 +97,13 @@
     float: left;
     padding-left: 50px;
     position: relative;
-    top: 20px;
     h3 {
       color: $primary-color;
       font-size: 21px;
       letter-spacing: 2px;
       text-transform: uppercase;
       margin: 0;
+      font-weight: 700;
     }
     p {
       color: $dark-gray;
@@ -149,16 +121,18 @@ section.not-included {
   background: $white;
   width: 100%;
   overflow: hidden;
-  padding: 70px 10px;
+  padding: 70px 50px;
   .container {
     padding: 0 10px;
     font-size: 18px;
     text-align: center;
+    max-width: 1280px;
     h2 {
       font-size: 34px;
       color: $dark-gray;
       margin: 0 1em 2.5em;
       line-height: 1.3;
+      font-weight: 100;
       @include media($mobile) {
         font-weight: 100;
         margin: 0 0 2.5em;
@@ -188,6 +162,7 @@ section.not-included {
         color: $primary-color;
         letter-spacing: 1.2px;
         text-transform: uppercase;
+        margin-bottom: 0.5em;
       }
       p {
         color: $dark-gray;
@@ -213,6 +188,7 @@ section.search {
     font-size: 34px;
     color: $white;
     margin-bottom: 1em;
+    font-weight: 100;
   }
   form.search-bar {
     @include span-columns(8);

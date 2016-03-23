@@ -1,12 +1,17 @@
 .ib {
   background-color: #F0F0F0;
   .hero {
-    background: url("../img/cremation-hero.jpg");
+    background:$dark-gray;
     position: absolute;
     width: 100%;
+    min-height: 540px;
     h1 {
-      margin-bottom: 0.5em;
-      font-size: 22px;
+      margin: 1em 1.3em 0.3em;
+      font-size: 40px;
+      font-weight: 100;
+      b {
+        border-bottom: 3px solid $primary-color;
+      }
       @include media($mobile){
         font-weight: 700;
         margin-bottom: 2em;
