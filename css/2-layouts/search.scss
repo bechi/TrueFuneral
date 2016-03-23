@@ -271,7 +271,7 @@
                 box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.14), 0px 8px 15px 0px rgba(0,0,0,0.15);
                 border-radius: 5px;
                 @include media ($mobile) {
-                  top: 60px;
+                  top: 50px;
                   height: 100%;
                   width: 100%;
                   border-radius: 0;
@@ -365,7 +365,7 @@
                   background: $light-blue;
                   padding: 1em 1em;
                   @include media ($mobile) {
-                    padding: 1em 1em 8em;
+                    padding: 1em 1em 5em;
                     position: relative;
                     top: 0;
                   }
