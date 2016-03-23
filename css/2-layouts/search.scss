@@ -528,11 +528,11 @@
           height: 310px !important;
           left: -120px !important;
           top: 14px !important;
+          border-radius: 4px;
         }
         .gm-style-iw + div {display: none; }
       }
       .map-content {
-        border-radius: 4px;
         background: $white;
         text-align: center;
         width: 280px;

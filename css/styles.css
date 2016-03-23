@@ -1683,11 +1683,11 @@ header.navigation {
         width: 280px !important;
         height: 310px !important;
         left: -120px !important;
-        top: 14px !important; }
+        top: 14px !important;
+        border-radius: 4px; }
       .content .map #map .gm-style-iw + div {
         display: none; }
     .content .map .map-content {
-      border-radius: 4px;
       background: #fff;
       text-align: center;
       width: 280px;
@@ -2178,6 +2178,12 @@ footer.home {
   @media screen and (max-width: 600px) {
     .profile .content .map {
       display: none; } }
+  .profile .content .map #map .gm-style-iw {
+    top: -38px !important; }
+  .profile .content .map .map-content .left {
+    float: left; }
+  .profile .content .map .map-content .right {
+    float: right; }
 .profile .pricing-details {
   padding: 50px 40px 40px 44em;
   background: #D4E6F3;

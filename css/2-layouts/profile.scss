@@ -130,6 +130,19 @@
       @include media($mobile){
         display: none;
       }
+      #map {
+        .gm-style-iw {
+          top: -38px !important;
+        }
+      }
+      .map-content {
+        .left {
+          float: left;
+        }
+        .right {
+          float: right;
+        }
+      }
     }
   }
 
