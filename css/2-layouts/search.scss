@@ -143,6 +143,35 @@
         color: $dark-gray;
       }
     }
+    .bg-empty-state {
+      background: $white;
+      position: fixed;
+      width: 470px;
+      height: 100%;
+      z-index: 998;
+      padding: 20% 5em;
+      text-align: center;
+      @include media($mobile) {
+        width: 100%;
+      }
+      p {
+        font-size: 18px;
+        margin: 2em 0 0.7em;
+        color: $dark-gray;
+      }
+      span {
+        display: block;
+        font-size: 15px;
+        color: $light-gray;
+        line-height: 20px;
+        margin-bottom: 1em;
+      }
+      a.button {
+        background: $primary-color;
+        color: white;
+        padding: 0.8em 1.2em;
+      }
+    }
     section.sidebar {
       @include position(absolute, null);
       width: em(470);

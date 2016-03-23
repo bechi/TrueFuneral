@@ -1358,6 +1358,31 @@ header.navigation {
     .content .bg-loading p {
       font-size: 18px;
       color: #5C5A58; }
+  .content .bg-empty-state {
+    background: #fff;
+    position: fixed;
+    width: 470px;
+    height: 100%;
+    z-index: 998;
+    padding: 20% 5em;
+    text-align: center; }
+    @media screen and (max-width: 600px) {
+      .content .bg-empty-state {
+        width: 100%; } }
+    .content .bg-empty-state p {
+      font-size: 18px;
+      margin: 2em 0 0.7em;
+      color: #5C5A58; }
+    .content .bg-empty-state span {
+      display: block;
+      font-size: 15px;
+      color: #9B9B9B;
+      line-height: 20px;
+      margin-bottom: 1em; }
+    .content .bg-empty-state a.button {
+      background: #6FB2E0;
+      color: white;
+      padding: 0.8em 1.2em; }
   .content section.sidebar {
     position: absolute;
     width: 29.375em;
@@ -2458,6 +2483,22 @@ section.search {
           width: 100%;
           padding: 0 2em;
           margin-left: 0; } }
+
+#fsvs-body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+#fsvs-body > .slide {
+  padding: 40px;
+  text-align: center; }
+
+#fsvs-body > .slide.nth-class-1 {
+  background: #eb7347; }
 
 a {
   text-decoration: none; }

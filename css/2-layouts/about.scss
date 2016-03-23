@@ -1,0 +1,18 @@
+#fsvs-body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#fsvs-body>.slide {
+    padding: 40px;
+    text-align: center;
+}
+
+#fsvs-body>.slide.nth-class-1 {
+    background: #eb7347;
+}
