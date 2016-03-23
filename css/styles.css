@@ -1507,9 +1507,12 @@ header.navigation {
             background: #5C5A58;
             padding: 1em;
             text-align: center;
-            min-height: 61px;
             color: #fff;
             font-size: 20px; }
+            .content section.sidebar .list .item .info .modal .modal-inner .phone span {
+              vertical-align: middle; }
+              .content section.sidebar .list .item .info .modal .modal-inner .phone span i {
+                vertical-align: middle; }
           .content section.sidebar .list .item .info .modal .modal-inner .pricing-details-2 {
             background: #fff;
             padding: 2em; }

@@ -300,9 +300,14 @@
                   background: $dark-gray;
                   padding: 1em;
                   text-align: center;
-                  min-height: 61px;
                   color: $white;
                   font-size: 20px;
+                  span {
+                    vertical-align: middle;
+                    i {
+                      vertical-align: middle;
+                    }
+                  }
                 }
                 .pricing-details-2 {
                   background: $white;
