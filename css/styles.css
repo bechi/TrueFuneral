@@ -1475,7 +1475,7 @@ header.navigation {
             background-color: #549CCE; }
         .content section.sidebar .list .item .info .modal .modal-inner {
           width: 424px;
-          min-height: 533px;
+          min-height: 540px;
           padding: 0;
           text-align: center;
           box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.14), 0px 8px 15px 0px rgba(0, 0, 0, 0.15);
@@ -1552,7 +1552,7 @@ header.navigation {
           .content section.sidebar .list .item .info .modal .modal-inner .pricing-details {
             text-align: left;
             background: #D4E6F3;
-            padding: 1em 1em 2.9em; }
+            padding: 1em 1em; }
             @media screen and (max-width: 600px) {
               .content section.sidebar .list .item .info .modal .modal-inner .pricing-details {
                 padding: 1em 1em 8em;
@@ -1581,7 +1581,8 @@ header.navigation {
               .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content {
                 background: #fff;
                 border: none;
-                position: relative; }
+                position: relative;
+                padding: 0.7em 1.618em; }
                 @media screen and (max-width: 600px) {
                   .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content {
                     float: left; } }
@@ -1605,20 +1606,21 @@ header.navigation {
                       margin-top: 0.5em; }
                     .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr.total .right {
                       font-size: 28px; }
-              .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .table-footer {
-                background: #EDF7FE;
-                position: absolute;
-                left: 0;
-                bottom: -59px;
-                width: 100%;
-                padding: 1em 1.5em;
-                border-bottom-left-radius: 4px;
-                border-bottom-right-radius: 4px; }
-                .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .table-footer p {
-                  font-size: 14px;
-                  color: #9B9B9B;
-                  letter-spacing: 0.5px;
-                  line-height: 18px; }
+            .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .table-footer {
+              background: #EDF7FE;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              padding: 1.5em 1.5em;
+              text-align: left;
+              border-bottom-left-radius: 4px;
+              border-bottom-right-radius: 4px; }
+              .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .table-footer p {
+                font-size: 14px;
+                color: #9B9B9B;
+                letter-spacing: 0.5px;
+                line-height: 1.5; }
       .content section.sidebar .list .item .price {
         float: right; }
         .content section.sidebar .list .item .price small {
@@ -1679,7 +1681,7 @@ header.navigation {
       .content .map .map-content h1 {
         margin: 0.5em; }
     .content .map .bodyContent {
-      font-family: "effra", helvetica, arial; }
+      font-family: "effra", sans-serif; }
       .content .map .bodyContent p.ubication {
         margin: 0 1em;
         padding: 1em;
@@ -2504,7 +2506,7 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: "effra", helvetica, arial; }
+  font-family: "effra", sans-serif; }
 
 a.button {
   padding: 0.5em 1.5em;
