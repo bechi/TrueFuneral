@@ -1614,54 +1614,59 @@ header.navigation {
       width: 17.5em; }
       .content .map .map-content h1 {
         margin: 0.5em; }
-    .content .map .bodyContent p.ubication {
-      margin: 0 1em;
-      padding: 1em;
-      border-bottom: 1px solid #E5E5E5; }
-      .content .map .bodyContent p.ubication i {
-        color: #6FB2E0;
-        font-size: 0.875em; }
-    .content .map .bodyContent i.icon-star {
-      color: #9B9B9B;
-      font-size: 1em; }
-    .content .map .bodyContent .price {
-      padding: 1em;
-      overflow: hidden; }
-      .content .map .bodyContent .price small {
-        font-size: 0.875em;
+    .content .map .bodyContent {
+      font-family: "effra", helvetica, arial; }
+      .content .map .bodyContent p.ubication {
+        margin: 0 1em;
+        padding: 1em;
+        font-weight: 400;
+        color: #5C5A58;
+        border-bottom: 1px solid #E5E5E5; }
+        .content .map .bodyContent p.ubication i {
+          color: #6FB2E0;
+          font-size: 15px;
+          margin-right: 5px; }
+      .content .map .bodyContent i.icon-star {
+        color: #9B9B9B;
+        font-size: 1em; }
+      .content .map .bodyContent small {
+        font-size: 12px;
         color: #9B9B9B;
         font-weight: 400; }
-      .content .map .bodyContent .price p {
-        margin: 0.3em 0;
-        font-size: 1.5em;
-        color: #000;
-        font-weight: 400; }
-        .content .map .bodyContent .price p i {
-          font-size: 1.125em;
-          color: #6FB2E0; }
-      .content .map .bodyContent .price .left {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%; }
-        .content .map .bodyContent .price .left:last-child {
+      .content .map .bodyContent .price {
+        padding: 1em;
+        overflow: hidden; }
+        .content .map .bodyContent .price p {
+          margin: 0.3em 0;
+          font-size: 1.5em;
+          color: #000;
+          font-weight: 400; }
+          .content .map .bodyContent .price p i {
+            font-size: 1.125em;
+            color: #6FB2E0; }
+        .content .map .bodyContent .price .left {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          .content .map .bodyContent .price .left:last-child {
+            margin-right: 0; }
+        .content .map .bodyContent .price .right {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
           margin-right: 0; }
-      .content .map .bodyContent .price .right {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-right: 0; }
-        .content .map .bodyContent .price .right:last-child {
-          margin-right: 0; }
-    .content .map .bodyContent a.button {
-      background: #6FB2E0;
-      color: white;
-      margin-top: 1em;
-      width: 100%;
-      padding: 1em;
-      font-weight: 400;
-      font-size: 16px; }
+          .content .map .bodyContent .price .right:last-child {
+            margin-right: 0; }
+      .content .map .bodyContent a.button {
+        background: #6FB2E0;
+        color: white;
+        margin-top: 1em;
+        width: 100%;
+        padding: 1em;
+        font-weight: 400;
+        font-size: 16px; }
 
 footer {
   position: fixed;
@@ -1835,14 +1840,9 @@ footer {
   .hero .accordion-tabs {
     position: relative;
     border: none;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
+    max-width: 640px;
+    margin: 0 auto;
     text-align: left; }
-    .hero .accordion-tabs:last-child {
-      margin-right: 0; }
     @media screen and (max-width: 768px) {
       .hero .accordion-tabs {
         width: 92%;
@@ -1987,8 +1987,6 @@ footer.home {
       footer.home ul li {
         display: block;
         margin: 0; } }
-    footer.home ul li:hover a {
-      color: #9B9B9B; }
   footer.home p {
     margin: 0.6em 0 0; }
 
