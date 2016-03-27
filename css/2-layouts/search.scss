@@ -309,6 +309,11 @@
                       vertical-align: middle;
                     }
                   }
+                  a.button.only-mobile {
+                    @include media($mobile){
+                      display: none;
+                    }
+                  }
                 }
                 .pricing-details-2 {
                   background: $white;
