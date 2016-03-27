@@ -264,6 +264,7 @@
             }
             .modal {
               .modal-inner {
+                white-space: normal;
                 width: 424px;
                 min-height: 540px;
                 padding: 0;
@@ -447,6 +448,36 @@
                       letter-spacing: 0.5px;
                       line-height: 1.5;
                     }
+                  }
+                }
+                &.rates {
+                  width: 500px;
+                  min-height: 280px;
+                  top: 50px;
+                  padding: 2em;
+                  color: $dark-gray;
+                  i {
+                    font-size: 22px;
+                    color: $ultra-light-gray;
+                  }
+                  h3 {
+                    font-size: 20px;
+                    margin-top: 1.2em;
+                    letter-spacing: 2.5px;
+                    line-height: 29px;
+                    font-weight: 700;
+                  }
+                  p {
+                    margin: 0.5em 0 1.7em;
+                    font-size: 15px;
+                    line-height: 23px;
+                    color: $dark-gray;
+                  }
+                  a.button {
+                    padding: 1em 2em;
+                    font-weight: 600;
+                    font-size: 14px;
+                    letter-spacing: 0.5px;
                   }
                 }
               }

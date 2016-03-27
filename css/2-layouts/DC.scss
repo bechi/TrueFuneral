@@ -204,8 +204,8 @@ section.search {
     a.location-link {
       text-transform: uppercase;
       position: absolute;
-      right: 70px;
-      top: 20px;
+      right: 75px;
+      top: 15px;
       font-size: 11px;
       color: $light-gray;
       @include media($tablet) {

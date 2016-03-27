@@ -1474,6 +1474,7 @@ header.navigation {
           .content section.sidebar .list .item .info a.button:hover {
             background-color: #549CCE; }
         .content section.sidebar .list .item .info .modal .modal-inner {
+          white-space: normal;
           width: 424px;
           min-height: 540px;
           padding: 0;
@@ -1624,6 +1625,31 @@ header.navigation {
                 color: #9B9B9B;
                 letter-spacing: 0.5px;
                 line-height: 1.5; }
+          .content section.sidebar .list .item .info .modal .modal-inner.rates {
+            width: 500px;
+            min-height: 280px;
+            top: 50px;
+            padding: 2em;
+            color: #5C5A58; }
+            .content section.sidebar .list .item .info .modal .modal-inner.rates i {
+              font-size: 22px;
+              color: #E5E5E5; }
+            .content section.sidebar .list .item .info .modal .modal-inner.rates h3 {
+              font-size: 20px;
+              margin-top: 1.2em;
+              letter-spacing: 2.5px;
+              line-height: 29px;
+              font-weight: 700; }
+            .content section.sidebar .list .item .info .modal .modal-inner.rates p {
+              margin: 0.5em 0 1.7em;
+              font-size: 15px;
+              line-height: 23px;
+              color: #5C5A58; }
+            .content section.sidebar .list .item .info .modal .modal-inner.rates a.button {
+              padding: 1em 2em;
+              font-weight: 600;
+              font-size: 14px;
+              letter-spacing: 0.5px; }
       .content section.sidebar .list .item .price {
         float: right; }
         .content section.sidebar .list .item .price small {
@@ -2450,8 +2476,8 @@ section.search {
     section.search form.search-bar a.location-link {
       text-transform: uppercase;
       position: absolute;
-      right: 70px;
-      top: 20px;
+      right: 75px;
+      top: 15px;
       font-size: 11px;
       color: #9B9B9B; }
       @media screen and (max-width: 768px) {
