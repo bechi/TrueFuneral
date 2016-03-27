@@ -491,6 +491,9 @@
 
           .price {
             float: right;
+            &.m20t {
+              margin-top: 20px;
+            }
 
             small {
               font-size: em(12);

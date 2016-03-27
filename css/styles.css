@@ -1655,6 +1655,8 @@ header.navigation {
               letter-spacing: 0.5px; }
       .content section.sidebar .list .item .price {
         float: right; }
+        .content section.sidebar .list .item .price.m20t {
+          margin-top: 20px; }
         .content section.sidebar .list .item .price small {
           font-size: 0.75em;
           color: #9B9B9B; }
