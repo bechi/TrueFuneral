@@ -1,4 +1,5 @@
 .profile {
+  background: $light-blue;
   section.hamburguer a {
     display: none;
     @include media($tablet){
@@ -60,7 +61,6 @@
     .sidebar {
       width: 40em;
       padding: 20px 50px;
-      z-index: 998;
       margin-bottom: 0;
       @include media($mobile){
         width: 100%;
@@ -147,12 +147,7 @@
   }
 
   .pricing-details {
-    padding: 50px 40px 40px 44em;
-    background: $light-blue;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 64.25px;
+    padding: 50px 40px 80px 44em;
     @include media ($mobile) {
       padding: 1em 1em 8em;
       position: relative;
