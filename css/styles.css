@@ -1514,9 +1514,11 @@ header.navigation {
               vertical-align: middle; }
               .content section.sidebar .list .item .info .modal .modal-inner .phone span i {
                 vertical-align: middle; }
-            @media screen and (max-width: 600px) {
-              .content section.sidebar .list .item .info .modal .modal-inner .phone a.button.only-mobile {
-                display: none; } }
+            .content section.sidebar .list .item .info .modal .modal-inner .phone a.button.only-mobile {
+              display: none; }
+              @media screen and (max-width: 600px) {
+                .content section.sidebar .list .item .info .modal .modal-inner .phone a.button.only-mobile {
+                  display: inline-block; } }
           .content section.sidebar .list .item .info .modal .modal-inner .pricing-details-2 {
             background: #fff;
             padding: 2em; }

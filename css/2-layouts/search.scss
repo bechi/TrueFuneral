@@ -310,8 +310,9 @@
                     }
                   }
                   a.button.only-mobile {
+                    display: none;
                     @include media($mobile){
-                      display: none;
+                      display: inline-block;
                     }
                   }
                 }
