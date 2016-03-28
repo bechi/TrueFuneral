@@ -1416,19 +1416,19 @@ header.navigation {
           letter-spacing: 0.2px;
           line-height: 18px;
           border-radius: 100px;
-          padding: 0 1em 0 2.5em;
+          padding: 0 1em 0 3em;
           height: 38px;
           border: none;
           width: 100%; }
           .content section.sidebar .filters .select-box select.sorting {
             background: url(../img/icon-sorting.png) no-repeat left;
             background-size: 18px;
-            background-position-x: 10px;
+            background-position-x: 15px;
             background-color: #fff; }
           .content section.sidebar .filters .select-box select.filter {
             background: url(../img/icon-filter.png) no-repeat left;
             background-size: 15px;
-            background-position-x: 10px;
+            background-position-x: 15px;
             background-color: #fff; }
         .content section.sidebar .filters .select-box i {
           position: absolute;
