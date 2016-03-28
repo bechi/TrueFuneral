@@ -5,7 +5,7 @@
     @include media($tablet){
       display: block;
       color: $dark-gray;
-      position: absolute;
+      position: fixed;
       right: 7px;
       top: 7px;
       z-index: 9999;

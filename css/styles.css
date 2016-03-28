@@ -1243,7 +1243,7 @@ section.hamburguer a {
     section.hamburguer a {
       display: block;
       color: #5C5A58;
-      position: absolute;
+      position: fixed;
       right: 7px;
       top: 7px;
       z-index: 9999;
@@ -1310,7 +1310,8 @@ header.navigation {
       border: 2px solid #DCDCDC;
       border-radius: 4px;
       padding: 0.9em;
-      color: #5C5A58; }
+      color: #5C5A58;
+      font-style: normal; }
     header.navigation .search-bar form button[type=submit] {
       font-size: 24px;
       background-color: #6FB2E0;
@@ -2113,7 +2114,7 @@ footer.home {
       .profile section.hamburguer a {
         display: block;
         color: #5C5A58;
-        position: absolute;
+        position: fixed;
         right: 7px;
         top: 7px;
         z-index: 9999;
