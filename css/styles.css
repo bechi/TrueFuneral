@@ -1362,8 +1362,9 @@ header.navigation {
     position: fixed;
     width: 470px;
     height: 100%;
+    top: 132px;
     z-index: 998;
-    padding: 20% 5em;
+    padding: 12% 5em;
     text-align: center; }
     @media screen and (max-width: 600px) {
       .content .bg-empty-state {
@@ -1502,10 +1503,10 @@ header.navigation {
               font-size: 25px;
               color: #fff; }
           .content section.sidebar .list .item .info .modal .modal-inner .pad-2 {
-            padding: 2em; }
+            padding: 1.4em 2em; }
           .content section.sidebar .list .item .info .modal .modal-inner .phone {
             background: #5C5A58;
-            padding: 1em;
+            padding: 0.8em;
             text-align: center;
             color: #fff;
             font-size: 20px; }
@@ -1590,7 +1591,7 @@ header.navigation {
                 background: #fff;
                 border: none;
                 position: relative;
-                padding: 0.7em 1.618em; }
+                padding: 1.5em 1.618em; }
                 @media screen and (max-width: 600px) {
                   .content section.sidebar .list .item .info .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content {
                     float: left; } }
@@ -2167,7 +2168,10 @@ footer.home {
       font-size: 13px;
       color: #9B9B9B;
       letter-spacing: 0.54px;
-      padding: 0.35em 0.9em; }
+      padding: 0.35em 0.9em;
+      line-height: 1.3; }
+      .profile .content .sidebar button.back i {
+        font-size: 11px; }
       .profile .content .sidebar button.back:hover {
         background-color: #CBCBCB;
         color: #fff; }

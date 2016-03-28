@@ -147,8 +147,9 @@
       position: fixed;
       width: 470px;
       height: 100%;
+      top: 132px;
       z-index: 998;
-      padding: 20% 5em;
+      padding: 12% 5em;
       text-align: center;
       @include media($mobile) {
         width: 100%;
@@ -294,11 +295,11 @@
                   }
                 }
                 .pad-2 {
-                  padding: 2em;
+                  padding: 1.4em 2em;
                 }
                 .phone {
                   background: $dark-gray;
-                  padding: 1em;
+                  padding: 0.8em;
                   text-align: center;
                   color: $white;
                   font-size: 20px;
@@ -402,7 +403,7 @@
                         background: $white;
                         border: none;
                         position: relative;
-                        padding: 0.7em 1.618em;
+                        padding: 1.5em 1.618em;
                         @include media($mobile){
                           float: left;
                         }
