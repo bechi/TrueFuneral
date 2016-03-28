@@ -203,7 +203,7 @@
             border-radius: 100px;
             padding: 0 1em 0 3em;
             height: 38px;
-            border: none;
+            border: none !important;
             width: 100%;
             &.sorting {
               background: url(../img/icon-sorting.png) no-repeat left;
@@ -264,6 +264,9 @@
               }
             }
             .modal {
+              .modal-fade-screen {
+                background: rgba(92,89,88,0.85);
+              }
               .modal-inner {
                 white-space: normal;
                 width: 424px;

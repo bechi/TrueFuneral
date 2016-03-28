@@ -1418,7 +1418,7 @@ header.navigation {
           border-radius: 100px;
           padding: 0 1em 0 3em;
           height: 38px;
-          border: none;
+          border: none !important;
           width: 100%; }
           .content section.sidebar .filters .select-box select.sorting {
             background: url(../img/icon-sorting.png) no-repeat left;
@@ -1474,6 +1474,8 @@ header.navigation {
           font-size: 13px; }
           .content section.sidebar .list .item .info a.button:hover {
             background-color: #549CCE; }
+        .content section.sidebar .list .item .info .modal .modal-fade-screen {
+          background: rgba(92, 89, 88, 0.85); }
         .content section.sidebar .list .item .info .modal .modal-inner {
           white-space: normal;
           width: 424px;
