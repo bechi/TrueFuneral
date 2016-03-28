@@ -1798,21 +1798,17 @@ footer {
       position: relative;
       padding: 2em 2.2em; } }
   footer .left {
-    float: left; }
-    footer .left img.logo {
-      margin-top: 5px;
-      margin-left: 1em; }
-      @media screen and (max-width: 600px) {
-        footer .left img.logo {
-          margin: 0; } }
+    float: left;
+    margin: 0.5em 1em; }
     footer .left span {
       font-size: 14px;
-      color: #9B9B9B;
-      margin: 0 10px; }
+      color: #9B9B9B; }
       @media screen and (max-width: 600px) {
         footer .left span {
           display: block;
           margin: 10px 0; } }
+      footer .left span.company {
+        color: #fff; }
   footer .logo-bbb {
     display: inline-block; }
     @media screen and (max-width: 600px) {
@@ -1823,7 +1819,8 @@ footer {
         float: none;
         display: block; } }
   footer ul {
-    float: right; }
+    float: right;
+    font-size: 14px; }
     @media screen and (max-width: 600px) {
       footer ul {
         margin-top: 3.5em;
@@ -1832,7 +1829,7 @@ footer {
     footer ul li {
       color: white;
       display: inline-block;
-      margin: 0.5em 1.25em; }
+      margin: 0.7em 1.25em; }
       @media screen and (max-width: 600px) {
         footer ul li {
           display: block;
@@ -2076,14 +2073,14 @@ footer {
 
 footer.home {
   position: relative;
-  padding: 3.125em 6.25em;
+  padding: 3em 6.25em;
   overflow: hidden; }
   @media screen and (max-width: 600px) {
     footer.home {
       padding: 2em 2.2em; } }
   footer.home .left {
     float: left;
-    margin-right: 1.5em; }
+    margin: 0 1.5em; }
   @media screen and (max-width: 600px) {
     footer.home img.logo-bbb {
       float: right; } }

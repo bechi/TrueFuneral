@@ -276,14 +276,14 @@
 
 footer.home {
   position: relative;
-  padding: em(50px) em(100px);
+  padding: 3em 6.25em;
   overflow: hidden;
   @include media($mobile){
     padding: 2em 2.2em;
   }
   .left {
     float: left;
-    margin-right: 1.5em;
+    margin: 0 1.5em;
   }
   img.logo-bbb {
     @include media($mobile) {
