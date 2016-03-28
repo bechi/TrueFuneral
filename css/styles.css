@@ -1825,7 +1825,7 @@ footer {
     float: right; }
     @media screen and (max-width: 600px) {
       footer ul {
-        margin-top: 5em;
+        margin-top: 3.5em;
         line-height: 1.8em;
         float: none; } }
     footer ul li {
