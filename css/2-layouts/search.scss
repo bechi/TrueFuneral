@@ -65,11 +65,11 @@
       width: 100%;
       border: none;
       .logo img {
-        width: 183px;
+        width: 146px;
         margin: 0.4em 0 0;
         float: left;
         @include media($tablet) {
-          width: 150px;
+          width: 132px;
         }
       }
       .search-bar {

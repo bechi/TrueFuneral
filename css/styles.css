@@ -1296,12 +1296,12 @@ header.navigation {
   width: 100%;
   border: none; }
   header.navigation .logo img {
-    width: 183px;
+    width: 146px;
     margin: 0.4em 0 0;
     float: left; }
     @media screen and (max-width: 768px) {
       header.navigation .logo img {
-        width: 150px; } }
+        width: 132px; } }
   header.navigation .search-bar {
     float: left;
     padding: 0.4em; }
