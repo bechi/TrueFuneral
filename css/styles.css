@@ -1732,6 +1732,13 @@ header.navigation {
       top: 0;
       font-size: 15px; }
       .content .map .map-content h1 {
+        display: block !important;
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
         font-size: 20px;
         margin: 1.3em 1.3em 0.5em; }
         .content .map .map-content h1 a {

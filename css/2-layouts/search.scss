@@ -585,6 +585,8 @@
         top: 0;
         font-size:  15px;
         h1 {
+          display: block !important;
+          @include ellipsis(100%);
           font-size: 20px;
           margin: 1.3em 1.3em 0.5em;
           a {
