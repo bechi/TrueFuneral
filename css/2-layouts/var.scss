@@ -10,6 +10,8 @@ $black: #000;
 
 
 $desktop: new-breakpoint(max-width 1200px 12);
+$small-desktop: new-breakpoint(max-width 1000px 12);
 $tablet:  new-breakpoint(max-width 768px 12);
+$small-tablet:  new-breakpoint(max-width 768px 12);
 $mobile:  new-breakpoint(max-width 600px 4);
 $small-mobile:  new-breakpoint(max-width 400px 4);

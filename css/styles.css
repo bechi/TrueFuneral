@@ -1851,7 +1851,7 @@ footer {
 
 .hero {
   color: #fff;
-  min-height: 43.75em; }
+  min-height: 700px; }
   .hero section.hamburguer a {
     display: none; }
     @media screen and (max-width: 768px) {
@@ -1933,9 +1933,13 @@ footer {
             padding: 0;
             margin: 30px; } }
   .hero h1 {
-    font-size: 40px;
+    font-weight: 300;
+    font-size: 46px;
     line-height: 1.3em;
     margin: 2em 1.3em 1.3em; }
+    @media screen and (max-width: 1000px) {
+      .hero h1 {
+        font-size: 35px; } }
     @media screen and (max-width: 768px) {
       .hero h1 {
         font-size: 30px;
@@ -1944,6 +1948,8 @@ footer {
       .hero h1 {
         font-size: 19px;
         margin: 4em 0.5em 0.5em; } }
+    .hero h1 b {
+      font-weight: 500; }
   .hero p.location {
     font-size: 0.8125em;
     display: none; }

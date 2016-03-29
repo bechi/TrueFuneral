@@ -1,6 +1,6 @@
 .hero  {
   color: $white;
-  min-height: em(700px);
+  min-height: 700px;
   section.hamburguer a {
     display: none;
     @include media($tablet){
@@ -102,9 +102,13 @@
 
 
   h1 {
-    font-size: 40px;
+    font-weight: 300;
+    font-size: 46px;
     line-height: 1.3em;
     margin: 2em 1.3em 1.3em;
+    @include media($small-desktop){
+      font-size: 35px;
+    }
     @include media($tablet){
       font-size: 30px;
       margin: 3em 0.5em 0.5em;
@@ -112,6 +116,9 @@
     @include media($mobile) {
       font-size: 19px;
       margin: 4em 0.5em 0.5em;
+    }
+    b {
+      font-weight: 500;
     }
   }
   p {
