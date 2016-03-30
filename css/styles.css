@@ -1392,8 +1392,9 @@ header.navigation {
       padding: 0.8em 1.2em; }
   .content section.sidebar {
     position: absolute;
-    width: 29.375em;
+    width: 470px;
     margin-bottom: 3.8em;
+    top: 67px;
     background-color: #fff; }
     @media screen and (max-width: 600px) {
       .content section.sidebar {
@@ -1401,6 +1402,10 @@ header.navigation {
         position: relative;
         margin-bottom: 4em; } }
     .content section.sidebar .filters {
+      position: fixed;
+      width: 470px;
+      top: 64px;
+      z-index: 1;
       background-color: #EBEBEB;
       padding: 0.92em;
       min-height: 4.25em; }
@@ -1679,7 +1684,7 @@ header.navigation {
         .content section.sidebar .list .item .price p {
           font-size: 1.5em;
           color: #000;
-          margin: 0.1em 0 0.5em 0; }
+          margin: 0.1em 0 0.2em 0; }
           .content section.sidebar .list .item .price p a i {
             font-size: 0.875em;
             color: #6FB2E0; }

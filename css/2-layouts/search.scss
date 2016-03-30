@@ -175,8 +175,9 @@
     }
     section.sidebar {
       @include position(absolute, null);
-      width: em(470);
+      width: 470px;
       margin-bottom: 3.8em;
+      top: 67px;
       background-color: $white;
       @include media($mobile) {
         width: 100%;
@@ -185,6 +186,10 @@
       }
 
       .filters {
+        position: fixed;
+        width: 470px;
+        top: 64px;
+        z-index: 1;
         background-color: #EBEBEB;
         padding: 0.92em;
         min-height: em(68px);
@@ -515,7 +520,7 @@
             p {
               font-size: em(24);
               color: $black;
-              margin: 0.1em 0 0.5em 0;
+              margin: 0.1em 0 0.2em 0;
 
               a i {
                 font-size: em(14);
