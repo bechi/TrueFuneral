@@ -1487,6 +1487,9 @@ header.navigation {
             background-color: #549CCE; }
         .content section.sidebar .list .item .info .modal .modal-fade-screen {
           background: rgba(92, 89, 88, 0.85); }
+          @media screen and (max-height: 700px) {
+            .content section.sidebar .list .item .info .modal .modal-fade-screen {
+              padding-top: 0; } }
         .content section.sidebar .list .item .info .modal .modal-inner {
           white-space: normal;
           width: 424px;

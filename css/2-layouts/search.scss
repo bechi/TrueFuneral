@@ -271,6 +271,9 @@
             .modal {
               .modal-fade-screen {
                 background: rgba(92,89,88,0.85);
+                @include media($small-height) {
+                  padding-top: 0;
+                }
               }
               .modal-inner {
                 white-space: normal;
