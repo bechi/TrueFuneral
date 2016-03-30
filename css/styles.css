@@ -1317,7 +1317,8 @@ header.navigation {
       border-radius: 4px;
       padding: 0.9em;
       color: #5C5A58;
-      font-style: normal; }
+      font-style: normal;
+      outline: 0; }
     header.navigation .search-bar form button[type=submit] {
       font-size: 24px;
       background-color: #6FB2E0;
@@ -2025,12 +2026,13 @@ footer {
         border: 0;
         padding: 0.9em;
         border-radius: 3px;
-        color: #5C5A58; }
+        color: #5C5A58;
+        outline: 0; }
       .hero .accordion-tabs .tab-content form.search-bar a.location-link {
         text-transform: uppercase;
         position: absolute;
         right: 76px;
-        top: 17px;
+        top: 17pex;
         font-size: 11px;
         color: #9B9B9B; }
         @media screen and (max-width: 768px) {

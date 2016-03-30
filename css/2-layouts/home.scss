@@ -178,12 +178,13 @@
           padding: 0.9em;
           border-radius: 3px;
           color: $dark-gray;
+          outline: 0;
         }
         a.location-link {
           text-transform: uppercase;
           position: absolute;
           right: 76px;
-          top: 17px;
+          top: 17pex;
           font-size: 11px;
           color: $light-gray;
           @include media($tablet) {
