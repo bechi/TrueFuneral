@@ -681,12 +681,19 @@
     .left {
       float: left;
       margin: 0.5em 1em;
+      @include media ($mobile){
+        margin: 0;
+      }
+      @include media($small-mobile) {
+        margin: 0 20px 0 0;
+        float: none;
+      }
       span {
         font-size: 14px;
         color: $light-gray;
         @include media($mobile) {
           display: block;
-          margin: 10px 0;
+          margin: 0 0 5px;
         }
         &.company {
           color: $white;
@@ -700,7 +707,8 @@
       }
       @include media ($small-mobile){
         float: none;
-        display: block
+        display: block;
+        margin: 0.5em 0;
       }
     }
     ul {
@@ -710,6 +718,9 @@
         margin-top: 3.5em;
         line-height: 1.8em;
         float: none;
+      }
+      @include media($small-mobile){
+        margin-top: 2em;
       }
       li {
         color: white;

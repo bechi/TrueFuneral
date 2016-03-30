@@ -1833,13 +1833,20 @@ footer {
   footer .left {
     float: left;
     margin: 0.5em 1em; }
+    @media screen and (max-width: 600px) {
+      footer .left {
+        margin: 0; } }
+    @media screen and (max-width: 400px) {
+      footer .left {
+        margin: 0 20px 0 0;
+        float: none; } }
     footer .left span {
       font-size: 14px;
       color: #9B9B9B; }
       @media screen and (max-width: 600px) {
         footer .left span {
           display: block;
-          margin: 10px 0; } }
+          margin: 0 0 5px; } }
       footer .left span.company {
         color: #fff; }
   footer .logo-bbb {
@@ -1850,7 +1857,8 @@ footer {
     @media screen and (max-width: 400px) {
       footer .logo-bbb {
         float: none;
-        display: block; } }
+        display: block;
+        margin: 0.5em 0; } }
   footer ul {
     float: right;
     font-size: 14px; }
@@ -1859,6 +1867,9 @@ footer {
         margin-top: 3.5em;
         line-height: 1.8em;
         float: none; } }
+    @media screen and (max-width: 400px) {
+      footer ul {
+        margin-top: 2em; } }
     footer ul li {
       color: white;
       display: inline-block;
