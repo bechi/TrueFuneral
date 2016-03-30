@@ -201,6 +201,7 @@
           position: relative;
           @include span-columns(6);
           select {
+            outline: 0;
             -webkit-appearance:none;
             font-size: 14px;
             color: $dark-gray;
