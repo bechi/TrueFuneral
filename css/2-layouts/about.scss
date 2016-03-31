@@ -17,11 +17,23 @@
 }
 section {
   img.bg {
-    width: 100%;
+    width: 127%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -300px;
     z-index: -1;
+    @include media($desktop) {
+      width: 118%;
+      left: -182px;
+    }
+    @include media($small-desktop) {
+      width: 129%;
+      left: -144px;
+    }
+    @include media($small-tablet) {
+      width: 124%;
+      left: -107px;
+    }
   }
   footer.home {
     position: absolute;
