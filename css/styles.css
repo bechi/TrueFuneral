@@ -2031,7 +2031,7 @@ footer {
       @media screen and (max-width: 768px) {
         .hero .accordion-tabs .tab-content {
           position: relative;
-          top: 0; } }
+          top: -2px; } }
       .hero .accordion-tabs .tab-content form.search-bar input[type=search] {
         font-size: 16px;
         font-style: normal;
