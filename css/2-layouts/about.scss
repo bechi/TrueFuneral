@@ -1,3 +1,20 @@
+.onepage-wrapper {
+  @include media($desktop) {
+    height: 77% !important;
+  }
+  @include media($small-desktop) {
+    height: 65% !important;
+  }
+  @include media($tablet) {
+    height: 55% !important;
+  }
+  @include media($small-tablet) {
+    height: 49% !important;
+  }
+  @include media($mobile) {
+    height: 36% !important;
+  }
+}
 section {
   img.bg {
     width: 100%;

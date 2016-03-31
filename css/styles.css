@@ -2592,6 +2592,22 @@ section.search {
           padding: 0 2em;
           margin-left: 0; } }
 
+@media screen and (max-width: 1200px) {
+  .onepage-wrapper {
+    height: 77% !important; } }
+@media screen and (max-width: 1000px) {
+  .onepage-wrapper {
+    height: 65% !important; } }
+@media screen and (max-width: 768px) {
+  .onepage-wrapper {
+    height: 55% !important; } }
+@media screen and (max-width: 768px) {
+  .onepage-wrapper {
+    height: 49% !important; } }
+@media screen and (max-width: 600px) {
+  .onepage-wrapper {
+    height: 36% !important; } }
+
 section img.bg {
   width: 100%;
   position: absolute;
