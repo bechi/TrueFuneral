@@ -1,23 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
+  <title>Home</title>
   <script type="text/javascript" src="js/bower_components/jquery-2.2.1.min/index.js"></script>
   <script type="text/javascript" src="js/base.js"></script>
   <script type="text/javascript" src="js/modernizr.custom.js"></script>
-  <title>Search result</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
   <script src="https://use.typekit.net/dvx2mzn.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.ico"/>
+  <script type="text/javascript" src="js/bower_components/jquery-2.2.1.min/index.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/0-plugins/onepage-scroll.css">
 </head>
 <body>
-  <div id="fsvs-body">
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
+
+  <div class="main">
+    <section>
+      <img class="bg" src="img/bg-home.jpg">
+      <header class="navigation" role="banner">
+        <a href="home.html" class="logo-tf">
+          <img src="img/TF-logo-white.svg" alt="Logo Image">
+        </a>
+
+        <nav role="navigation">
+          <ul id="js-navigation-menu" class="navigation-menu show">
+            <li class="nav-link"><a href="javascript:void(0)">What is Immediate Burial?</a></li>
+            <li class="nav-link"><a href="javascript:void(0)">What is Direct Cremation? </a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="text">
+        <h1>TrueFuneral helps make one of life's toughest decisions easier.</h1>
+        <a href="" class="button">Learn how</a>
+      </div>
+    </section>
+    <section>
+      <img class="bg" src="img/bg-home.jpg">
+    </section>
+    <section>
+      <img class="bg" src="img/bg-home.jpg">
+    </section>
+    <section>
+      <img class="bg" src="img/bg-home.jpg">
+      <footer class="home">
+        <div class="left">
+          <div><img src="img/TF-logo-white.svg" alt="True Funeral" width="130"></div>
+          <p>©2016 - All rights reserved</p>
+        </div>
+        <img class="logo-bbb" src="img/BBB-logo.png" alt="" width="105">
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+        </ul>
+      </footer>
+    </section>
   </div>
+
+  <script type="text/javascript">
+    $(".main").onepage_scroll();
+  </script>
+
 </body>
 </html>
