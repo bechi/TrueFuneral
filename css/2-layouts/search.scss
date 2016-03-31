@@ -75,6 +75,9 @@
       .search-bar {
         float: left;
         padding: 0.4em;
+        @include media($mobile) {
+          width: 100%;
+        }
         form {
           input[type=search] {
             background-color: $white;
@@ -94,11 +97,6 @@
             right: 0;
             bottom: 0;
             padding: 0 0.55em;
-          }
-        }
-        &.only-desktop {
-          @include media($mobile){
-            display: none;
           }
         }
       }
@@ -183,7 +181,8 @@
       @include media($mobile) {
         width: 100%;
         position: relative;
-        margin-bottom: 4em;
+        margin-bottom: 8em;
+        top: 248px;
       }
 
       .filters {
@@ -197,6 +196,7 @@
         @include media($mobile){
           margin-bottom: 130px;
           width: 100%;
+          top: 114px;
         }
         .select-box {
           position: relative;
@@ -576,7 +576,7 @@
         top: 64px;
         @include media ($mobile){
           position: absolute;
-          top: 68px;
+          top: 118px;
           left: 0;
           height: 130px;
           overflow: hidden;

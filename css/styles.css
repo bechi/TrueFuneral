@@ -1311,6 +1311,9 @@ header.navigation {
   header.navigation .search-bar {
     float: left;
     padding: 0.4em; }
+    @media screen and (max-width: 600px) {
+      header.navigation .search-bar {
+        width: 100%; } }
     header.navigation .search-bar form input[type=search] {
       background-color: #fff;
       border: 2px solid #DCDCDC;
@@ -1328,9 +1331,6 @@ header.navigation {
       right: 0;
       bottom: 0;
       padding: 0 0.55em; }
-    @media screen and (max-width: 600px) {
-      header.navigation .search-bar.only-desktop {
-        display: none; } }
   header.navigation nav {
     float: right; }
     header.navigation nav ul li.nav-link {
@@ -1401,7 +1401,8 @@ header.navigation {
       .content section.sidebar {
         width: 100%;
         position: relative;
-        margin-bottom: 4em; } }
+        margin-bottom: 8em;
+        top: 248px; } }
     .content section.sidebar .filters {
       position: fixed;
       width: 470px;
@@ -1413,7 +1414,8 @@ header.navigation {
       @media screen and (max-width: 600px) {
         .content section.sidebar .filters {
           margin-bottom: 130px;
-          width: 100%; } }
+          width: 100%;
+          top: 114px; } }
       .content section.sidebar .filters .select-box {
         position: relative;
         float: left;
@@ -1729,7 +1731,7 @@ header.navigation {
     @media screen and (max-width: 600px) {
       .content .map {
         position: absolute;
-        top: 68px;
+        top: 118px;
         left: 0;
         height: 130px;
         overflow: hidden; } }
