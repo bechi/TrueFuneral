@@ -1401,7 +1401,7 @@ header.navigation {
       .content section.sidebar {
         width: 100%;
         position: relative;
-        margin-bottom: 8em;
+        padding-bottom: 8em;
         top: 248px; } }
     .content section.sidebar .filters {
       position: fixed;
