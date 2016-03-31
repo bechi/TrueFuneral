@@ -2064,7 +2064,7 @@ footer {
         border-bottom-right-radius: 3px;
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
-        padding: 0.5em 0.8em; }
+        padding: 0.35em 0.8em; }
         .hero .accordion-tabs .tab-content form.search-bar button[type=submit]:hover {
           background-color: #6FB2E0; }
           .hero .accordion-tabs .tab-content form.search-bar button[type=submit]:hover i {
