@@ -182,7 +182,7 @@
         width: 100%;
         position: relative;
         padding-bottom: 8em;
-        top: 248px;
+        top: 118px;
       }
 
       .filters {
@@ -568,6 +568,18 @@
         }
       }
     }
+    .map-mobile-search {
+      display: none;
+      @include media($mobile){
+        display: block;
+        width: 100%;
+        height: 130px;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+    }
     .map {
         position: fixed;
         right: 0;
@@ -575,11 +587,7 @@
         bottom: 50px;
         top: 64px;
         @include media ($mobile){
-          position: absolute;
-          top: 118px;
-          left: 0;
-          height: 130px;
-          overflow: hidden;
+          display: none;
         }
       #map {
         width: 100%;

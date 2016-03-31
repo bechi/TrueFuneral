@@ -1403,7 +1403,7 @@ header.navigation {
         width: 100%;
         position: relative;
         padding-bottom: 8em;
-        top: 248px; } }
+        top: 118px; } }
     .content section.sidebar .filters {
       position: fixed;
       width: 470px;
@@ -1723,6 +1723,16 @@ header.navigation {
               display: block;
               font-size: 14px;
               line-height: 22px; }
+  .content .map-mobile-search {
+    display: none; }
+    @media screen and (max-width: 600px) {
+      .content .map-mobile-search {
+        display: block;
+        width: 100%;
+        height: 130px;
+        overflow: hidden; }
+        .content .map-mobile-search img {
+          width: 100%; } }
   .content .map {
     position: fixed;
     right: 0;
@@ -1731,11 +1741,7 @@ header.navigation {
     top: 64px; }
     @media screen and (max-width: 600px) {
       .content .map {
-        position: absolute;
-        top: 118px;
-        left: 0;
-        height: 130px;
-        overflow: hidden; } }
+        display: none; } }
     .content .map #map {
       width: 100%;
       height: 100%; }
