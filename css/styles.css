@@ -1418,6 +1418,8 @@ header.navigation {
           top: 114px; } }
       .content section.sidebar .filters .select-box {
         position: relative;
+        background-color: #fff;
+        border-radius: 100px;
         float: left;
         display: block;
         margin-right: 2.35765%;
@@ -1425,13 +1427,18 @@ header.navigation {
         .content section.sidebar .filters .select-box:last-child {
           margin-right: 0; }
         .content section.sidebar .filters .select-box select {
+          display: inline-block;
+          max-width: 80%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-wrap: normal;
           outline: 0;
           -webkit-appearance: none;
           font-size: 14px;
           color: #5C5A58;
           letter-spacing: 0.2px;
           line-height: 18px;
-          border-radius: 100px;
           padding: 0 1em 0 3em;
           height: 38px;
           border: none !important;
@@ -1439,13 +1446,11 @@ header.navigation {
           .content section.sidebar .filters .select-box select.sorting {
             background: url(../img/icon-sorting.png) no-repeat left;
             background-size: 18px;
-            background-position-x: 15px;
-            background-color: #fff; }
+            background-position-x: 15px; }
           .content section.sidebar .filters .select-box select.filter {
             background: url(../img/icon-filter.png) no-repeat left;
             background-size: 15px;
-            background-position-x: 15px;
-            background-color: #fff; }
+            background-position-x: 15px; }
         .content section.sidebar .filters .select-box i {
           position: absolute;
           top: 16px;

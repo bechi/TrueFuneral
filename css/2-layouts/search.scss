@@ -200,15 +200,17 @@
         }
         .select-box {
           position: relative;
+          background-color: #fff;
+          border-radius: 100px;
           @include span-columns(6);
           select {
+            @include ellipsis(80%);
             outline: 0;
             -webkit-appearance:none;
             font-size: 14px;
             color: $dark-gray;
             letter-spacing: 0.2px;
             line-height: 18px;
-            border-radius: 100px;
             padding: 0 1em 0 3em;
             height: 38px;
             border: none !important;
@@ -217,13 +219,11 @@
               background: url(../img/icon-sorting.png) no-repeat left;
               background-size: 18px;
               background-position-x: 15px;
-              background-color: #fff;
             }
             &.filter {
               background: url(../img/icon-filter.png) no-repeat left;
               background-size: 15px;
               background-position-x: 15px;
-              background-color: #fff;
             }
           }
           i {
