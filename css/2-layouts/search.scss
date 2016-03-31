@@ -196,6 +196,7 @@
         min-height: em(68px);
         @include media($mobile){
           margin-bottom: 130px;
+          width: 100%;
         }
         .select-box {
           position: relative;

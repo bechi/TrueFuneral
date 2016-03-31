@@ -1412,7 +1412,8 @@ header.navigation {
       min-height: 4.25em; }
       @media screen and (max-width: 600px) {
         .content section.sidebar .filters {
-          margin-bottom: 130px; } }
+          margin-bottom: 130px;
+          width: 100%; } }
       .content section.sidebar .filters .select-box {
         position: relative;
         float: left;
