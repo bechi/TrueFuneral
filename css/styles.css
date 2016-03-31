@@ -2608,26 +2608,28 @@ section.search {
   .onepage-wrapper {
     height: 36% !important; } }
 
-section img.bg {
-  width: 127%;
-  position: absolute;
-  top: 0;
-  left: -300px;
-  z-index: -1; }
-  @media screen and (max-width: 1200px) {
-    section img.bg {
-      width: 118%;
-      left: -182px; } }
-  @media screen and (max-width: 1000px) {
-    section img.bg {
-      width: 129%;
-      left: -144px; } }
-  @media screen and (max-width: 768px) {
-    section img.bg {
-      width: 124%;
-      left: -107px; } }
-section footer.home {
-  position: absolute; }
+section {
+  overflow: hidden; }
+  section img.bg {
+    width: 127%;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    z-index: -1; }
+    @media screen and (max-width: 1200px) {
+      section img.bg {
+        width: 118%;
+        left: -182px; } }
+    @media screen and (max-width: 1000px) {
+      section img.bg {
+        width: 129%;
+        left: -144px; } }
+    @media screen and (max-width: 768px) {
+      section img.bg {
+        width: 124%;
+        left: -107px; } }
+  section footer.home {
+    position: absolute; }
 
 section.hamburguer a {
   display: none; }
