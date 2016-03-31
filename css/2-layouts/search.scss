@@ -484,6 +484,9 @@
                   top: 50px;
                   padding: 2em;
                   color: $dark-gray;
+                  @include media($mobile){
+                    width: 100%;
+                  }
                   i {
                     font-size: 22px;
                     color: $ultra-light-gray;

@@ -1663,6 +1663,9 @@ header.navigation {
             top: 50px;
             padding: 2em;
             color: #5C5A58; }
+            @media screen and (max-width: 600px) {
+              .content section.sidebar .list .item .info .modal .modal-inner.rates {
+                width: 100%; } }
             .content section.sidebar .list .item .info .modal .modal-inner.rates i {
               font-size: 22px;
               color: #E5E5E5; }
