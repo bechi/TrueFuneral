@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script type="text/javascript" src="js/bower_components/jquery-2.2.1.min/index.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.typekit.net/dvx2mzn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+</head>
+<body class="map">
+  <header class="navigation" role="banner">
+    <a class="back" href="search.html"><i class="icon-arrow-left"> </i></a>
+    <a href="home.html" class="logo">
+      <img src="img/TF-logo.svg" alt="True Funeral">
+    </a>
+  </header>
+  <div class="map">
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+
+        var contentString = '<div class="map-content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 class="firstHeading"><a href="{{permalink}}">{{name}}</a></h1>'+
+            '<div class="bodyContent">'+
+            '<small><i class="icon-star"> </i><i class="icon-star"> </i> <i class="icon-star"> </i> <i class="icon-star"> </i><i class="icon-star"></i>  16 ratings</small><p class="location"><i class="icon-pin"></i> 148 San Antonio St</p> <div class="price"><small>Direct Cremation</small><p><a href="#"> <img src="img/icon-cremation.png" alt="" width="11"></a> $1,600<a href="#"></a> </p></div><a class="button"> <i class="icon-phone"> </i> Contact </a>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        google.maps.event.addListener(infowindow, 'domready', function() {
+
+           // Reference to the DIV which receives the contents of the infowindow using jQuery
+           var iwOuter = $('.gm-style-iw');
+
+           /* The DIV we want to change is above the .gm-style-iw DIV.
+            * So, we use jQuery and create a iwBackground variable,
+            * and took advantage of the existing reference to .gm-style-iw for the previous DIV with .prev().
+            */
+           var iwBackground = iwOuter.prev();
+
+           // Remove the background shadow DIV
+           iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+
+           // Remove the white background DIV
+           iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+
+           // Moves the arrow 76px to the left margin
+           iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'z-index: 9999 !important;'})
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          title: 'Uluru (Ayers Rock)',
+          icon: 'img/pin-1.png'
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map);
+        //Change the marker icon
+        marker.setIcon('img/close-windows-map.svg');
+        });
+
+
+
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+  </div>
+</body>
+</html>

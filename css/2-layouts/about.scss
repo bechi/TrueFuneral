@@ -1,187 +1,189 @@
-.onepage-wrapper {
-  @include media($desktop) {
-    height: 77% !important;
-  }
-  @include media($small-desktop) {
-    height: 65% !important;
-  }
-  @include media($tablet) {
-    height: 55% !important;
-  }
-  @include media($small-tablet) {
-    height: 49% !important;
-  }
-  @include media($mobile) {
-    height: 36% !important;
-  }
-}
-section {
-  overflow: hidden;
-  img.bg {
-    width: 127%;
-    position: absolute;
-    top: 0;
-    left: -300px;
-    z-index: -1;
+.about {
+  .onepage-wrapper {
     @include media($desktop) {
-      width: 118%;
-      left: -182px;
+      height: 77% !important;
     }
     @include media($small-desktop) {
-      width: 129%;
-      left: -144px;
+      height: 65% !important;
+    }
+    @include media($tablet) {
+      height: 55% !important;
     }
     @include media($small-tablet) {
-      width: 124%;
-      left: -107px;
+      height: 49% !important;
+    }
+    @include media($mobile) {
+      height: 36% !important;
     }
   }
-  footer.home {
-    position: absolute;
+  section {
+    overflow: hidden;
+    img.bg {
+      width: 127%;
+      position: absolute;
+      top: 0;
+      left: -300px;
+      z-index: -1;
+      @include media($desktop) {
+        width: 118%;
+        left: -182px;
+      }
+      @include media($small-desktop) {
+        width: 129%;
+        left: -144px;
+      }
+      @include media($small-tablet) {
+        width: 124%;
+        left: -107px;
+      }
+    }
+    footer.home {
+      position: absolute;
+    }
   }
-}
-section.hamburguer a {
-  display: none;
-  @include media($tablet){
-    display: block;
-    color: $white;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 9999;
-    border: 2px solid rgba(255,255,255,0.20);
-    border-radius: 100%;
-    padding: 0.9em 0.8em;
-  }
-}
-.overlay {
-  background: rgba(125,185,227,0.95);
-  text-align: left;
-  padding: 1.5em 2em;
-  .close {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 9999;
-    border: 2px solid rgba(255,255,255,0.20);
-    border-radius: 100%;
-    padding: 0.9em 1em;
-    color: $white;
-  }
-  nav {
-    text-align: left;
-    top: 235px;
-    height: auto;
-    width: auto;
-    ul.footer {
-      padding-top: 35px;
-      font-size: 18px;
-      line-height: 44px;
+  section.hamburguer a {
+    display: none;
+    @include media($tablet){
       display: block;
-    }
-    .line {
-      margin-bottom: 25px;
-      width: 31px;
-      height: 2px;
-      background-color: $white;
-    }
-  }
-  li {
-    span {
-      font-size: 18px;
-      line-height: 26px;
-    }
-    p {
-      font-size: 25px;
-      font-weight: 700;
+      color: $white;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 9999;
+      border: 2px solid rgba(255,255,255,0.20);
+      border-radius: 100%;
+      padding: 0.9em 0.8em;
     }
   }
-}
-header {
-  position: relative;
-  box-shadow: none;
-  &.navigation {
-    background-color: transparent;
-    min-height: none;
-    border-bottom: none;
-    padding: 60px 72px 60px 100px;
+  .overlay {
+    background: rgba(125,185,227,0.95);
     text-align: left;
-    box-shadow: none;
-    @include media($tablet) {
-      padding: 0;
+    padding: 1.5em 2em;
+    .close {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 9999;
+      border: 2px solid rgba(255,255,255,0.20);
+      border-radius: 100%;
+      padding: 0.9em 1em;
+      color: $white;
     }
     nav {
-      min-height: 0;
-      float: right;
-      ul li.nav-link {
-        line-height: 1.8;
-        a {
-          color: $white;
-          @include media($mobile){
-            color: $dark-gray;
-          }
-          &:hover {
-            color: #fff;
-            opacity: 0.5;
+      text-align: left;
+      top: 235px;
+      height: auto;
+      width: auto;
+      ul.footer {
+        padding-top: 35px;
+        font-size: 18px;
+        line-height: 44px;
+        display: block;
+      }
+      .line {
+        margin-bottom: 25px;
+        width: 31px;
+        height: 2px;
+        background-color: $white;
+      }
+    }
+    li {
+      span {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      p {
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+  }
+  header {
+    position: relative;
+    box-shadow: none;
+    &.navigation {
+      background-color: transparent;
+      min-height: none;
+      border-bottom: none;
+      padding: 60px 72px 60px 100px;
+      text-align: left;
+      box-shadow: none;
+      @include media($tablet) {
+        padding: 0;
+      }
+      nav {
+        min-height: 0;
+        float: right;
+        ul li.nav-link {
+          line-height: 1.8;
+          a {
+            color: $white;
+            @include media($mobile){
+              color: $dark-gray;
+            }
+            &:hover {
+              color: #fff;
+              opacity: 0.5;
+            }
           }
         }
       }
-    }
-    .logo-tf img {
-      margin: 0;
-      width: 183px;
-      @include media($tablet) {
-        width: 150px;
-        padding: 0;
-        margin: 30px;
+      .logo-tf img {
+        margin: 0;
+        width: 183px;
+        @include media($tablet) {
+          width: 150px;
+          padding: 0;
+          margin: 30px;
+        }
       }
     }
   }
-}
 
-.text {
-  @include span-columns(6);
-  @include shift(3);
-  margin-top: 20%;
-  text-align: center;
-  h1 {
-    font-weight: 300;
-    font-size: 46px;
-    line-height: 1.3em;
+  .text {
+    @include span-columns(6);
+    @include shift(3);
+    margin-top: 20%;
+    text-align: center;
+    h1 {
+      font-weight: 300;
+      font-size: 46px;
+      line-height: 1.3em;
 
-    color: $white;
+      color: $white;
 
-    @include media($small-desktop){
-      font-size: 35px;
+      @include media($small-desktop){
+        font-size: 35px;
+      }
+      @include media($tablet){
+        font-size: 30px;
+        margin: 3em 0.5em 0.5em;
+      }
+      @include media($mobile) {
+        font-size: 19px;
+        margin: 4em 0.5em 0.5em;
+      }
+      b {
+        font-weight: 500;
+      }
     }
-    @include media($tablet){
-      font-size: 30px;
-      margin: 3em 0.5em 0.5em;
+    p {
+      font-size: 28px;
+      color: $white;
+      line-height: 1.5em;
+      text-align: left;
     }
-    @include media($mobile) {
-      font-size: 19px;
-      margin: 4em 0.5em 0.5em;
-    }
-    b {
-      font-weight: 500;
-    }
-  }
-  p {
-    font-size: 28px;
-    color: $white;
-    line-height: 1.5em;
-    text-align: left;
-  }
-  a.button {
-    background: $primary-color;
-    color: white;
-    margin: 0 1em;
-    padding: 1em 4em;
-    font-weight: 400;
-    font-size: 16px;
-    &.m20t {
-      margin-top: 20px;
+    a.button {
+      background: $primary-color;
+      color: white;
+      margin: 0 1em;
+      padding: 1em 4em;
+      font-weight: 400;
+      font-size: 16px;
+      &.m20t {
+        margin-top: 20px;
+      }
     }
   }
 }
