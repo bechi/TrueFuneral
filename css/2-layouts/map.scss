@@ -86,14 +86,11 @@
             vertical-align: middle;
           }
         }
-        a.button.only-mobile {
-          display: none;
-          @include media($mobile){
-            display: inline-block;
-            background: $primary-color;
-            color: white;
-            font-size: 13px;
-          }
+        a.button {
+          display: inline-block;
+          background: $primary-color;
+          color: white;
+          font-size: 13px;
         }
       }
       .pricing-details-2 {

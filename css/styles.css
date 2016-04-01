@@ -1015,8 +1015,6 @@ form.search-bar {
 .modal .modal-state:checked + .modal-fade-screen {
   opacity: 1;
   visibility: visible; }
-.modal .modal-state:checked + .modal-fade-screen .modal-inner {
-  top: 0.5em; }
 
 .modal-open {
   overflow: hidden; }
@@ -1546,11 +1544,6 @@ header.navigation {
               vertical-align: middle; }
               .content section.sidebar .list .item .info .modal .modal-inner .phone span i {
                 vertical-align: middle; }
-            .content section.sidebar .list .item .info .modal .modal-inner .phone a.button.only-mobile {
-              display: none; }
-              @media screen and (max-width: 600px) {
-                .content section.sidebar .list .item .info .modal .modal-inner .phone a.button.only-mobile {
-                  display: inline-block; } }
           .content section.sidebar .list .item .info .modal .modal-inner .pricing-details-2 {
             background: #fff;
             padding: 2em; }
@@ -2841,14 +2834,11 @@ section.search {
       vertical-align: middle; }
       .map .modal .modal-inner .phone span i {
         vertical-align: middle; }
-    .map .modal .modal-inner .phone a.button.only-mobile {
-      display: none; }
-      @media screen and (max-width: 600px) {
-        .map .modal .modal-inner .phone a.button.only-mobile {
-          display: inline-block;
-          background: #6FB2E0;
-          color: white;
-          font-size: 13px; } }
+    .map .modal .modal-inner .phone a.button {
+      display: inline-block;
+      background: #6FB2E0;
+      color: white;
+      font-size: 13px; }
   .map .modal .modal-inner .pricing-details-2 {
     background: #fff;
     padding: 2em; }

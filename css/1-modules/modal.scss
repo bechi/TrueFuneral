@@ -145,9 +145,6 @@
     visibility: visible;
   }
 
-  .modal-state:checked + .modal-fade-screen .modal-inner {
-    top: 0.5em;
-  }
 }
 
 .modal-open {

@@ -331,12 +331,6 @@
                       vertical-align: middle;
                     }
                   }
-                  a.button.only-mobile {
-                    display: none;
-                    @include media($mobile){
-                      display: inline-block;
-                    }
-                  }
                 }
                 .pricing-details-2 {
                   background: $white;
