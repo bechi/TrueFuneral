@@ -2769,6 +2769,7 @@ section.search {
       margin-top: 20px; }
 
 .map header.navigation {
+  display: none;
   padding: 0; }
   @media screen and (max-width: 600px) {
     .map header.navigation {
@@ -2782,6 +2783,173 @@ section.search {
     height: 60px;
     font-size: 25px;
     color: #fff; }
+.map .modal .modal-fade-screen {
+  background: rgba(92, 89, 88, 0.85); }
+  @media screen and (max-height: 700px) {
+    .map .modal .modal-fade-screen {
+      padding-top: 0; } }
+.map .modal .modal-inner {
+  white-space: normal;
+  width: 424px;
+  min-height: 540px;
+  padding: 0;
+  text-align: center;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.14), 0px 8px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px; }
+  @media screen and (max-width: 600px) {
+    .map .modal .modal-inner {
+      top: 50px;
+      height: 100%;
+      width: 100%;
+      border-radius: 0; } }
+  .map .modal .modal-inner h3 {
+    color: #5C5A58; }
+    .map .modal .modal-inner h3 a {
+      font-size: 20px;
+      margin-bottom: 0.3em; }
+  .map .modal .modal-inner header.navigation {
+    display: none;
+    padding: 0; }
+    @media screen and (max-width: 600px) {
+      .map .modal .modal-inner header.navigation {
+        display: block; } }
+    .map .modal .modal-inner header.navigation a.back {
+      background-color: #6FB2E0;
+      padding: 0.6em;
+      display: block;
+      float: left;
+      width: 64px;
+      height: 60px;
+      font-size: 25px;
+      color: #fff; }
+  .map .modal .modal-inner .pad-2 {
+    padding: 1.4em 2em; }
+  .map .modal .modal-inner .phone {
+    background: #5C5A58;
+    padding: 0.8em;
+    text-align: center;
+    color: #fff;
+    font-size: 20px; }
+    .map .modal .modal-inner .phone span {
+      vertical-align: middle; }
+      .map .modal .modal-inner .phone span i {
+        vertical-align: middle; }
+    .map .modal .modal-inner .phone a.button.only-mobile {
+      display: none; }
+      @media screen and (max-width: 600px) {
+        .map .modal .modal-inner .phone a.button.only-mobile {
+          display: inline-block; } }
+  .map .modal .modal-inner .pricing-details-2 {
+    background: #fff;
+    padding: 2em; }
+    .map .modal .modal-inner .pricing-details-2 table {
+      width: 100%;
+      line-height: 1.7; }
+      .map .modal .modal-inner .pricing-details-2 table tr td {
+        font-size: 17px;
+        color: #9B9B9B;
+        display: block;
+        float: left; }
+        .map .modal .modal-inner .pricing-details-2 table tr td.right {
+          display: block;
+          color: #5C5A58;
+          float: right; }
+      .map .modal .modal-inner .pricing-details-2 table tr.total {
+        margin-top: 0.8em;
+        padding: 0.5em 0;
+        display: block;
+        border-top: 1px solid #E5E5E5; }
+        .map .modal .modal-inner .pricing-details-2 table tr.total .left {
+          margin-top: 0.5em; }
+        .map .modal .modal-inner .pricing-details-2 table tr.total .right {
+          font-size: 28px; }
+    .map .modal .modal-inner .pricing-details-2 .table-footer {
+      background: #EDF7FE;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 2em 1.5em;
+      text-align: left;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px; }
+      .map .modal .modal-inner .pricing-details-2 .table-footer p {
+        font-size: 14px;
+        color: #9B9B9B;
+        letter-spacing: 0.5px;
+        line-height: 1.5; }
+  .map .modal .modal-inner .pricing-details {
+    text-align: left;
+    background: #D4E6F3;
+    padding: 1em 1em; }
+    @media screen and (max-width: 600px) {
+      .map .modal .modal-inner .pricing-details {
+        padding: 1em 1em 5em;
+        position: relative;
+        top: 0; } }
+    .map .modal .modal-inner .pricing-details .accordion-tabs {
+      border: 0; }
+      @media screen and (max-width: 600px) {
+        .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content {
+          display: inline; } }
+      .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-link {
+        background: #F4F8FC;
+        font-size: 15px;
+        color: #9B9B9B;
+        letter-spacing: 0.46px;
+        font-weight: 500;
+        padding: 0.75em 1.5em; }
+        @media screen and (max-width: 600px) {
+          .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-link {
+            border-top: 0;
+            display: inline-block; } }
+        .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-link.is-active {
+          border: none;
+          color: #6FB2E0;
+          background-color: #fff; }
+      .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content {
+        background: #fff;
+        border: none;
+        position: relative;
+        padding: 1.5em 1.618em; }
+        @media screen and (max-width: 600px) {
+          .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content {
+            float: left; } }
+        .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table {
+          width: 100%; }
+          .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr td {
+            font-size: 17px;
+            color: #9B9B9B;
+            display: block;
+            float: left; }
+            .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr td.right {
+              display: block;
+              color: #5C5A58;
+              float: right; }
+          .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr.total {
+            margin-top: 0.8em;
+            padding: 0.5em 0;
+            display: block;
+            border-top: 1px solid #E5E5E5; }
+            .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr.total .left {
+              margin-top: 0.5em; }
+            .map .modal .modal-inner .pricing-details .accordion-tabs .tab-header-and-content .tab-content table tr.total .right {
+              font-size: 28px; }
+    .map .modal .modal-inner .pricing-details .table-footer {
+      background: #EDF7FE;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 1.5em 1.5em;
+      text-align: left;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px; }
+      .map .modal .modal-inner .pricing-details .table-footer p {
+        font-size: 14px;
+        color: #9B9B9B;
+        letter-spacing: 0.5px;
+        line-height: 1.5; }
 .map .map {
   position: fixed;
   right: 0;
