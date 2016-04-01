@@ -2621,29 +2621,34 @@ section.search {
 @media screen and (max-width: 600px) {
   .about .onepage-wrapper {
     height: 36% !important; } }
-.about section img.bg {
-  width: 127%;
-  position: absolute;
-  top: 0;
-  left: -300px;
-  z-index: -1; }
-  @media screen and (max-width: 1200px) {
-    .about section img.bg {
-      width: 118%;
-      left: -182px; } }
-  @media screen and (max-width: 1000px) {
-    .about section img.bg {
-      width: 129%;
-      left: -144px; } }
+.about section {
+  overflow: hidden; }
   @media screen and (max-width: 768px) {
-    .about section img.bg {
-      width: 124%;
-      left: -107px; } }
-.about section footer.home {
-  position: absolute; }
-  @media screen and (max-width: 768px) {
-    .about section footer.home {
-      position: relative; } }
+    .about section {
+      overflow: visible; } }
+  .about section img.bg {
+    width: 127%;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    z-index: -1; }
+    @media screen and (max-width: 1200px) {
+      .about section img.bg {
+        width: 118%;
+        left: -182px; } }
+    @media screen and (max-width: 1000px) {
+      .about section img.bg {
+        width: 129%;
+        left: -144px; } }
+    @media screen and (max-width: 768px) {
+      .about section img.bg {
+        width: 124%;
+        left: -107px; } }
+  .about section footer.home {
+    position: absolute; }
+    @media screen and (max-width: 768px) {
+      .about section footer.home {
+        position: relative; } }
 .about .hamburguer a {
   display: none; }
   @media screen and (max-width: 768px) {

@@ -17,6 +17,10 @@
     }
   }
   section {
+    overflow: hidden;
+    @include media($tablet){
+      overflow: visible;
+    }
     img.bg {
       width: 127%;
       position: absolute;
