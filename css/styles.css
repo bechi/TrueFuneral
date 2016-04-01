@@ -2146,6 +2146,9 @@ footer.home {
   footer.home .left {
     float: left;
     margin: 0 1.5em; }
+    @media screen and (max-width: 768px) {
+      footer.home .left {
+        margin: 0; } }
   @media screen and (max-width: 600px) {
     footer.home img.logo-bbb {
       float: right; } }
@@ -2620,6 +2623,9 @@ section.search {
     height: 36% !important; } }
 .about section {
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .about section {
+      overflow: visible; } }
   .about section img.bg {
     width: 127%;
     position: absolute;
@@ -2640,10 +2646,13 @@ section.search {
         left: -107px; } }
   .about section footer.home {
     position: absolute; }
-.about section.hamburguer a {
+    @media screen and (max-width: 768px) {
+      .about section footer.home {
+        position: relative; } }
+.about .hamburguer a {
   display: none; }
   @media screen and (max-width: 768px) {
-    .about section.hamburguer a {
+    .about .hamburguer a {
       display: block;
       color: #fff;
       position: absolute;
@@ -2669,14 +2678,22 @@ section.search {
     color: #fff; }
   .about .overlay nav {
     text-align: left;
-    top: 235px;
+    top: 200px;
     height: auto;
     width: auto; }
-    .about .overlay nav ul.footer {
+    .about .overlay nav ul {
       padding-top: 35px;
       font-size: 18px;
       line-height: 44px;
-      display: block; }
+      display: block;
+      height: 170px;
+      line-height: 1.2; }
+      .about .overlay nav ul.footer li {
+        height: 30px;
+        min-height: 0; }
+      .about .overlay nav ul li {
+        height: 50px;
+        margin-bottom: 0.5em; }
     .about .overlay nav .line {
       margin-bottom: 25px;
       width: 31px;
@@ -2689,7 +2706,7 @@ section.search {
     font-size: 25px;
     font-weight: 700; }
 .about header {
-  position: relative;
+  position: fixed;
   box-shadow: none; }
   .about header.navigation {
     background-color: transparent;
@@ -2728,16 +2745,44 @@ section.search {
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-left: 25.58941%;
-  margin-top: 13%;
+  margin-top: 18%;
   text-align: center; }
   .about .text:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 1000px) {
+    .about .text {
+      margin-top: 19%; } }
+  @media screen and (max-width: 768px) {
+    .about .text {
+      padding: 0 2.5em 0;
+      width: 100%;
+      margin-top: 19%;
+      margin-left: 0; } }
   .about .text.slide-2 {
     margin-top: 22%; }
   .about .text.slide-3 {
     margin-top: 18%; }
+    @media screen and (max-width: 1000px) {
+      .about .text.slide-3 {
+        margin-top: 12%; } }
+    @media screen and (max-width: 600px) {
+      .about .text.slide-3 {
+        margin-top: 16%; } }
   .about .text.slide-4 {
-    margin-top: 16%; }
+    margin-top: 16%;
+    margin-bottom: 6em; }
+    @media screen and (max-width: 768px) {
+      .about .text.slide-4 {
+        margin-bottom: 7em; } }
+    @media screen and (max-width: 768px) {
+      .about .text.slide-4 {
+        margin-bottom: 11em; } }
+    @media screen and (max-width: 600px) {
+      .about .text.slide-4 {
+        margin-bottom: 5em; } }
+    @media screen and (max-width: 1000px) {
+      .about .text.slide-4 {
+        margin-top: 15%; } }
   .about .text h1 {
     font-weight: 300;
     font-size: 46px;
@@ -2753,7 +2798,7 @@ section.search {
     @media screen and (max-width: 600px) {
       .about .text h1 {
         font-size: 19px;
-        margin: 4em 0.5em 0.5em; } }
+        margin: 1em 0.5em 0.5em; } }
     .about .text h1 b {
       font-weight: 500; }
   .about .text p {
@@ -2761,6 +2806,12 @@ section.search {
     color: #fff;
     line-height: 1.5em;
     text-align: left; }
+    @media screen and (max-width: 1000px) {
+      .about .text p {
+        font-size: 22px; } }
+    @media screen and (max-width: 600px) {
+      .about .text p {
+        font-size: 16px; } }
   .about .text a.button {
     background: #6FB2E0;
     color: white;

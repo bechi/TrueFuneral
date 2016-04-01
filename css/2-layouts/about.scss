@@ -18,6 +18,9 @@
   }
   section {
     overflow: hidden;
+    @include media($tablet){
+      overflow: visible;
+    }
     img.bg {
       width: 127%;
       position: absolute;
@@ -39,9 +42,12 @@
     }
     footer.home {
       position: absolute;
+      @include media($tablet){
+        position: relative;
+      }
     }
   }
-  section.hamburguer a {
+  .hamburguer a {
     display: none;
     @include media($tablet){
       display: block;
@@ -72,14 +78,26 @@
     }
     nav {
       text-align: left;
-      top: 235px;
+      top: 200px;
       height: auto;
       width: auto;
-      ul.footer {
+      ul {
         padding-top: 35px;
         font-size: 18px;
         line-height: 44px;
         display: block;
+        height: 170px;
+        line-height: 1.2;
+        &.footer {
+          li {
+            height: 30px;
+            min-height: 0;
+          }
+        }
+        li {
+          height: 50px;
+          margin-bottom: 0.5em;
+        }
       }
       .line {
         margin-bottom: 25px;
@@ -100,7 +118,7 @@
     }
   }
   header {
-    position: relative;
+    position: fixed;
     box-shadow: none;
     &.navigation {
       background-color: transparent;
@@ -143,24 +161,51 @@
   .text {
     @include span-columns(6);
     @include shift(3);
-    margin-top: 13%;
+    margin-top: 18%;
     text-align: center;
+    @include media($small-desktop) {
+      margin-top: 19%;
+    }
+    @include media($tablet) {
+      padding: 0 2.5em 0;
+      width: 100%;
+      margin-top: 19%;
+      margin-left: 0;
+    }
     &.slide-2 {
       margin-top: 22%;
     }
     &.slide-3 {
       margin-top: 18%;
+      @include media($small-desktop) {
+        margin-top: 12%;
+      }
+      @include media($mobile) {
+        margin-top: 16%;
+      }
+
     }
     &.slide-4 {
       margin-top: 16%;
+      margin-bottom: 6em;
+      @include media($tablet) {
+        margin-bottom: 7em;
+      }
+      @include media($small-tablet) {
+        margin-bottom: 11em;
+      }
+      @include media($mobile) {
+        margin-bottom: 5em;
+      }
+      @include media($small-desktop) {
+        margin-top: 15%;
+      }
     }
     h1 {
       font-weight: 300;
       font-size: 46px;
       line-height: 1.3em;
-
       color: $white;
-
       @include media($small-desktop){
         font-size: 35px;
       }
@@ -170,7 +215,7 @@
       }
       @include media($mobile) {
         font-size: 19px;
-        margin: 4em 0.5em 0.5em;
+        margin: 1em 0.5em 0.5em;
       }
       b {
         font-weight: 500;
@@ -181,6 +226,12 @@
       color: $white;
       line-height: 1.5em;
       text-align: left;
+      @include media($small-desktop) {
+        font-size: 22px;
+      }
+      @include media($mobile) {
+        font-size: 16px;
+      }
     }
     a.button {
       background: $primary-color;
