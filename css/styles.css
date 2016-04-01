@@ -1449,6 +1449,10 @@ header.navigation {
             background: url(../img/icon-filter.png) no-repeat left;
             background-size: 15px;
             background-position-x: 15px; }
+          @media screen and (max-width: 400px) {
+            .content section.sidebar .filters .select-box select {
+              font-size: 12px;
+              letter-spacing: 0; } }
         .content section.sidebar .filters .select-box i {
           position: absolute;
           top: 16px;

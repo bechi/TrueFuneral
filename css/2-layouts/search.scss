@@ -225,6 +225,10 @@
               background-size: 15px;
               background-position-x: 15px;
             }
+            @include media($small-mobile){
+              font-size: 12px;
+              letter-spacing: 0;
+            }
           }
           i {
             position: absolute;
