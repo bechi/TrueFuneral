@@ -2724,10 +2724,16 @@ section.search {
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-left: 25.58941%;
-  margin-top: 20%;
+  margin-top: 13%;
   text-align: center; }
   .about .text:last-child {
     margin-right: 0; }
+  .about .text.slide-2 {
+    margin-top: 22%; }
+  .about .text.slide-3 {
+    margin-top: 18%; }
+  .about .text.slide-4 {
+    margin-top: 16%; }
   .about .text h1 {
     font-weight: 300;
     font-size: 46px;

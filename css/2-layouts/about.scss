@@ -140,12 +140,20 @@
       }
     }
   }
-
   .text {
     @include span-columns(6);
     @include shift(3);
-    margin-top: 20%;
+    margin-top: 13%;
     text-align: center;
+    &.slide-2 {
+      margin-top: 22%;
+    }
+    &.slide-3 {
+      margin-top: 18%;
+    }
+    &.slide-4 {
+      margin-top: 16%;
+    }
     h1 {
       font-weight: 300;
       font-size: 46px;
