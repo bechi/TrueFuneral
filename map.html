@@ -1,24 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <script type="text/javascript" src="js/bower_components/jquery-2.2.1.min/index.js"></script>
-    <script type="text/javascript" src="js/base.js"></script>
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://use.typekit.net/dvx2mzn.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico"/>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="js/bower_components/jquery-2.2.1.min/index.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <title>Search result</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+  <script src="https://use.typekit.net/dvx2mzn.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico"/>
 </head>
 <body class="map">
+
   <header class="navigation" role="banner">
     <a class="back" href="search.html"><i class="icon-arrow-left"> </i></a>
     <a href="home.html" class="logo">
       <img src="img/TF-logo.svg" alt="True Funeral">
     </a>
   </header>
+  <div class="modal">
+    <input class="modal-state" id="modal-1" type="checkbox" />
+    <div class="modal-fade-screen">
+      <div class="modal-inner">
+        <header class="navigation only-mobile" role="banner">
+          <a class="back" href="search.html"><i class="icon-arrow-left"> </i></a>
+          <a href="home.html" class="logo">
+            <img src="img/TF-logo.svg" alt="True Funeral">
+          </a>
+        </header>
+        <div class="pad-2">
+          <h3><a href="#">2. Funeral Home Name </a></h3>
+          <h5>
+            <i class="icon-star"> </i>
+            <i class="icon-star"> </i>
+            <i class="icon-star"> </i>
+            <i class="icon-star"> </i>
+            <i class="icon-star"> </i>
+            16 ratings
+          </h5>
+          <p class="ubication"><i class="icon-pin text-primary"></i> 148 San Antonio St</p>
+        </div>
+        <div class="phone">
+          <span><i class="icon-phone"> </i> (555) 123-4567</span> <a href="" class="button only-mobile"> Call now</a>
+        </div>
+        <section class="pricing-details">
+          <ul class="accordion-tabs">
+            <li class="tab-header-and-content">
+              <a href="javascript:void(0)" class="is-active tab-link">Direct Cremation</a>
+              <div class="tab-content">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Direct cremation price</td>
+                      <td class="right">$1,600</td>
+                    </tr>
+                    <tr>
+                      <td>Death certificate</td>
+                      <td class="right">$200</td>
+                    </tr>
+                    <tr>
+                      <td>Coroner’s fee</td>
+                      <td class="right">$300</td>
+                    </tr>
+                    <tr class="total">
+                      <td class="left">Out of the door price</td>
+                      <td class="right">$300</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="tab-header-and-content">
+              <a href="javascript:void(0)" class="tab-link">Immediate Burial</a>
+              <div class="tab-content">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Direct cremation price</td>
+                      <td class="right">$1,600</td>
+                    </tr>
+                    <tr>
+                      <td>Death certificate</td>
+                      <td class="right">$200</td>
+                    </tr>
+                    <tr>
+                      <td>Coroner’s fee</td>
+                      <td class="right">$300</td>
+                    </tr>
+                    <tr class="total">
+                      <td class="left">Coroner’s fee</td>
+                      <td class="right">$300</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+          <div class="table-footer">
+            <p>What isn’t included: <br> Specialized urn, memorial service, over 300lb services.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
   <div class="map">
     <div id="map"></div>
     <script>
